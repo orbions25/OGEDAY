@@ -1,0 +1,10 @@
+services:
+  ogedays-web:
+    image: nginx:1.27-alpine
+    container_name: ogedays-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8095:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./site/nginx.conf:/etc/nginx/conf.d/default.conf:ro
