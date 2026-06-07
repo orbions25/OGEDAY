@@ -245,21 +245,24 @@
       }
     </style>
   </head>
-  <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <body id="top" class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
     <nav
       id="main-nav"
       class="sticky top-0 z-50 border-b border-on-surface/5 bg-background/95 backdrop-blur-md transition-all duration-300"
     >
       <div class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto,1fr,auto] items-center gap-8 px-margin-mobile py-md md:px-margin-desktop">
-        <div class="flex shrink-0 items-center gap-sm">
-          <div class="flex h-16 w-16 items-center justify-center rounded-full border border-primary/20 bg-primary/10 text-primary font-headline-md text-[28px] font-extrabold">O</div>
+        <a class="flex shrink-0 items-center gap-sm" href="#top" aria-label="Ogeday ana sayfa">
+          <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-1 shadow-sm ring-1 ring-black/5">
+            <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="h-full w-full object-contain" loading="eager" decoding="async" />
+          </div>
           <div class="hidden sm:block">
             <p class="font-label-sm text-label-sm uppercase tracking-[0.32em] text-primary">Ogeday</p>
-            <p class="text-xs text-on-surface-variant">Teknoloji ve Yazılım Sistemleri</p>
+            <p class="text-xs text-on-surface-variant">Yazılım ve Teknoloji Sistemleri</p>
           </div>
-        </div>
+        </a>
 
         <div class="hidden min-w-0 items-center justify-center gap-12 whitespace-nowrap md:flex">
+          <a class="whitespace-nowrap border-b-2 border-primary pb-1 font-body-md text-body-md font-bold text-primary" href="#about">Hakkımızda</a>
           <a class="whitespace-nowrap border-b-2 border-primary pb-1 font-body-md text-body-md font-bold text-primary" href="#solutions">Çözümler</a>
           <a class="whitespace-nowrap pb-1 font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#technology">Teknoloji</a>
           <a class="whitespace-nowrap pb-1 font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#services">Hizmetler</a>
@@ -294,7 +297,7 @@
             </h1>
 
             <p class="max-w-xl font-body-lg text-body-lg font-medium text-surface-variant opacity-90">
-              Kritik operasyonlar için tasarlanmış, sınırsız ölçeklenebilir ve tavizsiz güvenliğe sahip premium yazılım ekosistemleri sunuyoruz.
+              OGEDAY, işletmeler, kurumlar ve girişimler için SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir.
             </p>
 
             <div class="flex flex-col pt-sm sm:flex-row" style="gap: 24px;">
@@ -345,6 +348,117 @@
         </div>
       </div>
       <div class="tech-line absolute bottom-0 left-0 w-full"></div>
+    </section>
+
+    <section id="about" class="bg-surface-container-low px-margin-mobile py-section-y md:px-margin-desktop">
+      <div class="mb-xl max-w-3xl reveal-up active">
+        <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda ve Hikayemiz</span>
+        <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background md:font-display-lg md:text-display-lg">
+          SaaS, özel yazılım ve müşteriye özel AI sistemlerini operasyon disipliniyle birleştiriyoruz.
+        </h2>
+        <p class="mt-4 max-w-2xl font-body-md text-body-md leading-7 text-on-surface-variant">
+          SaaS Ürünleri • Özel Yazılım • Müşteriye Özel AI Sistemleri • Operasyon Disiplini
+        </p>
+      </div>
+
+      <div class="grid items-start gap-6 lg:grid-cols-12">
+        <article class="light-glass-card relative overflow-hidden rounded-2xl p-xl reveal-up active lg:col-span-7">
+          <div class="absolute top-0 right-0 hidden p-lg opacity-5 md:block">
+            <span class="material-symbols-outlined text-[180px] text-primary">hub</span>
+          </div>
+          <div class="relative z-10 flex flex-col gap-6">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda</span>
+                <h3 class="font-headline-md text-headline-md font-bold text-on-background">İş problemi → kapsam → sistem → ölçüm</h3>
+              </div>
+              <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="hidden h-24 w-24 rounded-2xl bg-white object-contain p-2 shadow-sm md:block" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
+              <p>OGEDAY, işletmelerin, kurumların ve girişimlerin dijital dünyada daha düzenli, daha ölçülebilir ve daha güçlü çalışabilmesi için SaaS ürünleri, özel yazılım projeleri, entegrasyon altyapıları ve müşteriye özel yapay zekâ sistemleri geliştiren hibrit bir teknoloji şirketidir.</p>
+              <p>Biz OGEDAY’i yalnızca “kod yazan bir ekip” olarak konumlandırmıyoruz. Bizim için asıl mesele; gerçek bir iş problemini anlamak, bu problemi doğru kapsamla sadeleştirmek, teknolojiyle uygulanabilir hale getirmek ve ortaya uzun vadede değer üretecek bir sistem çıkarmaktır.</p>
+              <p>Bu yüzden OGEDAY’in çalışma alanı tek bir başlığa sıkışmaz. Bir tarafta Orbions gibi kendi SaaS ürünlerimizi geliştiririz; diğer tarafta işletmelere özel yazılım projeleri, entegrasyon sistemleri, yönetim panelleri, dijital operasyon altyapıları ve müşterinin kendi iş akışına göre çalışan yapay zekâ destekli sistemler tasarlarız.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="space-y-6 lg:col-span-5">
+          <article class="light-glass-card rounded-2xl p-lg reveal-up active">
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">OGEDAY Ne Yapar?</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Ürün, proje ve altyapıyı aynı çatı altında toplar.</h3>
+            <ul class="space-y-3 font-body-md text-body-md leading-7 text-on-surface-variant">
+              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>SaaS ürünleri geliştirir: Orbions başta olmak üzere abonelik, lisans ve kurulum modeliyle büyüyebilecek dijital ürünler üretir.</span></li>
+              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Özel yazılım projeleri yapar: yönetim panelleri, müşteri portalları, dashboardlar, takip ekranları, otomasyon sistemleri ve MVP projeleri geliştirir.</span></li>
+              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Entegrasyon ve dijital altyapı kurar: muhasebe, e-belge, stok, satış, CRM, depo ve raporlama sistemlerini bağlar.</span></li>
+              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Müşteriye özel AI sistemleri tasarlar: veriyi, iş akışını, dili ve karar ihtiyaçlarını anlayan özel asistanlar geliştirir.</span></li>
+              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Operasyon ve süreç disiplini sağlar: kapsam, rol, yetki, revizyon, teslim, destek ve ölçüm yapısını da tasarlar.</span></li>
+            </ul>
+          </article>
+
+          <article class="light-glass-card rounded-2xl p-lg reveal-up active" style="transition-delay: 0.1s">
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Yapay Zekâ Yaklaşımımız</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">AI, üretim kısayolu değil; karar kalitesini yükselten bir katmandır.</h3>
+            <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
+              <p>OGEDAY için yapay zekâ, yazılım geliştirme sürecinin yerine geçen bir üretim kısayolu değil; doğru probleme bağlandığında veriyi, süreci ve karar mekanizmasını güçlendiren özel bir sistem katmanıdır.</p>
+              <p>Önceliğimiz, kendi iç bünyemizde kontrollü ve ölçülebilir bir AI çalışma düzeni oluşturmaktır. Bu düzen; dokümantasyon, bilgi tabanı, proje hafızası, test senaryoları, teklif hazırlığı, operasyon takibi ve karar destek gibi alanlarda şirketin üretim kalitesini artırır.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-12">
+        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-7" style="transition-delay: 0.1s">
+          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hikayemiz</span>
+          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Gerçek işletme sorunlarından doğan bir teknoloji çatısı.</h3>
+          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
+            <p>OGEDAY’in hikâyesi, yalnızca “bir yazılım şirketi kuralım” fikriyle başlamadı. Daha derinde, gerçek işletmelerin yaşadığı dağınıklığı ve karar zorluğunu teknolojiyle çözme ihtiyacı vardı.</p>
+            <p>Sahada gördüğümüz şey çok netti: Birçok işletme büyümek istiyor ama sistemleri büyümeye hazır değil. Excel dosyaları, kopuk programlar, manuel takipler, dağınık iletişim, geciken raporlar ve geç fark edilen finansal riskler işletmenin hızını düşürüyor.</p>
+            <p>Bu tablo bize şunu gösterdi: Türkiye’de sadece yazılım yapan değil; işletmeyi anlayan, süreci sadeleştiren, doğru kapsam çıkaran ve teknolojiyi ticari sonuca bağlayan yapılara ihtiyaç var.</p>
+            <p>OGEDAY bu anlayışla doğdu. Amacımız, işletmelerin ve girişimlerin dijitalleşme sürecinde yüzeysel çözümler üretmek değil; gerçekten çalışan, yönetilebilir ve büyümeyi taşıyabilecek sistemler kurmak.</p>
+            <p>Orbions, bu vizyonun ilk büyük karşılığıdır. Orbions ile işletmelerin satış, stok, cari, finans, depo, şube ve raporlama süreçlerini tek merkezde toplayan; veriyi yalnızca kaydeden değil, karar sürecine katkı sağlayan bir iş yönetim platformu geliştirmeyi hedefliyoruz.</p>
+          </div>
+        </article>
+
+        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-5" style="transition-delay: 0.2s">
+          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Karakterimiz</span>
+          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Sade, ölçülebilir ve uzun vadeli değer üretmeye odaklı.</h3>
+          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
+            <p>OGEDAY’in karakteri sade ama güçlü bir anlayışa dayanır: Problemi netleştir, sistemi doğru kur, işi ölçülebilir hale getir ve uzun vadeli değer üret.</p>
+            <p>Bizim için iyi teknoloji karmaşık görünmek zorunda değildir. İyi teknoloji; kullanıcının yükünü azaltmalı, kararını netleştirmeli ve işin günlük akışına doğal şekilde yerleşmelidir.</p>
+            <p>Bu yüzden hem kendi ürünlerimizde hem özel projelerde gösterişli ama zayıf çözümler yerine; sade, anlaşılır, güvenilir ve büyümeye hazır sistemler kurmayı önemsiyoruz.</p>
+          </div>
+          <div class="mt-6 rounded-xl border border-primary/10 bg-primary/5 p-4">
+            <h4 class="mb-3 font-headline-md text-[20px] font-bold text-on-background">OGEDAY’i Nasıl Konumlandırıyoruz?</h4>
+            <ul class="space-y-2 font-body-md text-body-md leading-7 text-on-surface-variant">
+              <li>• Sadece yazılım ajansı değildir; kendi SaaS ürünlerini geliştiren bir ürün şirketi refleksi taşır.</li>
+              <li>• Sadece Orbions’un arkasındaki teknik ekip değildir; Orbions ilk amiral üründür, OGEDAY daha geniş bir teknoloji çatısıdır.</li>
+              <li>• Sadece yapay zekâ şirketi değildir; yapay zekâyı kendi iç bilgi ve operasyon kabiliyetinden beslenen bir teknoloji katmanı olarak ele alır.</li>
+              <li>• Sadece fason proje alan bir ekip değildir; özel projeleri kontrollü, kapsamı net ve portal/süreç disipliniyle yönetmeyi hedefler.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 grid gap-6 lg:grid-cols-12">
+        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-8" style="transition-delay: 0.3s">
+          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Kısa Web Sitesi Versiyonu</span>
+          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">OGEDAY, dijital operasyonları iş değeri üreten sistemlere dönüştürür.</h3>
+          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
+            <p>OGEDAY, SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir.</p>
+            <p>Biz yalnızca kod yazan bir ekip değil; işletmelerin, kurumların ve girişimlerin gerçek ihtiyaçlarını anlayan, bu ihtiyaçları sade ve uygulanabilir sistemlere dönüştüren bir yapı olmayı hedefliyoruz. OGEDAY; ürün geliştirme, özel proje üretimi, entegrasyon, müşteri portalı, operasyon disiplini ve kendi iç AI kabiliyetini müşteriye özel çözümlere dönüştürme yaklaşımıyla çalışır.</p>
+            <p>Orbions, OGEDAY’in bu vizyonla geliştirdiği ana SaaS ürünlerinden biridir. Bunun yanında OGEDAY; müşterinin kendi verisine, iş akışına ve karar ihtiyaçlarına göre çalışan özel yazılım projeleri ve AI destekli dijital sistemler geliştiren uzun vadeli bir teknoloji şirketi olarak konumlanır.</p>
+          </div>
+        </article>
+
+        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-4" style="transition-delay: 0.35s">
+          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Çok Kısa Profil Açıklaması</span>
+          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Kısa, net ve profil alanlarına uygun.</h3>
+          <p class="font-body-md text-body-md leading-7 text-on-surface-variant">
+            OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve operasyonel dijital altyapılar geliştiren hibrit bir teknoloji şirketidir. Kendi iç AI kabiliyetini; kurumların, şirketlerin ve kişilerin verisini, sürecini ve karar ihtiyaçlarını anlayan özel dijital sistemlere dönüştürür.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="solutions" class="relative bg-surface px-margin-mobile py-section-y md:px-margin-desktop">
@@ -534,11 +648,18 @@
       class="flex w-full flex-col items-center justify-between gap-md border-t border-on-surface/5 bg-surface-container-highest px-margin-mobile py-lg md:flex-row md:px-margin-desktop dark:bg-inverse-surface"
     >
       <div class="flex flex-col items-center gap-sm md:items-start">
-        <span class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-background dark:text-inverse-on-surface">Ogeday</span>
+        <div class="flex items-center gap-3">
+          <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="h-14 w-14 rounded-xl bg-white object-contain p-1 shadow-sm" loading="lazy" decoding="async" />
+          <div class="flex flex-col">
+            <span class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-background dark:text-inverse-on-surface">Ogeday</span>
+            <span class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-surface-variant">Yazılım ve Teknoloji Sistemleri</span>
+          </div>
+        </div>
         <span class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-surface-variant">© 2024 Ogeday Teknoloji. Tüm hakları saklıdır.</span>
       </div>
 
       <div class="flex flex-wrap justify-center gap-md">
+        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#about">Hakkımızda</a>
         <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#company">İletişim</a>
         <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#technology">Teknoloji</a>
         <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#solutions">Çözümler</a>
