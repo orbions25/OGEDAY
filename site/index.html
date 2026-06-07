@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta
       name="description"
-      content="Ogeday, teknoloji ve yazılım sistemleri için kurumsal mimari, güvenlik, veri istihbaratı ve ölçeklenebilir ürünler geliştirir."
+      content="Ogeday, SaaS ürünleri, özel yazılım projeleri, müşteriye özel AI sistemleri ve dijital operasyon altyapıları geliştiren hibrit teknoloji şirketidir."
     />
     <meta name="theme-color" content="#121212" />
     <title>Ogeday | Teknoloji ve Yazılım Sistemleri</title>
@@ -68,10 +68,12 @@
               "dark-border": "rgba(255,255,255,0.1)",
             },
             borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
+              sm: "0.125rem",
+              DEFAULT: "0.25rem",
+              md: "0.375rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
             },
             spacing: {
               xl: "80px",
@@ -136,7 +138,7 @@
                 {
                   lineHeight: "40px",
                   letterSpacing: "-0.01em",
-                  fontWeight: "800",
+                  fontWeight: "700",
                 },
               ],
               "display-lg": [
@@ -173,44 +175,61 @@
       }
 
       .glass-card {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(27, 28, 28, 0.06);
       }
 
       .glass-premium {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        background: linear-gradient(180deg, #ffffff 0%, #f8f5f4 100%);
+        border: 1px solid rgba(27, 28, 28, 0.08);
+        box-shadow: 0 18px 48px rgba(12, 12, 12, 0.08);
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       }
 
       .light-glass-card {
         background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(27, 28, 28, 0.05);
-        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid rgba(27, 28, 28, 0.06);
+        box-shadow: 0 1px 0 rgba(12, 12, 12, 0.04);
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       }
 
       .light-glass-card:hover {
-        box-shadow: 0 20px 40px rgba(12, 12, 12, 0.12);
+        box-shadow: 0 12px 32px rgba(12, 12, 12, 0.08);
         border-top: 2px solid #a81f20;
-        transform: translateY(-6px) scale(1.01);
+        transform: translateY(-4px);
       }
 
       .tech-line {
         height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(168, 31, 32, 0.5), transparent);
+        background: linear-gradient(90deg, transparent, rgba(168, 31, 32, 0.4), transparent);
       }
 
       .ambient-glow {
         position: absolute;
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(circle, rgba(168, 31, 32, 0.15) 0%, rgba(18, 18, 18, 0) 70%);
+        width: 720px;
+        height: 720px;
+        background: radial-gradient(circle, rgba(168, 31, 32, 0.08) 0%, rgba(251, 249, 248, 0) 68%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 0;
+      }
+
+      .hero-panel {
+        background: linear-gradient(180deg, #ffffff 0%, #f6f3f2 100%);
+        border: 1px solid rgba(27, 28, 28, 0.08);
+        box-shadow: 0 20px 48px rgba(12, 12, 12, 0.08);
+      }
+
+      .hero-metric {
+        background: #f6f3f2;
+        border: 1px solid rgba(27, 28, 28, 0.06);
+      }
+
+      .hero-chip {
+        background: rgba(168, 31, 32, 0.08);
+        border: 1px solid rgba(168, 31, 32, 0.15);
+        color: #7a2d30;
       }
 
       @keyframes marquee {
@@ -252,8 +271,8 @@
     >
       <div class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto,1fr,auto] items-center gap-8 px-margin-mobile py-md md:px-margin-desktop">
         <a class="flex shrink-0 items-center gap-sm" href="#top" aria-label="Ogeday ana sayfa">
-          <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-1 shadow-sm ring-1 ring-black/5">
-            <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="h-full w-full object-contain" loading="eager" decoding="async" />
+          <div class="flex h-16 w-16 items-center justify-center rounded-lg bg-white p-1 shadow-sm ring-1 ring-black/5">
+            <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="h-full w-full object-contain" loading="eager" decoding="async" />
           </div>
           <div class="hidden sm:block">
             <p class="font-label-sm text-label-sm uppercase tracking-[0.32em] text-primary">Ogeday</p>
@@ -280,68 +299,107 @@
       </div>
     </nav>
 
-    <section class="relative flex min-h-[90vh] items-center overflow-hidden bg-dark-bg pb-section-y pt-20 text-surface-container-lowest">
+    <section class="relative overflow-hidden bg-surface pb-section-y pt-16">
       <div class="ambient-glow top-0 right-0 -translate-y-1/4 translate-x-1/4"></div>
       <div class="ambient-glow bottom-0 left-0 -translate-x-1/4 translate-y-1/4"></div>
-      <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop">
-        <div class="grid grid-cols-1 items-center gap-gutter lg:grid-cols-12">
-          <div class="space-y-lg reveal-up active lg:col-span-6">
-            <div class="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 backdrop-blur-sm">
-              <span class="material-symbols-outlined text-[16px] text-primary">memory</span>
-              <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Kurumsal Mimari</span>
-            </div>
-
-            <h1 class="font-display-lg text-display-lg font-extrabold tracking-tight text-white leading-tight">
-              Geleceğin Mimarisini <br />
-              <span class="bg-gradient-to-r from-primary to-secondary-container bg-clip-text text-transparent">Bugün İnşa Ediyoruz.</span>
-            </h1>
-
-            <p class="max-w-xl font-body-lg text-body-lg font-medium text-surface-variant opacity-90">
-              OGEDAY, işletmeler, kurumlar ve girişimler için SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir.
-            </p>
-
-            <div class="flex flex-col pt-sm sm:flex-row" style="gap: 24px;">
-              <a
-                class="group flex whitespace-nowrap items-center justify-center gap-2 rounded bg-primary px-xl py-md font-body-md text-body-md font-bold text-on-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(168,31,32,0.4)]"
-                href="#solutions"
-              >
-                Hemen Dağıt
-                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-              </a>
-              <a
-                class="flex whitespace-nowrap items-center justify-center gap-2 rounded border border-surface-variant/40 bg-transparent px-xl py-md font-body-md text-body-md font-semibold text-white transition-all duration-300 hover:border-white/60 hover:bg-white/10"
-                href="#technology"
-              >
-                <span class="material-symbols-outlined">play_circle</span>
-                Demoyu İncele
-              </a>
-            </div>
+      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+      <div class="mx-auto grid w-full max-w-[1440px] grid-cols-1 items-center gap-12 px-margin-mobile pt-10 md:px-margin-desktop lg:grid-cols-[1.05fr,0.95fr]">
+        <div class="space-y-lg reveal-up active">
+          <div class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2">
+            <span class="material-symbols-outlined text-[16px] text-primary">memory</span>
+            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Hibrit teknoloji şirketi</span>
           </div>
 
-          <div class="relative mt-lg reveal-up active lg:col-span-6 lg:mt-0" style="transition-delay: 0.2s">
-            <div class="glass-premium relative aspect-square w-full overflow-hidden rounded-2xl border border-white/10 p-2 shadow-2xl md:aspect-[4/3]">
-              <div class="absolute inset-0 z-10 bg-gradient-to-br from-primary/20 to-transparent mix-blend-overlay"></div>
+          <h1 class="font-display-lg text-[44px] font-extrabold leading-[1.02] tracking-tight text-on-background sm:text-[50px] md:text-display-lg">
+            Teknoloji sistemlerini
+            <span class="block text-primary">daha net, daha güvenli ve daha premium kuruyoruz.</span>
+          </h1>
+
+          <p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+            OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit teknoloji şirketidir. Amacımız, karmaşık iş ihtiyaçlarını sade, ölçülebilir ve sürdürülebilir sistemlere dönüştürmektir.
+          </p>
+
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a class="group inline-flex items-center justify-center gap-2 rounded bg-primary px-xl py-md font-body-md text-body-md font-bold text-on-primary transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#910912]" href="#company">
+              Projeyi Konuşalım
+              <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </a>
+            <a class="inline-flex items-center justify-center gap-2 rounded border border-on-surface/10 bg-white px-xl py-md font-body-md text-body-md font-semibold text-on-background transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:text-primary" href="#about">
+              Hakkımızda
+            </a>
+          </div>
+
+          <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">SaaS ürünleri</div>
+            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Özel yazılım</div>
+            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Müşteriye özel AI</div>
+            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Operasyon disiplini</div>
+          </div>
+
+          <div class="rounded-xl border border-primary/10 bg-primary/10 px-4 py-3">
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Orbions, OGEDAY’in ilk amiral ürünüdür. Şirketin ürün geliştirme, karar desteği ve operasyon disiplinini aynı çatı altında toplar.
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal-up active" style="transition-delay: 0.15s">
+          <div class="hero-panel rounded-2xl p-6 md:p-8">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">OGEDAY</span>
+                <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background">Yazılım ve teknoloji sistemleri</h2>
+              </div>
               <img
-                id="hero-parallax"
-                class="h-full w-full rounded-xl object-cover"
-                src="https://lh3.googleusercontent.com/aida/AP1WRLsZ4BZqYfkC8Jg-4te-l6OHm1bgKMggv_9mKxG5SS3n8-IrIXhRogy4l4ugiAvivk5R-RMHSvzp0K-awHZnWqQQRFqDQPJjf8Sfvgk3f2X7hqHmtep0zv063uJHSv8O4GmhOECc2SaIT0LMfozAie0o4hrw38HocIuJ253bm4SFGclX5wY6gbmFoaLW9Qxcmu-GkfzNX91ZqcksDQVtblGYMf0CUisY2RuS572c5XoPNglOEoldvTcygWU"
-                alt="Modern kurumsal teknoloji görseli"
+                src="/assets/ogeday-logo-cropped.png"
+                alt="Ogeday logosu"
+                class="h-16 w-auto object-contain md:h-20"
                 loading="eager"
                 decoding="async"
               />
+            </div>
 
-              <div class="glass-premium absolute bottom-8 -left-8 z-20 rounded-xl p-sm animate-[bounce_4s_infinite]">
-                <div class="flex items-center gap-sm">
-                  <div class="h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)]"></div>
-                  <span class="font-label-sm text-label-sm font-bold text-white">Sistem Optimum</span>
-                </div>
+            <p class="mt-4 max-w-2xl font-body-md text-body-md leading-7 text-on-surface-variant">
+              SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketiyiz.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="hero-metric rounded-xl p-4">
+                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Ürün odağı</span>
+                <p class="font-body-md text-body-md font-medium text-on-background">Orbions gibi ölçeklenebilir SaaS ürünleri.</p>
               </div>
+              <div class="hero-metric rounded-xl p-4">
+                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Özel proje</span>
+                <p class="font-body-md text-body-md font-medium text-on-background">İş akışına göre şekillenen yazılım çözümleri.</p>
+              </div>
+              <div class="hero-metric rounded-xl p-4">
+                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">AI yaklaşımı</span>
+                <p class="font-body-md text-body-md font-medium text-on-background">Veri ve kararı güçlendiren özel AI sistemleri.</p>
+              </div>
+              <div class="hero-metric rounded-xl p-4">
+                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Teslim modeli</span>
+                <p class="font-body-md text-body-md font-medium text-on-background">Kapsam, ölçüm ve operasyon disipliniyle yönetim.</p>
+              </div>
+            </div>
 
-              <div class="glass-premium absolute top-1/4 -right-4 z-20 rounded-xl p-sm animate-[bounce_5s_infinite_reverse]">
-                <div class="flex items-center gap-sm">
-                  <span class="material-symbols-outlined text-[20px] text-primary">cloud_sync</span>
-                  <span class="font-label-sm text-label-sm font-bold text-white">%99.99 Kesintisizlik</span>
+            <div class="mt-6 overflow-hidden rounded-xl border border-on-surface/10 bg-surface-container-low">
+              <div class="flex items-center justify-between gap-4 px-4 py-3">
+                <div>
+                  <span class="font-label-sm text-label-sm mb-1 block font-bold uppercase tracking-widest text-primary">Amiral ürün</span>
+                  <p class="font-body-md text-body-md font-medium text-on-background">Orbions, veri ve karar akışını tek merkezde toplar.</p>
                 </div>
+                <span class="rounded-full bg-primary/10 px-3 py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Canlı ürün odağı</span>
+              </div>
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img
+                  id="hero-parallax"
+                  class="h-full w-full object-cover object-center saturate-75 contrast-95"
+                  src="https://lh3.googleusercontent.com/aida/AP1WRLsZ4BZqYfkC8Jg-4te-l6OHm1bgKMggv_9mKxG5SS3n8-IrIXhRogy4l4ugiAvivk5R-RMHSvzp0K-awHZnWqQQRFqDQPJjf8Sfvgk3f2X7hqHmtep0zv063uJHSv8O4GmhOECc2SaIT0LMfozAie0o4hrw38HocIuJ253bm4SFGclX5wY6gbmFoaLW9Qxcmu-GkfzNX91ZqcksDQVtblGYMf0CUisY2RuS572c5XoPNglOEoldvTcygWU"
+                  alt="Modern kurumsal teknoloji görseli"
+                  loading="eager"
+                  decoding="async"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
               </div>
             </div>
           </div>
@@ -354,7 +412,7 @@
       <div class="mb-xl max-w-3xl reveal-up active">
         <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda ve Hikayemiz</span>
         <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background md:font-display-lg md:text-display-lg">
-          SaaS, özel yazılım ve müşteriye özel AI sistemlerini operasyon disipliniyle birleştiriyoruz.
+          SaaS, özel yazılım ve müşteriye özel AI sistemlerini tek bir teknoloji çatısında birleştiriyoruz.
         </h2>
         <p class="mt-4 max-w-2xl font-body-md text-body-md leading-7 text-on-surface-variant">
           SaaS Ürünleri • Özel Yazılım • Müşteriye Özel AI Sistemleri • Operasyon Disiplini
@@ -372,7 +430,7 @@
                 <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda</span>
                 <h3 class="font-headline-md text-headline-md font-bold text-on-background">İş problemi → kapsam → sistem → ölçüm</h3>
               </div>
-              <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="hidden h-24 w-24 rounded-2xl bg-white object-contain p-2 shadow-sm md:block" loading="lazy" decoding="async" />
+            <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="hidden h-24 w-auto rounded-xl bg-white object-contain p-2 shadow-sm md:block" loading="lazy" decoding="async" />
             </div>
 
             <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
@@ -408,9 +466,9 @@
       </div>
 
       <div class="mt-6 grid gap-6 lg:grid-cols-12">
-        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-7" style="transition-delay: 0.1s">
-          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hikayemiz</span>
-          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Gerçek işletme sorunlarından doğan bir teknoloji çatısı.</h3>
+          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-7" style="transition-delay: 0.1s">
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hikayemiz</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Gerçek işletme sorunlarından doğan bir teknoloji çatısı.</h3>
           <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
             <p>OGEDAY’in hikâyesi, yalnızca “bir yazılım şirketi kuralım” fikriyle başlamadı. Daha derinde, gerçek işletmelerin yaşadığı dağınıklığı ve karar zorluğunu teknolojiyle çözme ihtiyacı vardı.</p>
             <p>Sahada gördüğümüz şey çok netti: Birçok işletme büyümek istiyor ama sistemleri büyümeye hazır değil. Excel dosyaları, kopuk programlar, manuel takipler, dağınık iletişim, geciken raporlar ve geç fark edilen finansal riskler işletmenin hızını düşürüyor.</p>
@@ -420,15 +478,15 @@
           </div>
         </article>
 
-        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-5" style="transition-delay: 0.2s">
-          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Karakterimiz</span>
-          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Sade, ölçülebilir ve uzun vadeli değer üretmeye odaklı.</h3>
+          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-5" style="transition-delay: 0.2s">
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Karakterimiz</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Sade, ölçülebilir ve uzun vadeli değer üretmeye odaklı.</h3>
           <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
             <p>OGEDAY’in karakteri sade ama güçlü bir anlayışa dayanır: Problemi netleştir, sistemi doğru kur, işi ölçülebilir hale getir ve uzun vadeli değer üret.</p>
             <p>Bizim için iyi teknoloji karmaşık görünmek zorunda değildir. İyi teknoloji; kullanıcının yükünü azaltmalı, kararını netleştirmeli ve işin günlük akışına doğal şekilde yerleşmelidir.</p>
             <p>Bu yüzden hem kendi ürünlerimizde hem özel projelerde gösterişli ama zayıf çözümler yerine; sade, anlaşılır, güvenilir ve büyümeye hazır sistemler kurmayı önemsiyoruz.</p>
           </div>
-          <div class="mt-6 rounded-xl border border-primary/10 bg-primary/5 p-4">
+          <div class="mt-6 rounded-xl border border-primary/10 bg-primary/10 p-4">
             <h4 class="mb-3 font-headline-md text-[20px] font-bold text-on-background">OGEDAY’i Nasıl Konumlandırıyoruz?</h4>
             <ul class="space-y-2 font-body-md text-body-md leading-7 text-on-surface-variant">
               <li>• Sadece yazılım ajansı değildir; kendi SaaS ürünlerini geliştiren bir ürün şirketi refleksi taşır.</li>
@@ -441,9 +499,9 @@
       </div>
 
       <div class="mt-6 grid gap-6 lg:grid-cols-12">
-        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-8" style="transition-delay: 0.3s">
-          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Kısa Web Sitesi Versiyonu</span>
-          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">OGEDAY, dijital operasyonları iş değeri üreten sistemlere dönüştürür.</h3>
+          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-8" style="transition-delay: 0.3s">
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Kısa Web Sitesi Versiyonu</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">OGEDAY, dijital operasyonları iş değeri üreten sistemlere dönüştürür.</h3>
           <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
             <p>OGEDAY, SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir.</p>
             <p>Biz yalnızca kod yazan bir ekip değil; işletmelerin, kurumların ve girişimlerin gerçek ihtiyaçlarını anlayan, bu ihtiyaçları sade ve uygulanabilir sistemlere dönüştüren bir yapı olmayı hedefliyoruz. OGEDAY; ürün geliştirme, özel proje üretimi, entegrasyon, müşteri portalı, operasyon disiplini ve kendi iç AI kabiliyetini müşteriye özel çözümlere dönüştürme yaklaşımıyla çalışır.</p>
@@ -452,13 +510,13 @@
         </article>
 
         <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-4" style="transition-delay: 0.35s">
-          <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Çok Kısa Profil Açıklaması</span>
-          <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Kısa, net ve profil alanlarına uygun.</h3>
-          <p class="font-body-md text-body-md leading-7 text-on-surface-variant">
-            OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve operasyonel dijital altyapılar geliştiren hibrit bir teknoloji şirketidir. Kendi iç AI kabiliyetini; kurumların, şirketlerin ve kişilerin verisini, sürecini ve karar ihtiyaçlarını anlayan özel dijital sistemlere dönüştürür.
-          </p>
-        </article>
-      </div>
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Çok Kısa Profil Açıklaması</span>
+            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Kısa, net ve profil alanlarına uygun.</h3>
+            <p class="font-body-md text-body-md leading-7 text-on-surface-variant">
+              OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve operasyonel dijital altyapılar geliştiren hibrit bir teknoloji şirketidir. Kendi iç AI kabiliyetini; kurumların, şirketlerin ve kişilerin verisini, sürecini ve karar ihtiyaçlarını anlayan özel dijital sistemlere dönüştürür.
+            </p>
+          </article>
+        </div>
     </section>
 
     <section id="solutions" class="relative bg-surface px-margin-mobile py-section-y md:px-margin-desktop">
@@ -480,9 +538,9 @@
               <div class="mb-md flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <span class="material-symbols-outlined text-[28px] text-primary">developer_board</span>
               </div>
-              <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Gelişmiş Özel Yazılım Mimarisi</h3>
+              <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Özel yazılım mimarisi</h3>
               <p class="max-w-md font-body-md text-body-md font-medium text-on-surface-variant">
-                İşletmenizin benzersiz DNA'sına kodlanmış, yüksek performanslı ve geleceğe hazır premium yazılım çözümleri üretiyoruz. Eski sistem modernizasyonundan sıfırdan full-stack uygulamalara kadar kodumuz titiz ve dayanıklıdır.
+                İşletmenin ritmine uyumlu, yönetim panelleri, portallar, dashboardlar ve MVP'ler tasarlarız.
               </p>
             </div>
             <div class="mt-lg">
@@ -499,9 +557,9 @@
             <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
               <span class="material-symbols-outlined text-[24px] text-primary">cloud</span>
             </div>
-            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Sonsuz Ölçekli Bulut Sistemleri</h3>
+            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Ölçeklenebilir ürün altyapıları</h3>
             <p class="font-body-md text-body-md font-medium text-on-surface-variant">
-              Küresel çapta kesintisiz operasyonlar için tasarlanmış, ultra güvenli ve otonom bulut altyapıları inşa ediyoruz.
+              Abonelik, lisans ve kurulum modeliyle büyüyebilecek ürün tabanları kuruyoruz.
             </p>
           </div>
           <div class="mt-md">
@@ -517,9 +575,9 @@
             <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
               <span class="material-symbols-outlined text-[24px] text-primary">analytics</span>
             </div>
-            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Gerçek Zamanlı Veri İstihbaratı</h3>
+            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Karar odaklı analitik</h3>
             <p class="font-body-md text-body-md font-medium text-on-surface-variant">
-              Karmaşık veri yığınlarını, yapay zeka destekli algoritmalarımızla stratejik ve eyleme dönüştürülebilir içgörülere çeviriyoruz.
+              Veri yığınlarını stratejik, okunabilir ve eyleme dönüştürülebilir içgörülere çeviriyoruz.
             </p>
           </div>
           <div class="mt-md">
@@ -535,9 +593,9 @@
             <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
               <span class="material-symbols-outlined text-[24px] text-primary">security</span>
             </div>
-            <h3 class="mb-xs font-headline-md text-headline-md font-bold text-on-background">Sıfır Toleranslı Güvenlik Ağı</h3>
+            <h3 class="mb-xs font-headline-md text-headline-md font-bold text-on-background">Güvenlik ve kontrol katmanı</h3>
             <p class="max-w-sm font-body-md text-body-md font-medium text-on-surface-variant">
-              Askeri düzeyde şifreleme ve Sıfır Güven (Zero-Trust) mimarisi ile dijital varlıklarınızı zırhlıyoruz.
+              Sıfır Güven yaklaşımıyla dijital varlıkları, rol yapısını ve erişim sınırlarını kontrollü tutuyoruz.
             </p>
           </div>
           <div class="hidden transform opacity-10 transition-opacity duration-500 group-hover:opacity-100 sm:block group-hover:scale-110">
@@ -550,9 +608,9 @@
     <section id="technology" class="relative overflow-hidden border-t border-b border-white/5 bg-dark-bg py-section-y text-white">
       <div class="pointer-events-none absolute inset-0 opacity-10" style="background-image: radial-gradient(#a81f20 1px, transparent 1px); background-size: 32px 32px;"></div>
       <div class="reveal-up active relative z-10 mb-xl px-margin-mobile text-center md:px-margin-desktop">
-        <h2 class="mb-sm font-headline-lg text-headline-lg font-extrabold text-white">İleri Teknoloji Ekosistemimiz</h2>
+        <h2 class="mb-sm font-headline-lg text-headline-lg font-extrabold text-white">İleri teknoloji ekosistemimiz</h2>
         <p class="mx-auto max-w-2xl font-body-md text-body-md font-medium text-surface-variant opacity-90">
-          Sektörün en güçlü ve yenilikçi araçlarını kullanarak, kırılmaz ve yüksek performanslı dijital yapılar kuruyoruz.
+          Güçlü araçları disiplinli teslim, gözlemlenebilir mimari ve sürdürülebilir üretim için bir araya getiriyoruz.
         </p>
       </div>
 
@@ -593,7 +651,7 @@
         <div class="reveal-up active relative">
           <div class="-inset-4 absolute z-0 rounded-2xl bg-gradient-to-tr from-primary/10 to-transparent blur-lg transform -rotate-2"></div>
           <img
-            class="relative z-10 aspect-square w-full rounded-2xl border border-on-surface/10 object-cover grayscale contrast-125 transition-all duration-700 hover:grayscale-0"
+            class="relative z-10 aspect-square w-full rounded-2xl border border-on-surface/10 object-cover grayscale contrast-105 transition-all duration-700 hover:grayscale-0"
             data-alt="Uzaktaki mesafelere uzanan yüksek teknolojili sunucu rafları sıraları ile şık, modern bir sunucu odası içi."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5NmH6rPLLaDO0K4ETKIsv9mvKPone8kdprly24j3e1sO98lPde5F5SipaK8M1MIveqPEcCnITg4a3JxBVL_76y-mcU_WIbhrwXJctr6WDA6_vXaLmYr6nEx2CS2kRPWuKqJq3vohEgyMEYY7JU1hGhKt_zbeGsuFrJmEPq69tuGrfhXBYn9MIa7XpnLq6aS9X8DDFZvrOa1uFN79bwGYy0TYYXlCb610Bc9d3cGbUjlhpzmHzSZLBeWB7IX5cbCyQQW6FGdDO2FY"
             alt="Modern sunucu odası"
@@ -604,8 +662,8 @@
 
         <div class="space-y-lg reveal-up active" style="transition-delay: 0.2s">
           <div>
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Ogeday Avantajı</span>
-            <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background">Kusursuz Mühendislik ve Strateji.</h2>
+            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Ogeday avantajı</span>
+            <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background">Kapsamı net, teslimi ölçülebilir bir çalışma modeli.</h2>
           </div>
 
           <div class="space-y-md">
@@ -614,8 +672,8 @@
                 <span class="material-symbols-outlined text-[28px] text-primary">verified</span>
               </div>
               <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Sıfır Zafiyet Prensibi</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">En gelişmiş siber tehditlere karşı proaktif koruma kalkanları oluşturuyor, verilerinizi geçilmez kılıyoruz.</p>
+                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Risk görünürlüğü</h4>
+                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Problemi, kapsamı ve teslim sınırını görünür hale getiririz.</p>
               </div>
             </div>
 
@@ -624,8 +682,8 @@
                 <span class="material-symbols-outlined text-[28px] text-primary">rocket_launch</span>
               </div>
               <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Sınırsız Büyüme Kapasitesi</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Milyonlarca anlık işlemi sıfır gecikmeyle yönetecek, esnek ve dayanıklı sistem mimarileri tasarlıyoruz.</p>
+                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Ölçeklenebilir mimari</h4>
+                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Sistemleri büyümeye hazır ve uzun ömürlü olacak şekilde kurarız.</p>
               </div>
             </div>
 
@@ -634,8 +692,8 @@
                 <span class="material-symbols-outlined text-[28px] text-primary">support_agent</span>
               </div>
               <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Elit Teknoloji Partnerliği</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Sizi endüstrinizin zirvesine taşıyacak stratejik vizyon ve sürdürülebilir teknoloji danışmanlığı sunuyoruz.</p>
+                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Uzun vadeli teknoloji ortaklığı</h4>
+                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Teslimden sonra da sistemin çalışırlığını ve gelişimini birlikte yönetiriz.</p>
               </div>
             </div>
           </div>
@@ -649,7 +707,7 @@
     >
       <div class="flex flex-col items-center gap-sm md:items-start">
         <div class="flex items-center gap-3">
-          <img src="/assets/ogeday-logo.png" alt="Ogeday logosu" class="h-14 w-14 rounded-xl bg-white object-contain p-1 shadow-sm" loading="lazy" decoding="async" />
+          <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="h-14 w-auto rounded-lg bg-white object-contain p-1 shadow-sm" loading="lazy" decoding="async" />
           <div class="flex flex-col">
             <span class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-background dark:text-inverse-on-surface">Ogeday</span>
             <span class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-surface-variant">Yazılım ve Teknoloji Sistemleri</span>
