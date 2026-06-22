@@ -477,8 +477,8 @@
       .orbions-console {
         position: relative;
         display: grid;
-        grid-template-columns: 92px minmax(0, 1fr);
-        min-height: 720px;
+        gap: 18px;
+        padding: 18px;
         overflow: hidden;
         border: 1px solid rgba(24, 212, 196, 0.16);
         border-radius: var(--radius-xl);
@@ -487,6 +487,38 @@
           radial-gradient(circle at top right, rgba(24, 212, 196, 0.12), transparent 22%),
           linear-gradient(180deg, #0e2430 0%, #0b1e27 100%);
         box-shadow: 0 40px 110px rgba(0, 0, 0, 0.35);
+      }
+
+      .dashboard-badge {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        border: 1px solid rgba(24, 212, 196, 0.14);
+        border-radius: 22px;
+        background: rgba(7, 29, 38, 0.86);
+        justify-self: start;
+      }
+
+      .dashboard-badge img {
+        width: 44px;
+        height: 44px;
+      }
+
+      .dashboard-badge strong {
+        display: block;
+        font-family: "Sora", sans-serif;
+        font-size: 1.05rem;
+        letter-spacing: -0.03em;
+      }
+
+      .dashboard-badge span {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.66);
       }
 
       .orbions-console::after {
@@ -499,6 +531,31 @@
         background-size: 44px 44px;
         opacity: 0.18;
         pointer-events: none;
+      }
+
+      .dashboard-screen {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 28px;
+        background: rgba(5, 18, 23, 0.68);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 24px 60px rgba(0, 0, 0, 0.26);
+      }
+
+      .dashboard-screen img {
+        width: 100%;
+        height: auto;
+      }
+
+      .dashboard-screen--hero {
+        padding: 10px;
+      }
+
+      .dashboard-screen--hero img {
+        border-radius: 22px;
       }
 
       .console-sidebar {
@@ -1379,7 +1436,6 @@
         }
 
         .orbions-console {
-          grid-template-columns: 1fr;
           min-height: auto;
         }
 
@@ -1585,116 +1641,20 @@
 
           <div class="hero-visual reveal">
             <div class="orbions-console" aria-label="Orbions Product Surface">
-              <aside class="console-sidebar">
-                <div class="orbions-brand">
-                  <img src="assets/orbions-symbol-light.svg" alt="" />
-                  <span>ORBIONS</span>
+              <div class="dashboard-badge">
+                <img src="assets/orbions-symbol-light.svg" alt="" />
+                <div>
+                  <strong data-i18n="console.title">Yönetici Kullanım Paneli</strong>
+                  <span data-i18n="console.subtitle">Satış, finans, stok ve operasyon görünümünü tek ekranda izleyin.</span>
                 </div>
-                <div class="sidebar-stack">
-                  <div class="sidebar-pill is-active" data-i18n="console.navDashboard">Panel</div>
-                  <div class="sidebar-pill" data-i18n="console.navSales">Satış</div>
-                  <div class="sidebar-pill" data-i18n="console.navStock">Stok</div>
-                  <div class="sidebar-pill" data-i18n="console.navFinance">Finans</div>
-                </div>
-              </aside>
+              </div>
 
-              <div class="console-main">
-                <div class="console-topbar">
-                  <div>
-                    <h3 data-i18n="console.title">Yönetici Kullanım Paneli</h3>
-                    <p data-i18n="console.subtitle">Satış, finans, stok ve operasyon görünümünü tek ekranda izleyin.</p>
-                  </div>
-                  <div class="console-badges">
-                    <div class="console-badge" data-i18n="console.badgeOne">ORBY Tanışma</div>
-                    <div class="console-badge">23.06.2026 01:49</div>
-                  </div>
-                </div>
-
-                <div class="console-note">
-                  <div class="note-avatar">
-                    <img src="assets/orbions-symbol-light.svg" alt="" />
-                  </div>
-
-                  <div class="note-content">
-                    <span class="note-label" data-i18n="console.noteLabel">ORBY Günlük Notu</span>
-                    <h4 data-i18n="console.noteTitle">Tahsilat akışı ve açık bakiye görünürlüğü aynı merkezde.</h4>
-                    <p data-i18n="console.noteText">
-                      Kritik açık bakiye hareketlerini, şube performansını ve tahsilat ritmini tek bakışta izleyen daha
-                      kontrollü bir iş akışı oluşturun.
-                    </p>
-                    <div class="mini-action" data-i18n="console.noteAction">Akışı açın</div>
-                  </div>
-
-                  <div class="watch-card">
-                    <span class="note-label" data-i18n="console.watchLabel">İzlenmesi Gerekenler</span>
-                    <ul class="watch-list">
-                      <li data-i18n="console.watchOne">Tahsilat riski yüksek müşteri hareketleri</li>
-                      <li data-i18n="console.watchTwo">Şube bazlı satış ve ciro görünürlüğü</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="metrics-grid">
-                  <div class="metric-card">
-                    <span class="metric-label" data-i18n="console.metricSales">Aylık Satış</span>
-                    <div class="metric-value">₺1.430.538,00</div>
-                    <div class="metric-footnote" data-i18n="console.metricSalesFootnote">Güncel satış hacmi</div>
-                  </div>
-                  <div class="metric-card">
-                    <span class="metric-label" data-i18n="console.metricProfit">Net Kâr</span>
-                    <div class="metric-value">₺439.293,36</div>
-                    <div class="metric-footnote" data-i18n="console.metricProfitFootnote">Finans görünümü</div>
-                  </div>
-                  <div class="metric-card">
-                    <span class="metric-label" data-i18n="console.metricItems">Toplam Ürün</span>
-                    <div class="metric-value">8</div>
-                    <div class="metric-footnote" data-i18n="console.metricItemsFootnote">Şubeler arası aktif envanter</div>
-                  </div>
-                  <div class="metric-card">
-                    <span class="metric-label" data-i18n="console.metricOrders">Siparişler</span>
-                    <div class="metric-value">40</div>
-                    <div class="metric-footnote" data-i18n="console.metricOrdersFootnote">Son dönem hareketi</div>
-                  </div>
-                </div>
-
-                <div class="mini-grid">
-                  <div class="mini-card">
-                    <small data-i18n="console.chartLabel">Kısa Dönem Akış</small>
-                    <h4 data-i18n="console.chartTitle">Operasyon eğrisi şube kırılımı ile okunur.</h4>
-                    <div class="chart-ghost" aria-hidden="true">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-
-                  <div class="mini-card">
-                    <small data-i18n="console.riskLabel">Şube Görünümü</small>
-                    <div class="kpi-grid">
-                      <div class="kpi-card">
-                        <small data-i18n="console.riskScore">Risk Puanı</small>
-                        <strong>22/100</strong>
-                      </div>
-                      <div class="kpi-card">
-                        <small data-i18n="console.branchLabel">Öne Çıkan Şube</small>
-                        <strong data-i18n="console.branchValue">İstanbul Ana Toptan</strong>
-                      </div>
-                      <div class="kpi-card">
-                        <small data-i18n="console.aiPanelLabel">ORBY</small>
-                        <strong data-i18n="console.aiPanelValue">Karar Notları</strong>
-                      </div>
-                      <div class="kpi-card">
-                        <small data-i18n="console.periodLabel">Dönem</small>
-                        <strong data-i18n="console.periodValue">Son 6 Ay</strong>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="dashboard-screen dashboard-screen--hero">
+                <img
+                  src="assets/orbions-dashboard-20260623.png"
+                  alt="Orbions dashboard"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
@@ -1928,42 +1888,12 @@
                     <span data-i18n="orbions.windowMeta">Canlı ürün dili</span>
                   </div>
 
-                  <div class="orbions-window-grid">
-                    <div class="orbions-window-panel">
-                      <small class="note-label" data-i18n="orbions.windowChartLabel">Operasyon Akışı</small>
-                      <h4 data-i18n="orbions.windowChartTitle">Şube hareketleri ve günlük karar yüzeyi</h4>
-                      <div class="chart-ghost" aria-hidden="true">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div class="orbions-window-panel">
-                      <small class="note-label" data-i18n="orbions.windowKpiLabel">Temel Göstergeler</small>
-                      <div class="kpi-grid">
-                        <div class="kpi-card">
-                          <small data-i18n="orbions.kpiOneLabel">Mevcut Şube</small>
-                          <strong data-i18n="orbions.kpiOneValue">İstanbul Ana Toptan</strong>
-                        </div>
-                        <div class="kpi-card">
-                          <small data-i18n="orbions.kpiTwoLabel">Risk Puanı</small>
-                          <strong>22/100</strong>
-                        </div>
-                        <div class="kpi-card">
-                          <small data-i18n="orbions.kpiThreeLabel">Aylık Satış</small>
-                          <strong>₺1.430.538,00</strong>
-                        </div>
-                        <div class="kpi-card">
-                          <small data-i18n="orbions.kpiFourLabel">Siparişler</small>
-                          <strong>40</strong>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="dashboard-screen dashboard-screen--section">
+                    <img
+                      src="assets/orbions-dashboard-20260623.png"
+                      alt="Orbions dashboard"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
