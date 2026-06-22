@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="OGEDAY, Orbions odakli premium teknoloji landing sayfasi. SaaS urunleri, ozel yazilim projeleri ve AI sistemleri."
+      content="OGEDAY, Orbions odaklı premium teknoloji landing sayfası. SaaS ürünleri, özel yazılım projeleri ve yapay zekâ sistemleri."
     />
     <meta name="theme-color" content="#101010" />
-    <title>OGEDAY | Yazilim ve Teknoloji Sistemleri</title>
+    <title>OGEDAY | Yazılım ve Teknoloji Sistemleri</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -795,6 +795,17 @@
         gap: 18px;
       }
 
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+        gap: 18px;
+      }
+
+      .about-stack {
+        display: grid;
+        gap: 18px;
+      }
+
       .card {
         position: relative;
         overflow: hidden;
@@ -1420,7 +1431,8 @@
 
         .hero-grid,
         .operational-panel,
-        .footer-grid {
+        .footer-grid,
+        .about-layout {
           grid-template-columns: 1fr;
         }
 
@@ -1670,28 +1682,28 @@
             <img class="brand-mark" src="/assets/ogeday-logo-cropped.png" alt="OGEDAY logosu" loading="eager" decoding="async" />
             <span class="brand-copy">
               <span class="brand-title">OGEDAY</span>
-              <span class="brand-subtitle">Yazilim ve Teknoloji Sistemleri</span>
+              <span class="brand-subtitle">Yazılım ve Teknoloji Sistemleri</span>
             </span>
           </a>
 
           <nav class="desktop-nav" aria-label="Ana navigasyon">
-            <a href="#about">Hakkimizda</a>
-            <a href="#solutions">Cozumler</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#solutions">Çözümler</a>
             <a class="is-active" href="#orbions">Orbions</a>
-            <a href="#ai-systems">AI Sistemleri</a>
+            <a href="#ai-systems">Yapay Zekâ</a>
             <a href="#projects">Projeler</a>
           </nav>
 
           <div class="header-actions">
-            <a class="ghost-button" href="#cta">Giris Yap</a>
-            <a class="primary-button" href="#cta">Uye Ol</a>
+            <a class="ghost-button" href="#cta">Giriş Yap</a>
+            <a class="primary-button" href="#cta">Üye Ol</a>
             <a class="lang-toggle" href="#footer">
               <span class="lang-dot" aria-hidden="true"></span>
               TR
             </a>
           </div>
 
-          <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Mobil menuyu ac" aria-expanded="false" aria-controls="mobile-menu">
+          <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Mobil menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
             </svg>
@@ -1700,15 +1712,15 @@
 
         <div id="mobile-menu" class="mobile-menu">
           <nav class="mobile-nav-links" aria-label="Mobil navigasyon">
-            <a href="#about">Hakkimizda</a>
-            <a href="#solutions">Cozumler</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#solutions">Çözümler</a>
             <a href="#orbions">Orbions</a>
-            <a href="#ai-systems">AI Sistemleri</a>
+            <a href="#ai-systems">Yapay Zekâ</a>
             <a href="#projects">Projeler</a>
           </nav>
           <div class="mobile-actions">
-            <a class="ghost-button" href="#cta">Giris Yap</a>
-            <a class="primary-button" href="#cta">Uye Ol</a>
+            <a class="ghost-button" href="#cta">Giriş Yap</a>
+            <a class="primary-button" href="#cta">Üye Ol</a>
           </div>
         </div>
       </div>
@@ -1725,35 +1737,35 @@
               </span>
 
               <h1>
-                Karmasik is sureclerini
+                Karmaşık iş süreçlerini
                 <span>Orbions</span>
-                ile netlestirin.
+                ile netleştirin.
               </h1>
 
               <p>
-                OGEDAY; SaaS urunleri, ozel yazilim projeleri ve AI sistemlerini tek bir premium teknoloji catisi altinda birlestirir.
-                Orbions ile satis, stok, finans ve operasyon akisini tek merkezde toplayan kontrollu bir isletim deneyimi kuruyoruz.
+                OGEDAY; SaaS ürünlerini, özel yazılım projelerini ve yapay zekâ sistemlerini tek bir premium teknoloji çatısı altında birleştirir.
+                Orbions ile satış, stok, finans ve operasyon akışını tek merkezde toplayan kontrollü bir işletim deneyimi kuruyoruz.
               </p>
 
               <div class="hero-actions">
                 <a class="primary-button" href="#cta">
-                  Ucretsiz Deneyin
+                  Ücretsiz Deneyin
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
                   </svg>
                 </a>
                 <a class="secondary-button" href="#orbions">
-                  Demoyu Izle
+                  Demoyu İzle
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M8 6l6 4-6 4V6z" fill="currentColor" />
                   </svg>
                 </a>
               </div>
 
-              <div class="trust-row" aria-label="Guven rozetleri">
-                <span>14 gun ucretsiz deneme</span>
-                <span>Kredi karti gerekmez</span>
-                <span>Kurumlara ozel kurulum</span>
+              <div class="trust-row" aria-label="Güven rozetleri">
+                <span>14 gün ücretsiz deneme</span>
+                <span>Kredi kartı gerekmez</span>
+                <span>Kurumlara özel kurulum</span>
               </div>
             </div>
 
@@ -1804,7 +1816,7 @@
                         <strong>142</strong>
                       </div>
                       <div class="metric-card">
-                        <span>Anlik gosterge</span>
+                        <span>Anlık gösterge</span>
                         <strong>93%</strong>
                       </div>
                     </div>
@@ -1843,23 +1855,23 @@
 
               <div class="floating-cta">
                 <small>Karar paneli</small>
-                <strong>Veri, stok ve finans ayni akista toplanir.</strong>
+                <strong>Veri, stok ve finans aynı akışta toplanır.</strong>
               </div>
 
               <div class="floating-note">
-                <small>Amiral urun</small>
-                <strong>Orbions, saha karmasasini tek merkezden yonetilebilir hale getirir.</strong>
+                <small>Amiral ürün</small>
+                <strong>Orbions, saha karmaşasını tek merkezden yönetilebilir hale getirir.</strong>
               </div>
 
               <div class="floating-chip">
-                <small>Canli ritim</small>
-                <strong>Anlik gosterge + surec takibi</strong>
+                <small>Canlı ritim</small>
+                <strong>Anlık gösterge + süreç takibi</strong>
               </div>
             </div>
           </div>
 
           <div class="utility-bar reveal is-visible delay-2">
-            <a class="secondary-button" href="#cta">WhatsApp'tan yazin</a>
+            <a class="secondary-button" href="#cta">WhatsApp'tan yazın</a>
 
             <div class="social-list" aria-label="Sosyal baglantilar">
               <a class="social-pill" href="#footer" aria-label="Instagram">
@@ -1881,7 +1893,7 @@
 
             <div class="social-divider" aria-hidden="true"></div>
 
-            <a class="primary-button" href="#cta">Fiyat Teklifi Alin</a>
+            <a class="primary-button" href="#cta">Fiyat Teklifi Alın</a>
           </div>
         </div>
       </section>
@@ -1889,20 +1901,20 @@
       <section id="about" class="section">
         <div class="shell">
           <div class="section-head reveal">
-            <span class="section-label">Hakkimizda</span>
-            <h2>OGEDAY, sadece ekran tasarlayan degil; sistemi kurup olcen teknoloji ortagidir.</h2>
+            <span class="section-label">Hakkımızda</span>
+            <h2>OGEDAY, sadece ekran tasarlayan değil; sistemi kurup ölçen teknoloji ortağıdır.</h2>
             <div class="section-accent"></div>
           </div>
 
-          <div class="solutions-grid">
-            <article class="card col-6 reveal">
+          <div class="about-layout">
+            <article class="card reveal">
               <div class="card-content">
                 <div>
-                  <h3>Hibrit teknoloji catisi</h3>
-                  <p>OGEDAY ayni anda urun gelistirir, ozel yazilim teslim eder ve AI katmanlarini is ihtiyacina baglar. Orbions bunun vitrindeki ilk buyuk karsiligidir.</p>
+                  <h3>Hibrit teknoloji çatısı</h3>
+                  <p>OGEDAY aynı anda ürün geliştirir, özel yazılım teslim eder ve yapay zekâ katmanlarını iş ihtiyacına bağlar. Orbions bunun vitrindeki ilk büyük karşılığıdır.</p>
                 </div>
                 <a class="card-link" href="#orbions">
-                  Amiral urune git
+                  Amiral ürüne git
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -1910,23 +1922,25 @@
               </div>
             </article>
 
-            <article class="card col-3 reveal delay-1">
-              <div class="card-content">
-                <div>
-                  <h3>Net kapsam</h3>
-                  <p>Problemi sadeleştirir, kapsamı görünür hale getirir ve sürprizleri azaltır.</p>
+            <div class="about-stack">
+              <article class="card reveal delay-1">
+                <div class="card-content">
+                  <div>
+                    <h3>Net kapsam</h3>
+                    <p>Problemi sadeleştirir, kapsamı görünür hale getirir ve sürprizleri azaltır.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="card col-3 reveal delay-2">
-              <div class="card-content">
-                <div>
-                  <h3>Olculebilir teslim</h3>
-                  <p>Tasarim, altyapi ve surec katmanlarini tek premium ritimde teslim eder.</p>
+              <article class="card reveal delay-2">
+                <div class="card-content">
+                  <div>
+                    <h3>Ölçülebilir teslim</h3>
+                    <p>Tasarım, altyapı ve süreç katmanlarını daha oturaklı, kontrollü ve premium bir ritimde teslim eder.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -1934,8 +1948,8 @@
       <section id="solutions" class="section">
         <div class="shell">
           <div class="section-head reveal">
-            <span class="section-label">Temel Cozumler</span>
-            <h2>OGEDAY + Orbions ile kontrolu dagilmadan buyutun.</h2>
+            <span class="section-label">Temel Çözümler</span>
+            <h2>OGEDAY + Orbions ile kontrolü dağılmadan büyütün.</h2>
             <div class="section-accent"></div>
           </div>
 
@@ -1943,11 +1957,11 @@
             <article class="card col-6 reveal">
               <div class="card-content">
                 <div>
-                  <h3>Butunlesik Satis Yonetimi</h3>
-                  <p>Satis kanallarini, teklif akisini ve fiyatlama disiplinini tek panelde birlestiren net bir operasyon zemini.</p>
+                  <h3>Bütünleşik Satış Yönetimi</h3>
+                  <p>Satış kanallarını, teklif akışını ve fiyatlama disiplinini tek panelde birleştiren net bir operasyon zemini.</p>
                 </div>
                 <a class="card-link" href="#orbions">
-                  Surec optimizasyonu
+                  Süreç optimizasyonu
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -1959,11 +1973,11 @@
             <article class="card col-6 reveal delay-1">
               <div class="card-content">
                 <div>
-                  <h3>Net Stok Gorunurlugu</h3>
-                  <p>Kritik stok seviyelerini, tedarik ritmini ve saha etkisini tek bakista goren daha kontrollu ekipler.</p>
+                  <h3>Net Stok Görünürlüğü</h3>
+                  <p>Kritik stok seviyelerini, tedarik ritmini ve saha etkisini tek bakışta gören daha kontrollü ekipler.</p>
                 </div>
                 <a class="card-link" href="#orbions">
-                  Surecleri incele
+                  Süreçleri incele
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -1975,11 +1989,11 @@
             <article class="card card--tint col-4 reveal delay-1">
               <div class="card-content">
                 <div>
-                  <h3>Merkezi Finans Kontrolu</h3>
-                  <p>Daginik tablolar yerine gelir, gider ve nakit akisinda anlik karar kalitesi saglayan bir gorunum.</p>
+                  <h3>Merkezi Finans Kontrolü</h3>
+                  <p>Dağınık tablolar yerine gelir, gider ve nakit akışında anlık karar kalitesi sağlayan bir görünüm.</p>
                 </div>
                 <a class="card-link" href="#cta">
-                  Hatasiz raporlama
+                  Hatasız raporlama
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -1990,11 +2004,11 @@
             <article class="card col-8 reveal delay-2">
               <div class="card-content">
                 <div>
-                  <h3>Sube ve B2B Ag Koordinasyonu</h3>
-                  <p>Lokasyonlar arasi veri akislarini, ortak stok kullanimi ve roller bazli hareketleri tek ekranda netlestiren bir yapi.</p>
+                  <h3>Şube ve B2B Ağ Koordinasyonu</h3>
+                  <p>Lokasyonlar arası veri akışlarını, ortak stok kullanımını ve roller bazlı hareketleri tek ekranda netleştiren bir yapı.</p>
                 </div>
                 <a class="card-link" href="#projects">
-                  Merkezden yonetin
+                  Merkezden yönetin
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -2010,11 +2024,11 @@
         <div class="shell">
           <div class="operational-panel reveal">
             <div class="operational-copy">
-              <span class="section-label">Orbions Amiral Urun</span>
-              <h2>Operasyonel darbo gazlari asan, karar kalitesini yukselten akilli isletim katmani.</h2>
+              <span class="section-label">Orbions Amiral Ürün</span>
+              <h2>Operasyonel darboğazları aşan, karar kalitesini yükselten akıllı işletim katmanı.</h2>
               <p>
-                Orbions; satis, stok, finans ve saha sureclerini ayni ritimde bulusturarak ekiplerin ayni veriye ayni anda bakmasini saglar.
-                OGEDAY'in farki, bunu sadece bir arayuz olarak degil; is akisina oturan, olculebilir ve buyumeye hazir bir sistem olarak kurmasidir.
+                Orbions; satış, stok, finans ve saha süreçlerini aynı ritimde buluşturarak ekiplerin aynı veriye aynı anda bakmasını sağlar.
+                OGEDAY'in farkı, bunu sadece bir arayüz olarak değil; iş akışına oturan, ölçülebilir ve büyümeye hazır bir sistem olarak kurmasıdır.
               </p>
 
               <div class="bullet-list">
@@ -2023,8 +2037,8 @@
                     <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
                   </span>
                   <div>
-                    <strong>Tek noktadan dogruluk</strong>
-                    <span>Tum departmanlar ayni canli veri zemininde calisir; gecikme ve yorum farki azalir.</span>
+                    <strong>Tek noktadan doğruluk</strong>
+                    <span>Tüm departmanlar aynı canlı veri zemininde çalışır; gecikme ve yorum farkı azalır.</span>
                   </div>
                 </div>
 
@@ -2033,8 +2047,8 @@
                     <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
                   </span>
                   <div>
-                    <strong>Standartlastirilmis is akislari</strong>
-                    <span>Kisilere bagimli daginik surecler yerine yonetilebilir ve tekrar edilebilir operasyon senaryolari.</span>
+                    <strong>Standartlaştırılmış iş akışları</strong>
+                    <span>Kişilere bağlı dağınık süreçler yerine yönetilebilir ve tekrar edilebilir operasyon senaryoları.</span>
                   </div>
                 </div>
 
@@ -2043,8 +2057,8 @@
                     <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
                   </span>
                   <div>
-                    <strong>AI destekli karar katmani</strong>
-                    <span>Veriyi sadece gostermez; hangi alanin risk, firsat veya aksiyon istedigini daha okunur hale getirir.</span>
+                    <strong>AI destekli karar katmanı</strong>
+                    <span>Veriyi sadece göstermez; hangi alanın risk, fırsat veya aksiyon istediğini daha okunur hale getirir.</span>
                   </div>
                 </div>
               </div>
@@ -2053,8 +2067,8 @@
             <div class="workflow-stage">
               <div class="workflow-frame">
                 <div class="workflow-topbar">
-                  <strong>Operasyon Haritasi</strong>
-                  <span>Canli akis ornegi</span>
+                  <strong>Operasyon Haritası</strong>
+                  <span>Canlı akış örneği</span>
                 </div>
 
                 <div class="workflow-canvas">
@@ -2067,32 +2081,32 @@
                   </svg>
 
                   <div class="workflow-node is-primary">
-                    <strong>Satis Akisi</strong>
-                    <span>Teklif - siparis</span>
+                    <strong>Satış Akışı</strong>
+                    <span>Teklif - sipariş</span>
                   </div>
                   <div class="workflow-node">
-                    <strong>Stok Nodu</strong>
+                    <strong>Stok Düğümü</strong>
                     <span>Rezerv - transfer</span>
                   </div>
                   <div class="workflow-node">
-                    <strong>Finans Gozu</strong>
+                    <strong>Finans Gözü</strong>
                     <span>Tahsilat - risk</span>
                   </div>
                   <div class="workflow-node">
-                    <strong>Sube Komutu</strong>
+                    <strong>Şube Komutu</strong>
                     <span>Yetki - kanal</span>
                   </div>
                   <div class="workflow-node is-primary">
-                    <strong>AI Yorum Katmani</strong>
-                    <span>Oncelik - aksiyon</span>
+                    <strong>AI Yorum Katmanı</strong>
+                    <span>Öncelik - aksiyon</span>
                   </div>
 
                   <div class="workflow-caption">
                     <div>
-                      <strong>Gercek hayattaki daginik veri, ayni ekranda kontrol altina alinir.</strong>
-                      <span>Bu alan, sonra gercek Orbions ekran goruntuleriyle degistirilebilir premium placeholder sahnedir.</span>
+                      <strong>Gerçek hayattaki dağınık veri, aynı ekranda kontrol altına alınır.</strong>
+                      <span>Bu alan, daha sonra gerçek Orbions ekran görüntüleriyle kolayca değiştirilebilecek premium bir placeholder sahnedir.</span>
                     </div>
-                    <div class="workflow-badge">Placeholder sahne</div>
+                    <div class="workflow-badge">Geçici sahne</div>
                   </div>
                 </div>
               </div>
@@ -2104,8 +2118,8 @@
       <section id="ai-systems" class="section">
         <div class="shell">
           <div class="section-head reveal">
-            <span class="section-label">AI Sistemleri</span>
-            <h2>OGEDAY, yapay zekayi pariltidan cikarip is sonuclarina baglar.</h2>
+            <span class="section-label">Yapay Zekâ Sistemleri</span>
+            <h2>OGEDAY, yapay zekâyı parıltıdan çıkarıp iş sonuçlarına bağlar.</h2>
             <div class="section-accent"></div>
           </div>
 
@@ -2113,8 +2127,8 @@
             <article class="card col-4 reveal">
               <div class="card-content">
                 <div>
-                  <h3>Dokuman ve Bilgi Katmani</h3>
-                  <p>Sirket hafizasini, operasyon belgelerini ve karar bilgisini daha hizli erisilebilir hale getirir.</p>
+                  <h3>Doküman ve Bilgi Katmanı</h3>
+                  <p>Şirket hafızasını, operasyon belgelerini ve karar bilgisini daha hızlı erişilebilir hale getirir.</p>
                 </div>
                 <a class="card-link" href="#projects">
                   Bilgi sistemleri
@@ -2128,11 +2142,11 @@
             <article class="card col-4 reveal delay-1">
               <div class="card-content">
                 <div>
-                  <h3>Karar Destegi</h3>
-                  <p>Sadece veri gostermek yerine; risk, istisna ve oncelik alanlarini isaretleyen yorum katmanlari tasarlar.</p>
+                  <h3>Karar Desteği</h3>
+                  <p>Sadece veri göstermek yerine; risk, istisna ve öncelik alanlarını işaretleyen yorum katmanları tasarlar.</p>
                 </div>
                 <a class="card-link" href="#cta">
-                  Ozel cozum al
+                  Özel çözüm al
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -2143,11 +2157,11 @@
             <article class="card col-4 reveal delay-2">
               <div class="card-content">
                 <div>
-                  <h3>Sirket Icine Ozel Asistanlar</h3>
-                  <p>Markanin kendi veri yapisina, rol dagilimina ve is ritmine gore calisan kontrollu AI deneyimleri.</p>
+                  <h3>Şirket İçine Özel Asistanlar</h3>
+                  <p>Markanın kendi veri yapısına, rol dağılımına ve iş ritmine göre çalışan kontrollü AI deneyimleri.</p>
                 </div>
                 <a class="card-link" href="#about">
-                  Yaklasimi gor
+                  Yaklaşımı gör
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -2161,8 +2175,8 @@
       <section id="projects" class="section">
         <div class="shell">
           <div class="section-head reveal">
-            <span class="section-label">Projeler ve Altyapi</span>
-            <h2>Urun odagi kadar, ozel proje teslim ve operasyon disiplini de OGEDAY isidir.</h2>
+            <span class="section-label">Projeler ve Altyapı</span>
+            <h2>Ürün odağı kadar, özel proje teslimi ve operasyon disiplini de OGEDAY işidir.</h2>
             <div class="section-accent"></div>
           </div>
 
@@ -2170,11 +2184,11 @@
             <article class="card col-6 reveal">
               <div class="card-content">
                 <div>
-                  <h3>Yonetim panelleri ve musterinin isine ozel arayuzler</h3>
-                  <p>Gosterisli ama zayif ekranlar yerine, ekiplerin gunluk ritmine oturan net ve olculebilir panel deneyimleri kuruyoruz.</p>
+                  <h3>Yönetim panelleri ve müşterinin işine özel arayüzler</h3>
+                  <p>Gösterişli ama zayıf ekranlar yerine, ekiplerin günlük ritmine oturan net ve ölçülebilir panel deneyimleri kuruyoruz.</p>
                 </div>
                 <a class="card-link" href="#cta">
-                  Projeyi konusalim
+                  Projeyi konuşalım
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -2185,11 +2199,11 @@
             <article class="card col-6 reveal delay-1">
               <div class="card-content">
                 <div>
-                  <h3>Entegrasyon, raporlama ve buyumeye hazir dijital omurga</h3>
-                  <p>Depo, CRM, muhasebe, satis ve raporlama katmanlarini ayni mimari ritimde bulusturan daha temiz bir altyapi.</p>
+                  <h3>Entegrasyon, raporlama ve büyümeye hazır dijital omurga</h3>
+                  <p>Depo, CRM, muhasebe, satış ve raporlama katmanlarını aynı mimari ritimde buluşturan daha temiz bir altyapı.</p>
                 </div>
                 <a class="card-link" href="#cta">
-                  Altyapi planla
+                  Altyapıyı planla
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M4 10h11M11 4l6 6-6 6" />
                   </svg>
@@ -2203,13 +2217,13 @@
       <section id="cta" class="section cta-wrap">
         <div class="shell">
           <div class="cta-panel reveal">
-            <h2>Islerinizi karmasadan kurtarin.</h2>
+            <h2>İşlerinizi karmaşadan kurtarın.</h2>
             <p>
-              Orbions ile operasyonel kontrolu merkezi hale getirin; OGEDAY ile kurumunuza ozel yazilim, AI ve surec mimarisini tek ekipten alin.
-              Bu turda tum butonlar yer tutucu hedeflere baglidir; gercek urun akislari sonraki iterasyonda kolayca yerlestirilebilir.
+              Orbions ile operasyonel kontrolü merkezi hale getirin; OGEDAY ile kurumunuza özel yazılım, AI ve süreç mimarisini tek ekipten alın.
+              Bu turda tüm butonlar yer tutucu hedeflere bağlıdır; gerçek ürün akışları sonraki iterasyonda kolayca yerleştirilebilir.
             </p>
             <a class="secondary-button" href="#top">
-              Danismanlik Alin
+              Danışmanlık Alın
               <svg viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M4 10h11M11 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
               </svg>
@@ -2227,10 +2241,10 @@
               <img src="/assets/ogeday-logo-cropped.png" alt="OGEDAY logosu" loading="lazy" decoding="async" />
               <div>
                 <div class="footer-brand-name">OGEDAY</div>
-                <span class="brand-subtitle">Yazilim ve Teknoloji Sistemleri</span>
+                <span class="brand-subtitle">Yazılım ve Teknoloji Sistemleri</span>
               </div>
             </div>
-            <p>Karmasik surecleri, guvenli ve fonksiyonel teknoloji sistemleriyle duzenleyen premium bir teknoloji catisi.</p>
+            <p>Karmaşık süreçleri, güvenli ve fonksiyonel teknoloji sistemleriyle düzenleyen premium bir teknoloji çatısı.</p>
 
             <div class="social-list" aria-label="Footer sosyal baglantilar">
               <a class="social-pill" href="#footer" aria-label="Instagram">
@@ -2252,25 +2266,25 @@
           </div>
 
           <div class="footer-column">
-            <strong>Cozumler</strong>
-            <a href="#orbions">Orbions Isletim Sistemi</a>
-            <a href="#solutions">Surec Analizi</a>
+            <strong>Çözümler</strong>
+            <a href="#orbions">Orbions İşletim Sistemi</a>
+            <a href="#solutions">Süreç Analizi</a>
             <a href="#projects">Kurumsal Entegrasyon</a>
           </div>
 
           <div class="footer-column">
             <strong>Kurumsal</strong>
-            <a href="#about">Hakkimizda</a>
-            <a href="#projects">Yaklasimimiz</a>
-            <a href="#cta">Iletisim</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#projects">Yaklaşımımız</a>
+            <a href="#cta">İletişim</a>
           </div>
 
           <div class="footer-column">
-            <strong>Bulten</strong>
-            <span>Gercek form yerine bu tur icin premium placeholder alan kullanildi.</span>
+            <strong>Bülten</strong>
+            <span>Gerçek form yerine bu tur için premium bir yer tutucu alan kullanıldı.</span>
             <label class="newsletter">
               <input type="email" placeholder="E-posta adresi" aria-label="E-posta adresi" />
-              <button type="button" aria-label="Gonder">
+              <button type="button" aria-label="Gönder">
                 <svg viewBox="0 0 20 20">
                   <path d="M4 10h11M11 4l6 6-6 6" />
                 </svg>
@@ -2280,12 +2294,12 @@
         </div>
 
         <div class="footer-meta">
-          <span>&copy; 2026 OGEDAY. Tum haklari saklidir.</span>
+          <span>&copy; 2026 OGEDAY. Tüm hakları saklıdır.</span>
           <div class="footer-meta-links">
-            <a href="#footer">Gizlilik Politikasi</a>
-            <a href="#footer">Kullanim Sartlari</a>
+            <a href="#footer">Gizlilik Politikası</a>
+            <a href="#footer">Kullanım Şartları</a>
             <a href="#footer">KVKK</a>
-            <a href="#footer">Cerez Tercihleri</a>
+            <a href="#footer">Çerez Tercihleri</a>
           </div>
         </div>
       </div>
