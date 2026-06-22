@@ -547,15 +547,23 @@
 
       .dashboard-screen img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center top;
       }
 
       .dashboard-screen--hero {
         padding: 10px;
+        min-height: 360px;
       }
 
       .dashboard-screen--hero img {
         border-radius: 22px;
+      }
+
+      .dashboard-screen--section {
+        min-height: 440px;
       }
 
       .console-sidebar {
@@ -1651,7 +1659,7 @@
 
               <div class="dashboard-screen dashboard-screen--hero">
                 <img
-                  src="assets/orbions-dashboard-20260623.png"
+                  src="assets/orbions-dashboard-20260623-v2.png"
                   alt="Orbions dashboard"
                   loading="eager"
                 />
@@ -1890,7 +1898,7 @@
 
                   <div class="dashboard-screen dashboard-screen--section">
                     <img
-                      src="assets/orbions-dashboard-20260623.png"
+                      src="assets/orbions-dashboard-20260623-v2.png"
                       alt="Orbions dashboard"
                       loading="lazy"
                     />
