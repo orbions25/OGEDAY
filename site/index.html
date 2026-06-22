@@ -2,765 +2,2362 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Ogeday, SaaS ürünleri, özel yazılım projeleri, müşteriye özel AI sistemleri ve dijital operasyon altyapıları geliştiren hibrit teknoloji şirketidir."
+      content="OGEDAY, Orbions odakli premium teknoloji landing sayfasi. SaaS urunleri, ozel yazilim projeleri ve AI sistemleri."
     />
-    <meta name="theme-color" content="#121212" />
-    <title>Ogeday | Teknoloji ve Yazılım Sistemleri</title>
+    <meta name="theme-color" content="#101010" />
+    <title>OGEDAY | Yazilim ve Teknoloji Sistemleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#a81f20",
-              "on-primary": "#ffffff",
-              "on-error-container": "#93000a",
-              "outline-variant": "#e2bebb",
-              "on-surface-variant": "#5a413e",
-              "surface-tint": "#b32727",
-              "surface-container-lowest": "#ffffff",
-              "secondary-fixed": "#ffdad8",
-              "tertiary-fixed": "#ffdad8",
-              "inverse-surface": "#303030",
-              "on-tertiary-fixed": "#3f0209",
-              error: "#ba1a1a",
-              "error-container": "#ffdad6",
-              "surface-bright": "#fbf9f8",
-              "inverse-on-surface": "#f3f0f0",
-              "surface-dim": "#dcd9d9",
-              "surface-container-highest": "#e4e2e1",
-              "on-primary-fixed-variant": "#910912",
-              "on-background": "#1b1c1c",
-              "surface-variant": "#e4e2e1",
-              "inverse-primary": "#ffb3ac",
-              surface: "#fbf9f8",
-              "on-tertiary-container": "#fff0ef",
-              "on-secondary-container": "#640010",
-              outline: "#8e706d",
-              "surface-container": "#f0eded",
-              "on-secondary-fixed-variant": "#90081e",
-              background: "#fbf9f8",
-              "tertiary-fixed-dim": "#ffb3b2",
-              "primary-fixed-dim": "#ffb3ac",
-              "on-error": "#ffffff",
-              "surface-container-low": "#f6f3f2",
-              "on-surface": "#1b1c1c",
-              "on-tertiary": "#ffffff",
-              "secondary-fixed-dim": "#ffb3b1",
-              "primary-container": "#cb3935",
-              "tertiary-container": "#ad5455",
-              "on-primary-fixed": "#410003",
-              "on-tertiary-fixed-variant": "#7a2d30",
-              "on-primary-container": "#fff0ee",
-              "dark-bg": "#121212",
-              "dark-surface": "#1e1e1e",
-              "dark-border": "rgba(255,255,255,0.1)",
-            },
-            borderRadius: {
-              sm: "0.125rem",
-              DEFAULT: "0.25rem",
-              md: "0.375rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              xl: "80px",
-              "margin-desktop": "64px",
-              gutter: "24px",
-              xs: "4px",
-              sm: "12px",
-              base: "8px",
-              "margin-mobile": "16px",
-              md: "24px",
-              lg: "48px",
-              "section-y": "120px",
-            },
-            fontFamily: {
-              "label-sm": ["JetBrains Mono"],
-              "body-lg": ["Hanken Grotesk"],
-              "headline-md": ["Hanken Grotesk"],
-              "body-md": ["Hanken Grotesk"],
-              "headline-lg-mobile": ["Hanken Grotesk"],
-              "headline-lg": ["Hanken Grotesk"],
-              "display-lg": ["Hanken Grotesk"],
-            },
-            fontSize: {
-              "label-sm": [
-                "12px",
-                {
-                  lineHeight: "16px",
-                  letterSpacing: "0.05em",
-                  fontWeight: "500",
-                },
-              ],
-              "body-lg": [
-                "18px",
-                {
-                  lineHeight: "28px",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-md": [
-                "24px",
-                {
-                  lineHeight: "32px",
-                  fontWeight: "600",
-                },
-              ],
-              "body-md": [
-                "16px",
-                {
-                  lineHeight: "24px",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-lg-mobile": [
-                "28px",
-                {
-                  lineHeight: "36px",
-                  fontWeight: "700",
-                },
-              ],
-              "headline-lg": [
-                "32px",
-                {
-                  lineHeight: "40px",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "700",
-                },
-              ],
-              "display-lg": [
-                "56px",
-                {
-                  lineHeight: "64px",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "800",
-                },
-              ],
-            },
-          },
-        },
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style>
+      :root {
+        --bg: #101010;
+        --bg-soft: #171717;
+        --panel: #1f1f1f;
+        --panel-strong: #252525;
+        --panel-muted: #2c2c2c;
+        --line: rgba(255, 255, 255, 0.1);
+        --line-strong: rgba(255, 255, 255, 0.16);
+        --text: #f4f1ed;
+        --muted: #c4bbb1;
+        --muted-strong: #9f978e;
+        --brand: #d63c34;
+        --brand-deep: #a90721;
+        --brand-soft: rgba(214, 60, 52, 0.16);
+        --brand-glow: rgba(214, 60, 52, 0.28);
+        --white-soft: rgba(255, 255, 255, 0.84);
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+        --radius-xl: 34px;
+        --radius-lg: 26px;
+        --radius-md: 20px;
+        --radius-sm: 14px;
+        --content: 1440px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       html {
         scroll-behavior: smooth;
       }
 
       body {
+        margin: 0;
+        min-width: 320px;
+        background:
+          radial-gradient(circle at top right, rgba(214, 60, 52, 0.12), transparent 28%),
+          radial-gradient(circle at 12% 18%, rgba(214, 60, 52, 0.1), transparent 24%),
+          linear-gradient(180deg, #141414 0%, #111111 24%, #181818 100%);
+        color: var(--text);
+        font-family: "Manrope", sans-serif;
         overflow-x: hidden;
       }
 
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      a {
+        color: inherit;
+        text-decoration: none;
       }
 
-      .bento-grid {
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+
+      .shell {
+        width: min(calc(100% - 32px), var(--content));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(11, 11, 11, 0.86);
+        backdrop-filter: blur(18px);
+        transition: box-shadow 200ms ease, border-color 200ms ease;
+      }
+
+      .site-header.scrolled {
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .header-row {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 24px;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 28px;
+        min-height: 88px;
       }
 
-      .glass-card {
-        background: rgba(255, 255, 255, 0.65);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(27, 28, 28, 0.06);
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 0;
       }
 
-      .glass-premium {
-        background: linear-gradient(180deg, #ffffff 0%, #f8f5f4 100%);
-        border: 1px solid rgba(27, 28, 28, 0.08);
-        box-shadow: 0 18px 48px rgba(12, 12, 12, 0.08);
-        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      .brand-mark {
+        width: 64px;
+        height: 40px;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 20px rgba(214, 60, 52, 0.15));
       }
 
-      .light-glass-card {
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(27, 28, 28, 0.06);
-        box-shadow: 0 1px 0 rgba(12, 12, 12, 0.04);
-        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      .brand-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
       }
 
-      .light-glass-card:hover {
-        box-shadow: 0 12px 32px rgba(12, 12, 12, 0.08);
-        border-top: 2px solid #a81f20;
-        transform: translateY(-4px);
+      .brand-title {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.55em;
+        text-transform: uppercase;
+        white-space: nowrap;
       }
 
-      .tech-line {
-        height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(168, 31, 32, 0.4), transparent);
+      .brand-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--muted-strong);
       }
 
-      .ambient-glow {
+      .desktop-nav {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+      }
+
+      .desktop-nav a,
+      .header-actions a,
+      .lang-toggle {
+        position: relative;
+        font-size: 0.97rem;
+        font-weight: 600;
+        color: var(--white-soft);
+        transition: color 180ms ease;
+      }
+
+      .desktop-nav a::after {
+        content: "";
         position: absolute;
-        width: 720px;
-        height: 720px;
-        background: radial-gradient(circle, rgba(168, 31, 32, 0.08) 0%, rgba(251, 249, 248, 0) 68%);
+        left: 0;
+        right: 0;
+        bottom: -12px;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: center;
+        background: linear-gradient(90deg, transparent, var(--brand), transparent);
+        transition: transform 180ms ease;
+      }
+
+      .desktop-nav a:hover,
+      .desktop-nav a:focus-visible,
+      .header-actions a:hover,
+      .header-actions a:focus-visible,
+      .lang-toggle:hover,
+      .lang-toggle:focus-visible {
+        color: #ffffff;
+      }
+
+      .desktop-nav a:hover::after,
+      .desktop-nav a:focus-visible::after,
+      .desktop-nav a.is-active::after {
+        transform: scaleX(1);
+      }
+
+      .desktop-nav a.is-active {
+        color: #ffffff;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .ghost-button,
+      .primary-button,
+      .secondary-button,
+      .chip-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        transition:
+          transform 220ms ease,
+          border-color 220ms ease,
+          background-color 220ms ease,
+          box-shadow 220ms ease,
+          color 220ms ease;
+      }
+
+      .ghost-button {
+        min-height: 46px;
+        padding: 0 18px;
+        border-color: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .primary-button {
+        min-height: 48px;
+        padding: 0 24px;
+        color: #fff7f5;
+        background: linear-gradient(135deg, #d63c34, #e84a3b);
+        box-shadow: 0 20px 40px rgba(214, 60, 52, 0.22);
+      }
+
+      .secondary-button {
+        min-height: 48px;
+        padding: 0 24px;
+        color: #151515;
+        background: #f7f3ef;
+      }
+
+      .chip-button {
+        min-height: 38px;
+        padding: 0 16px;
+        border-color: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+        font-size: 0.86rem;
+      }
+
+      .ghost-button:hover,
+      .ghost-button:focus-visible,
+      .primary-button:hover,
+      .primary-button:focus-visible,
+      .secondary-button:hover,
+      .secondary-button:focus-visible,
+      .chip-button:hover,
+      .chip-button:focus-visible,
+      .card-link:hover,
+      .card-link:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      .primary-button:hover,
+      .primary-button:focus-visible {
+        box-shadow: 0 24px 48px rgba(214, 60, 52, 0.3);
+      }
+
+      .secondary-button:hover,
+      .secondary-button:focus-visible {
+        box-shadow: 0 20px 38px rgba(255, 255, 255, 0.14);
+      }
+
+      .lang-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .lang-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #ffffff, var(--brand));
+      }
+
+      .menu-toggle {
+        display: none;
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .menu-toggle svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .mobile-menu {
+        display: none;
+        padding-bottom: 18px;
+      }
+
+      .mobile-menu.open {
+        display: grid;
+        gap: 16px;
+      }
+
+      .mobile-nav-links {
+        display: grid;
+        gap: 10px;
+      }
+
+      .mobile-nav-links a {
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        font-weight: 600;
+      }
+
+      .mobile-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      main {
+        display: block;
+      }
+
+      .hero {
+        position: relative;
+        padding: 58px 0 34px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -120px;
+        right: -90px;
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(214, 60, 52, 0.26), transparent 64%);
+        filter: blur(12px);
+        pointer-events: none;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+        gap: 36px;
+        align-items: stretch;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 16px;
+        border: 1px solid rgba(214, 60, 52, 0.22);
+        border-radius: 999px;
+        background: rgba(214, 60, 52, 0.12);
+        color: #ffb1ab;
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #ff6c61, #d63c34);
+        box-shadow: 0 0 0 8px rgba(214, 60, 52, 0.16);
+      }
+
+      .hero-copy {
+        padding: 34px 0 16px;
+      }
+
+      .hero-copy h1 {
+        margin: 22px 0 18px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(3rem, 6vw, 5.8rem);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        max-width: 11ch;
+      }
+
+      .hero-copy h1 span {
+        color: var(--brand);
+      }
+
+      .hero-copy p {
+        max-width: 620px;
+        margin: 0;
+        font-size: 1.12rem;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .trust-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+
+      .trust-row span {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .trust-row span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #ff6f67, #d63c34);
+        box-shadow: 0 0 0 6px rgba(214, 60, 52, 0.12);
+      }
+
+      .hero-stage {
+        position: relative;
+        min-height: 680px;
+        border-radius: 38px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.02), transparent 42%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0) 30%),
+          linear-gradient(180deg, #1b1b1b 0%, #141414 100%);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-stage::before,
+      .hero-stage::after {
+        content: "";
+        position: absolute;
         border-radius: 50%;
         pointer-events: none;
-        z-index: 0;
       }
 
-      .hero-panel {
-        background: linear-gradient(180deg, #ffffff 0%, #f6f3f2 100%);
-        border: 1px solid rgba(27, 28, 28, 0.08);
-        box-shadow: 0 20px 48px rgba(12, 12, 12, 0.08);
+      .hero-stage::before {
+        inset: 40px auto auto 36px;
+        width: 180px;
+        height: 180px;
+        background: radial-gradient(circle, rgba(214, 60, 52, 0.4), transparent 68%);
       }
 
-      .hero-metric {
-        background: #f6f3f2;
-        border: 1px solid rgba(27, 28, 28, 0.06);
+      .hero-stage::after {
+        right: 34px;
+        bottom: 32px;
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 68%);
       }
 
-      .hero-chip {
-        background: rgba(168, 31, 32, 0.08);
-        border: 1px solid rgba(168, 31, 32, 0.15);
-        color: #7a2d30;
+      .hero-glow {
+        position: absolute;
+        inset: 10% 12% auto auto;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(214, 60, 52, 0.16), transparent 70%);
+        filter: blur(10px);
       }
 
-      @keyframes marquee {
-        0% {
-          transform: translateX(0%);
-        }
-
-        100% {
-          transform: translateX(-50%);
-        }
+      .device-frame {
+        position: absolute;
+        left: 50%;
+        top: 52%;
+        width: min(88%, 760px);
+        aspect-ratio: 1.08 / 0.72;
+        transform: translate(-42%, -50%);
+        border-radius: 30px;
+        background: linear-gradient(180deg, #222 0%, #121212 100%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow:
+          0 28px 64px rgba(0, 0, 0, 0.36),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        overflow: hidden;
       }
 
-      @keyframes marquee-reverse {
-        0% {
-          transform: translateX(-50%);
-        }
-
-        100% {
-          transform: translateX(0%);
-        }
+      .device-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.03);
       }
 
-      .reveal-up {
+      .device-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+      }
+
+      .device-brand img {
+        width: 40px;
+        height: 26px;
+        object-fit: contain;
+      }
+
+      .device-pills {
+        display: flex;
+        gap: 8px;
+      }
+
+      .device-pills span {
+        width: 36px;
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .device-body {
+        display: grid;
+        grid-template-columns: 118px 1fr;
+        height: calc(100% - 61px);
+      }
+
+      .sidebar {
+        padding: 18px 14px;
+        border-right: 1px solid rgba(255, 255, 255, 0.06);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      }
+
+      .sidebar span {
+        display: block;
+        height: 10px;
+        margin-bottom: 16px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .sidebar span:nth-child(1) {
+        width: 78%;
+      }
+
+      .sidebar span:nth-child(2) {
+        width: 54%;
+      }
+
+      .sidebar span:nth-child(3) {
+        width: 82%;
+        background: linear-gradient(90deg, rgba(214, 60, 52, 0.42), rgba(214, 60, 52, 0.08));
+      }
+
+      .sidebar span:nth-child(4) {
+        width: 60%;
+      }
+
+      .sidebar span:nth-child(5) {
+        width: 46%;
+      }
+
+      .dashboard {
+        padding: 22px;
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        gap: 18px;
+      }
+
+      .dashboard-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .dashboard-headline span {
+        display: block;
+        width: 180px;
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .dashboard-headline span:last-child {
+        width: 112px;
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 0.07);
+      }
+
+      .status-group {
+        display: flex;
+        gap: 12px;
+      }
+
+      .status-group div {
+        width: 86px;
+        height: 40px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .metric-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .metric-card {
+        border-radius: 18px;
+        padding: 16px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .metric-card strong {
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.7rem;
+        color: #fff;
+      }
+
+      .metric-card span {
+        color: var(--muted-strong);
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .chart-panel {
+        position: relative;
+        overflow: hidden;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+          linear-gradient(180deg, rgba(214, 60, 52, 0.08), transparent 45%);
+      }
+
+      .chart-panel svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .floating-note,
+      .floating-cta,
+      .floating-chip {
+        position: absolute;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(18, 18, 18, 0.84);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      .floating-note {
+        left: 24px;
+        bottom: 34px;
+        width: 224px;
+        padding: 18px;
+      }
+
+      .floating-note small,
+      .floating-cta small,
+      .floating-chip small {
+        display: block;
+        color: var(--muted-strong);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.72rem;
+        margin-bottom: 8px;
+      }
+
+      .floating-note strong {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.45;
+      }
+
+      .floating-cta {
+        right: 24px;
+        top: 32px;
+        padding: 16px 18px;
+        width: 190px;
+      }
+
+      .floating-chip {
+        right: 34px;
+        bottom: 54px;
+        padding: 14px 16px;
+        min-width: 160px;
+      }
+
+      .utility-bar {
+        margin-top: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 26px;
+        background: rgba(255, 255, 255, 0.02);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 24px;
+        padding: 14px 18px;
+      }
+
+      .social-list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+
+      .social-divider {
+        width: 1px;
+        align-self: stretch;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .social-pill {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background-color 180ms ease;
+      }
+
+      .social-pill:hover,
+      .social-pill:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba(214, 60, 52, 0.4);
+        background: rgba(214, 60, 52, 0.12);
+      }
+
+      .social-pill svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      .section {
+        padding: 80px 0 0;
+      }
+
+      .section-head {
+        margin-bottom: 34px;
+      }
+
+      .section-label {
+        display: inline-block;
+        color: #f06559;
+        font-size: 0.82rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 12px;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
+      }
+
+      .section-accent {
+        width: 112px;
+        height: 4px;
+        margin-top: 18px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--brand), transparent);
+      }
+
+      .solutions-grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        position: relative;
+        overflow: hidden;
+        min-height: 240px;
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+          #1d1d1d;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+      }
+
+      .card--tint {
+        background:
+          linear-gradient(135deg, rgba(214, 60, 52, 0.96), rgba(193, 47, 37, 0.94)),
+          #1d1d1d;
+      }
+
+      .card-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 28px;
+      }
+
+      .card h3,
+      .operational-copy h2,
+      .footer-brand-name,
+      .cta-panel h2 {
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: -0.04em;
+      }
+
+      .card h3 {
+        font-size: clamp(1.45rem, 2vw, 2rem);
+        line-height: 1;
+      }
+
+      .card p {
+        max-width: 34ch;
+        margin: 14px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.75;
+      }
+
+      .card--tint p,
+      .card--tint .card-link {
+        color: #fff4f2;
+      }
+
+      .card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 28px;
+        color: #f06559;
+        font-size: 0.85rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .card-link svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+
+      .card-visual {
+        position: absolute;
+        inset: 20px 20px auto auto;
+        width: 38%;
+        min-width: 140px;
+        max-width: 320px;
+        aspect-ratio: 1 / 1;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+          linear-gradient(135deg, rgba(214, 60, 52, 0.28), transparent);
+      }
+
+      .card-visual::before {
+        content: "";
+        position: absolute;
+        inset: 18px;
+        border-radius: 16px;
+        background:
+          linear-gradient(135deg, rgba(214, 60, 52, 0.18), transparent 40%),
+          repeating-linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.06) 0,
+            rgba(255, 255, 255, 0.06) 2px,
+            transparent 2px,
+            transparent 16px
+          );
+      }
+
+      .card-visual--bars::after {
+        content: "";
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+        height: 46%;
+        border-radius: 18px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(214, 60, 52, 0.32) 0 14%,
+            transparent 14% 18%,
+            rgba(255, 255, 255, 0.1) 18% 28%,
+            transparent 28% 34%,
+            rgba(214, 60, 52, 0.56) 34% 48%,
+            transparent 48% 54%,
+            rgba(255, 255, 255, 0.12) 54% 64%,
+            transparent 64% 70%,
+            rgba(214, 60, 52, 0.74) 70% 88%,
+            transparent 88%
+          );
+      }
+
+      .card-visual--monitor {
+        width: 42%;
+        aspect-ratio: 0.96 / 0.78;
+        border-radius: 28px;
+        background:
+          radial-gradient(circle at 28% 26%, rgba(214, 60, 52, 0.28), transparent 38%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+          #212121;
+      }
+
+      .card-visual--monitor::before {
+        inset: 16px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 20%),
+          linear-gradient(180deg, transparent 72%, rgba(214, 60, 52, 0.18) 72%),
+          repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 0,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px,
+            transparent 32px
+          ),
+          repeating-linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.04) 0,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px,
+            transparent 28px
+          );
+      }
+
+      .card-visual--nodes::after {
+        content: "";
+        position: absolute;
+        inset: 30px;
+        background-image:
+          radial-gradient(circle at 16% 30%, rgba(214, 60, 52, 0.9) 0 7px, transparent 8px),
+          radial-gradient(circle at 54% 18%, rgba(255, 255, 255, 0.88) 0 7px, transparent 8px),
+          radial-gradient(circle at 76% 44%, rgba(214, 60, 52, 0.9) 0 7px, transparent 8px),
+          radial-gradient(circle at 48% 72%, rgba(255, 255, 255, 0.88) 0 7px, transparent 8px),
+          radial-gradient(circle at 22% 70%, rgba(214, 60, 52, 0.9) 0 7px, transparent 8px),
+          linear-gradient(130deg, transparent 19%, rgba(255, 255, 255, 0.15) 20% 21%, transparent 22%),
+          linear-gradient(30deg, transparent 40%, rgba(255, 255, 255, 0.15) 41% 42%, transparent 43%),
+          linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.15) 49% 50%, transparent 51%);
+      }
+
+      .col-6 {
+        grid-column: span 6;
+      }
+
+      .col-4 {
+        grid-column: span 4;
+      }
+
+      .col-8 {
+        grid-column: span 8;
+      }
+
+      .col-12 {
+        grid-column: span 12;
+      }
+
+      .operational-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+        gap: 0;
+        border-radius: 34px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+        box-shadow: var(--shadow);
+      }
+
+      .operational-copy,
+      .workflow-stage {
+        min-height: 580px;
+      }
+
+      .operational-copy {
+        padding: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .operational-copy h2 {
+        font-size: clamp(2.1rem, 4vw, 3.5rem);
+        line-height: 0.98;
+      }
+
+      .operational-copy p {
+        margin: 18px 0 0;
+        color: var(--muted);
+        line-height: 1.82;
+        font-size: 1.03rem;
+      }
+
+      .bullet-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .bullet-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .bullet-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(214, 60, 52, 0.14);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ff857b;
+        margin-top: 2px;
+      }
+
+      .bullet-icon svg {
+        width: 14px;
+        height: 14px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+
+      .bullet-item strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 1rem;
+      }
+
+      .bullet-item span {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 0.95rem;
+      }
+
+      .workflow-stage {
+        position: relative;
+        padding: 30px;
+        background:
+          radial-gradient(circle at 85% 16%, rgba(214, 60, 52, 0.22), transparent 28%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)),
+          #181818;
+      }
+
+      .workflow-frame {
+        height: 100%;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+          linear-gradient(180deg, rgba(214, 60, 52, 0.08), transparent 30%),
+          #1f1f1f;
+        overflow: hidden;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+      }
+
+      .workflow-topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .workflow-topbar strong {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.2rem;
+      }
+
+      .workflow-topbar span {
+        color: var(--muted-strong);
+        font-size: 0.88rem;
+      }
+
+      .workflow-canvas {
+        position: relative;
+        height: calc(100% - 73px);
+        padding: 28px;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 36px 36px;
+      }
+
+      .workflow-node {
+        position: absolute;
+        min-width: 126px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(11, 11, 11, 0.62);
+        backdrop-filter: blur(10px);
+      }
+
+      .workflow-node strong {
+        display: block;
+        font-size: 0.95rem;
+      }
+
+      .workflow-node span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted-strong);
+        font-size: 0.75rem;
+      }
+
+      .workflow-node.is-primary {
+        background: rgba(214, 60, 52, 0.22);
+        border-color: rgba(214, 60, 52, 0.36);
+      }
+
+      .workflow-node:nth-child(1) {
+        left: 8%;
+        top: 14%;
+      }
+
+      .workflow-node:nth-child(2) {
+        left: 38%;
+        top: 10%;
+      }
+
+      .workflow-node:nth-child(3) {
+        right: 10%;
+        top: 18%;
+      }
+
+      .workflow-node:nth-child(4) {
+        left: 22%;
+        bottom: 24%;
+      }
+
+      .workflow-node:nth-child(5) {
+        right: 18%;
+        bottom: 18%;
+      }
+
+      .workflow-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .workflow-caption {
+        position: absolute;
+        left: 28px;
+        right: 28px;
+        bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: end;
+      }
+
+      .workflow-caption strong {
+        display: block;
+        font-size: 0.96rem;
+      }
+
+      .workflow-caption span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted-strong);
+        font-size: 0.85rem;
+      }
+
+      .workflow-badge {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        white-space: nowrap;
+      }
+
+      .cta-wrap {
+        padding: 24px 0 0;
+      }
+
+      .cta-panel {
+        position: relative;
+        overflow: hidden;
+        border-radius: 34px;
+        padding: 68px 40px;
+        background:
+          radial-gradient(circle at 15% 100%, rgba(255, 255, 255, 0.14), transparent 16%),
+          radial-gradient(circle at 93% 82%, rgba(109, 0, 0, 0.36), transparent 18%),
+          linear-gradient(135deg, #d63c34 0%, #cc3a33 58%, #c0322f 100%);
+        box-shadow: 0 26px 70px rgba(214, 60, 52, 0.24);
+        text-align: center;
+      }
+
+      .cta-panel h2 {
+        margin: 0;
+        font-size: clamp(2.4rem, 5vw, 4.4rem);
+        line-height: 0.98;
+        color: #fff9f6;
+      }
+
+      .cta-panel p {
+        max-width: 720px;
+        margin: 18px auto 0;
+        color: rgba(255, 246, 242, 0.86);
+        line-height: 1.7;
+        font-size: 1.02rem;
+      }
+
+      .cta-panel .secondary-button {
+        margin-top: 28px;
+      }
+
+      .site-footer {
+        margin-top: 26px;
+        padding: 18px 0 28px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.1fr repeat(3, minmax(0, 0.7fr));
+        gap: 24px;
+        padding: 26px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .footer-brand-top {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .footer-brand-top img {
+        width: 62px;
+        height: 40px;
+        object-fit: contain;
+      }
+
+      .footer-brand-name {
+        font-size: 1rem;
+        letter-spacing: 0.42em;
+        text-transform: uppercase;
+      }
+
+      .footer-brand p,
+      .footer-column a,
+      .footer-column span,
+      .footer-meta a,
+      .footer-meta span {
+        color: var(--muted);
+      }
+
+      .footer-brand p {
+        max-width: 30ch;
+        margin: 0;
+        line-height: 1.8;
+      }
+
+      .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .footer-column strong {
+        color: #f5efe8;
+        font-size: 0.9rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .footer-column a {
+        transition: color 180ms ease;
+      }
+
+      .footer-column a:hover,
+      .footer-column a:focus-visible {
+        color: #ffffff;
+      }
+
+      .newsletter {
+        display: flex;
+        align-items: center;
+        min-height: 52px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .newsletter input {
+        flex: 1;
+        min-width: 0;
+        height: 52px;
+        padding: 0 16px;
+        border: 0;
+        color: #fff;
+        background: transparent;
+      }
+
+      .newsletter input::placeholder {
+        color: var(--muted-strong);
+      }
+
+      .newsletter button {
+        width: 56px;
+        height: 52px;
+        border: 0;
+        cursor: pointer;
+        color: #fff;
+        background: linear-gradient(135deg, #d63c34, #e84a3b);
+      }
+
+      .newsletter button svg {
+        width: 18px;
+        height: 18px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+
+      .footer-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 18px;
+        font-size: 0.9rem;
+      }
+
+      .footer-meta-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 22px;
+      }
+
+      .footer-meta a:hover,
+      .footer-meta a:focus-visible {
+        color: #ffffff;
+      }
+
+      .reveal {
         opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        transform: translateY(42px);
+        transition:
+          opacity 700ms cubic-bezier(0.18, 1, 0.22, 1),
+          transform 700ms cubic-bezier(0.18, 1, 0.22, 1);
       }
 
-      .reveal-up.active {
+      .reveal.is-visible {
         opacity: 1;
         transform: translateY(0);
       }
+
+      .delay-1 {
+        transition-delay: 90ms;
+      }
+
+      .delay-2 {
+        transition-delay: 180ms;
+      }
+
+      .delay-3 {
+        transition-delay: 270ms;
+      }
+
+      @media (max-width: 1180px) {
+        .desktop-nav,
+        .header-actions {
+          display: none;
+        }
+
+        .menu-toggle {
+          display: inline-flex;
+          justify-self: end;
+        }
+
+        .header-row {
+          grid-template-columns: auto 1fr auto;
+        }
+
+        .hero-grid,
+        .operational-panel,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-stage {
+          min-height: 620px;
+        }
+
+        .utility-bar {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+
+        .social-divider {
+          display: none;
+        }
+
+        .footer-meta {
+          flex-direction: column;
+        }
+
+        .footer-meta-links {
+          justify-content: flex-start;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .hero {
+          padding-top: 30px;
+        }
+
+        .hero-copy {
+          padding-top: 14px;
+        }
+
+        .hero-copy h1 {
+          max-width: 9.6ch;
+        }
+
+        .utility-bar {
+          padding: 16px;
+        }
+
+        .solutions-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .col-4,
+        .col-6,
+        .col-8,
+        .col-12 {
+          grid-column: span 2;
+        }
+
+        .card-visual,
+        .card-visual--monitor {
+          width: 38%;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .shell {
+          width: min(calc(100% - 24px), var(--content));
+        }
+
+        .site-header {
+          backdrop-filter: blur(14px);
+        }
+
+        .header-row {
+          min-height: 76px;
+          gap: 12px;
+        }
+
+        .brand-mark {
+          width: 54px;
+          height: 34px;
+        }
+
+        .brand-title {
+          font-size: 0.9rem;
+          letter-spacing: 0.42em;
+        }
+
+        .brand-subtitle {
+          display: none;
+        }
+
+        .hero-grid {
+          gap: 24px;
+        }
+
+        .hero-copy p,
+        .cta-panel p,
+        .operational-copy p,
+        .card p {
+          font-size: 0.98rem;
+        }
+
+        .hero-actions,
+        .mobile-actions {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions {
+          display: grid;
+        }
+
+        .hero-stage {
+          min-height: 520px;
+          border-radius: 28px;
+        }
+
+        .device-frame {
+          top: 52%;
+          width: calc(100% - 36px);
+          transform: translate(-50%, -50%);
+        }
+
+        .device-body {
+          grid-template-columns: 82px 1fr;
+        }
+
+        .dashboard {
+          padding: 16px;
+          gap: 12px;
+        }
+
+        .metric-row {
+          gap: 10px;
+        }
+
+        .metric-card {
+          padding: 12px;
+        }
+
+        .metric-card strong {
+          font-size: 1.2rem;
+        }
+
+        .floating-note,
+        .floating-cta,
+        .floating-chip {
+          transform: scale(0.84);
+          transform-origin: center;
+        }
+
+        .floating-note {
+          left: -2px;
+          bottom: 10px;
+        }
+
+        .floating-cta {
+          right: -6px;
+          top: 12px;
+        }
+
+        .floating-chip {
+          right: 10px;
+          bottom: 12px;
+        }
+
+        .section {
+          padding-top: 58px;
+        }
+
+        .solutions-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .col-4,
+        .col-6,
+        .col-8,
+        .col-12 {
+          grid-column: span 1;
+        }
+
+        .card {
+          min-height: 280px;
+        }
+
+        .card-visual,
+        .card-visual--monitor {
+          position: relative;
+          inset: auto;
+          width: 100%;
+          max-width: none;
+          min-width: 0;
+          margin-top: 28px;
+          aspect-ratio: 1.3 / 0.72;
+        }
+
+        .card-content {
+          padding: 24px;
+        }
+
+        .operational-copy,
+        .workflow-stage {
+          min-height: auto;
+        }
+
+        .operational-copy,
+        .workflow-stage,
+        .cta-panel {
+          padding: 28px 22px;
+        }
+
+        .workflow-frame {
+          min-height: 500px;
+        }
+
+        .workflow-caption {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .footer-grid {
+          gap: 30px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition-duration: 0.01ms !important;
+          transition-delay: 0ms !important;
+          scroll-behavior: auto !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
     </style>
   </head>
-  <body id="top" class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
-    <nav
-      id="main-nav"
-      class="sticky top-0 z-50 border-b border-on-surface/5 bg-background/95 backdrop-blur-md transition-all duration-300"
-    >
-      <div class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto,1fr,auto] items-center gap-8 px-margin-mobile py-md md:px-margin-desktop">
-        <a class="flex shrink-0 items-center gap-sm" href="#top" aria-label="Ogeday ana sayfa">
-          <div class="flex h-16 w-16 items-center justify-center rounded-lg bg-white p-1 shadow-sm ring-1 ring-black/5">
-            <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="h-full w-full object-contain" loading="eager" decoding="async" />
-          </div>
-          <div class="hidden sm:block">
-            <p class="font-label-sm text-label-sm uppercase tracking-[0.32em] text-primary">Ogeday</p>
-            <p class="text-xs text-on-surface-variant">Yazılım ve Teknoloji Sistemleri</p>
-          </div>
-        </a>
+  <body>
+    <header id="site-header" class="site-header">
+      <div class="shell">
+        <div class="header-row">
+          <a class="brand" href="#top" aria-label="OGEDAY ana sayfa">
+            <img class="brand-mark" src="/assets/ogeday-logo-cropped.png" alt="OGEDAY logosu" loading="eager" decoding="async" />
+            <span class="brand-copy">
+              <span class="brand-title">OGEDAY</span>
+              <span class="brand-subtitle">Yazilim ve Teknoloji Sistemleri</span>
+            </span>
+          </a>
 
-        <div class="hidden min-w-0 items-center justify-center gap-12 whitespace-nowrap md:flex">
-          <a class="whitespace-nowrap border-b-2 border-primary pb-1 font-body-md text-body-md font-bold text-primary" href="#about">Hakkımızda</a>
-          <a class="whitespace-nowrap border-b-2 border-primary pb-1 font-body-md text-body-md font-bold text-primary" href="#solutions">Çözümler</a>
-          <a class="whitespace-nowrap pb-1 font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#technology">Teknoloji</a>
-          <a class="whitespace-nowrap pb-1 font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#services">Hizmetler</a>
-          <a class="whitespace-nowrap pb-1 font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#company">Kurumsal</a>
-        </div>
+          <nav class="desktop-nav" aria-label="Ana navigasyon">
+            <a href="#about">Hakkimizda</a>
+            <a href="#solutions">Cozumler</a>
+            <a class="is-active" href="#orbions">Orbions</a>
+            <a href="#ai-systems">AI Sistemleri</a>
+            <a href="#projects">Projeler</a>
+          </nav>
 
-        <div class="hidden items-center justify-end gap-6 whitespace-nowrap md:flex">
-          <a class="whitespace-nowrap font-body-md text-body-md text-on-surface-variant transition-colors duration-200 hover:text-primary" href="#company">İletişim</a>
-          <a class="whitespace-nowrap rounded bg-primary px-lg py-sm font-body-md text-body-md font-semibold text-on-primary transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg" href="#solutions">Başlayın</a>
-        </div>
-
-        <button class="justify-self-end text-on-surface-variant md:hidden" type="button" aria-label="Menüyü aç">
-        <span class="material-symbols-outlined text-[24px]">menu</span>
-        </button>
-      </div>
-    </nav>
-
-    <section class="relative overflow-hidden bg-surface pb-section-y pt-16">
-      <div class="ambient-glow top-0 right-0 -translate-y-1/4 translate-x-1/4"></div>
-      <div class="ambient-glow bottom-0 left-0 -translate-x-1/4 translate-y-1/4"></div>
-      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-      <div class="mx-auto grid w-full max-w-[1440px] grid-cols-1 items-center gap-12 px-margin-mobile pt-10 md:px-margin-desktop lg:grid-cols-[1.05fr,0.95fr]">
-        <div class="space-y-lg reveal-up active">
-          <div class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2">
-            <span class="material-symbols-outlined text-[16px] text-primary">memory</span>
-            <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Hibrit teknoloji şirketi</span>
-          </div>
-
-          <h1 class="font-display-lg text-[44px] font-extrabold leading-[1.02] tracking-tight text-on-background sm:text-[50px] md:text-display-lg">
-            Teknoloji sistemlerini
-            <span class="block text-primary">daha net, daha güvenli ve daha premium kuruyoruz.</span>
-          </h1>
-
-          <p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
-            OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit teknoloji şirketidir. Amacımız, karmaşık iş ihtiyaçlarını sade, ölçülebilir ve sürdürülebilir sistemlere dönüştürmektir.
-          </p>
-
-          <div class="flex flex-col gap-3 sm:flex-row">
-            <a class="group inline-flex items-center justify-center gap-2 rounded bg-primary px-xl py-md font-body-md text-body-md font-bold text-on-primary transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#910912]" href="#company">
-              Projeyi Konuşalım
-              <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-            </a>
-            <a class="inline-flex items-center justify-center gap-2 rounded border border-on-surface/10 bg-white px-xl py-md font-body-md text-body-md font-semibold text-on-background transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:text-primary" href="#about">
-              Hakkımızda
+          <div class="header-actions">
+            <a class="ghost-button" href="#cta">Giris Yap</a>
+            <a class="primary-button" href="#cta">Uye Ol</a>
+            <a class="lang-toggle" href="#footer">
+              <span class="lang-dot" aria-hidden="true"></span>
+              TR
             </a>
           </div>
 
-          <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">SaaS ürünleri</div>
-            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Özel yazılım</div>
-            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Müşteriye özel AI</div>
-            <div class="hero-chip rounded-full px-4 py-3 text-center font-label-sm text-label-sm font-bold uppercase tracking-wider">Operasyon disiplini</div>
-          </div>
-
-          <div class="rounded-xl border border-primary/10 bg-primary/10 px-4 py-3">
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Orbions, OGEDAY’in ilk amiral ürünüdür. Şirketin ürün geliştirme, karar desteği ve operasyon disiplinini aynı çatı altında toplar.
-            </p>
-          </div>
+          <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Mobil menuyu ac" aria-expanded="false" aria-controls="mobile-menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
         </div>
 
-        <div class="reveal-up active" style="transition-delay: 0.15s">
-          <div class="hero-panel rounded-2xl p-6 md:p-8">
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">OGEDAY</span>
-                <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background">Yazılım ve teknoloji sistemleri</h2>
-              </div>
-              <img
-                src="/assets/ogeday-logo-cropped.png"
-                alt="Ogeday logosu"
-                class="h-16 w-auto object-contain md:h-20"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-
-            <p class="mt-4 max-w-2xl font-body-md text-body-md leading-7 text-on-surface-variant">
-              SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketiyiz.
-            </p>
-
-            <div class="mt-6 grid gap-4 sm:grid-cols-2">
-              <div class="hero-metric rounded-xl p-4">
-                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Ürün odağı</span>
-                <p class="font-body-md text-body-md font-medium text-on-background">Orbions gibi ölçeklenebilir SaaS ürünleri.</p>
-              </div>
-              <div class="hero-metric rounded-xl p-4">
-                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Özel proje</span>
-                <p class="font-body-md text-body-md font-medium text-on-background">İş akışına göre şekillenen yazılım çözümleri.</p>
-              </div>
-              <div class="hero-metric rounded-xl p-4">
-                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">AI yaklaşımı</span>
-                <p class="font-body-md text-body-md font-medium text-on-background">Veri ve kararı güçlendiren özel AI sistemleri.</p>
-              </div>
-              <div class="hero-metric rounded-xl p-4">
-                <span class="font-label-sm text-label-sm mb-2 block font-bold uppercase tracking-widest text-primary">Teslim modeli</span>
-                <p class="font-body-md text-body-md font-medium text-on-background">Kapsam, ölçüm ve operasyon disipliniyle yönetim.</p>
-              </div>
-            </div>
-
-            <div class="mt-6 overflow-hidden rounded-xl border border-on-surface/10 bg-surface-container-low">
-              <div class="flex items-center justify-between gap-4 px-4 py-3">
-                <div>
-                  <span class="font-label-sm text-label-sm mb-1 block font-bold uppercase tracking-widest text-primary">Amiral ürün</span>
-                  <p class="font-body-md text-body-md font-medium text-on-background">Orbions, veri ve karar akışını tek merkezde toplar.</p>
-                </div>
-                <span class="rounded-full bg-primary/10 px-3 py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">Canlı ürün odağı</span>
-              </div>
-              <div class="relative aspect-[16/10] overflow-hidden">
-                <img
-                  id="hero-parallax"
-                  class="h-full w-full object-cover object-center saturate-75 contrast-95"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLsZ4BZqYfkC8Jg-4te-l6OHm1bgKMggv_9mKxG5SS3n8-IrIXhRogy4l4ugiAvivk5R-RMHSvzp0K-awHZnWqQQRFqDQPJjf8Sfvgk3f2X7hqHmtep0zv063uJHSv8O4GmhOECc2SaIT0LMfozAie0o4hrw38HocIuJ253bm4SFGclX5wY6gbmFoaLW9Qxcmu-GkfzNX91ZqcksDQVtblGYMf0CUisY2RuS572c5XoPNglOEoldvTcygWU"
-                  alt="Modern kurumsal teknoloji görseli"
-                  loading="eager"
-                  decoding="async"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
-              </div>
-            </div>
+        <div id="mobile-menu" class="mobile-menu">
+          <nav class="mobile-nav-links" aria-label="Mobil navigasyon">
+            <a href="#about">Hakkimizda</a>
+            <a href="#solutions">Cozumler</a>
+            <a href="#orbions">Orbions</a>
+            <a href="#ai-systems">AI Sistemleri</a>
+            <a href="#projects">Projeler</a>
+          </nav>
+          <div class="mobile-actions">
+            <a class="ghost-button" href="#cta">Giris Yap</a>
+            <a class="primary-button" href="#cta">Uye Ol</a>
           </div>
         </div>
       </div>
-      <div class="tech-line absolute bottom-0 left-0 w-full"></div>
-    </section>
+    </header>
 
-    <section id="about" class="bg-surface-container-low px-margin-mobile py-section-y md:px-margin-desktop">
-      <div class="mb-xl max-w-3xl reveal-up active">
-        <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda ve Hikayemiz</span>
-        <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background md:font-display-lg md:text-display-lg">
-          SaaS, özel yazılım ve müşteriye özel AI sistemlerini tek bir teknoloji çatısında birleştiriyoruz.
-        </h2>
-        <p class="mt-4 max-w-2xl font-body-md text-body-md leading-7 text-on-surface-variant">
-          SaaS Ürünleri • Özel Yazılım • Müşteriye Özel AI Sistemleri • Operasyon Disiplini
-        </p>
-      </div>
+    <main id="top">
+      <section class="hero">
+        <div class="shell">
+          <div class="hero-grid">
+            <div class="hero-copy reveal is-visible">
+              <span class="eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                OGEDAY x Orbions
+              </span>
 
-      <div class="grid items-start gap-6 lg:grid-cols-12">
-        <article class="light-glass-card relative overflow-hidden rounded-2xl p-xl reveal-up active lg:col-span-7">
-          <div class="absolute top-0 right-0 hidden p-lg opacity-5 md:block">
-            <span class="material-symbols-outlined text-[180px] text-primary">hub</span>
-          </div>
-          <div class="relative z-10 flex flex-col gap-6">
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hakkımızda</span>
-                <h3 class="font-headline-md text-headline-md font-bold text-on-background">İş problemi → kapsam → sistem → ölçüm</h3>
-              </div>
-            <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="hidden h-24 w-auto rounded-xl bg-white object-contain p-2 shadow-sm md:block" loading="lazy" decoding="async" />
-            </div>
+              <h1>
+                Karmasik is sureclerini
+                <span>Orbions</span>
+                ile netlestirin.
+              </h1>
 
-            <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
-              <p>OGEDAY, işletmelerin, kurumların ve girişimlerin dijital dünyada daha düzenli, daha ölçülebilir ve daha güçlü çalışabilmesi için SaaS ürünleri, özel yazılım projeleri, entegrasyon altyapıları ve müşteriye özel yapay zekâ sistemleri geliştiren hibrit bir teknoloji şirketidir.</p>
-              <p>Biz OGEDAY’i yalnızca “kod yazan bir ekip” olarak konumlandırmıyoruz. Bizim için asıl mesele; gerçek bir iş problemini anlamak, bu problemi doğru kapsamla sadeleştirmek, teknolojiyle uygulanabilir hale getirmek ve ortaya uzun vadede değer üretecek bir sistem çıkarmaktır.</p>
-              <p>Bu yüzden OGEDAY’in çalışma alanı tek bir başlığa sıkışmaz. Bir tarafta Orbions gibi kendi SaaS ürünlerimizi geliştiririz; diğer tarafta işletmelere özel yazılım projeleri, entegrasyon sistemleri, yönetim panelleri, dijital operasyon altyapıları ve müşterinin kendi iş akışına göre çalışan yapay zekâ destekli sistemler tasarlarız.</p>
-            </div>
-          </div>
-        </article>
-
-        <div class="space-y-6 lg:col-span-5">
-          <article class="light-glass-card rounded-2xl p-lg reveal-up active">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">OGEDAY Ne Yapar?</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Ürün, proje ve altyapıyı aynı çatı altında toplar.</h3>
-            <ul class="space-y-3 font-body-md text-body-md leading-7 text-on-surface-variant">
-              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>SaaS ürünleri geliştirir: Orbions başta olmak üzere abonelik, lisans ve kurulum modeliyle büyüyebilecek dijital ürünler üretir.</span></li>
-              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Özel yazılım projeleri yapar: yönetim panelleri, müşteri portalları, dashboardlar, takip ekranları, otomasyon sistemleri ve MVP projeleri geliştirir.</span></li>
-              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Entegrasyon ve dijital altyapı kurar: muhasebe, e-belge, stok, satış, CRM, depo ve raporlama sistemlerini bağlar.</span></li>
-              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Müşteriye özel AI sistemleri tasarlar: veriyi, iş akışını, dili ve karar ihtiyaçlarını anlayan özel asistanlar geliştirir.</span></li>
-              <li class="flex gap-3"><span class="mt-1 text-primary">•</span><span>Operasyon ve süreç disiplini sağlar: kapsam, rol, yetki, revizyon, teslim, destek ve ölçüm yapısını da tasarlar.</span></li>
-            </ul>
-          </article>
-
-          <article class="light-glass-card rounded-2xl p-lg reveal-up active" style="transition-delay: 0.1s">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Yapay Zekâ Yaklaşımımız</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">AI, üretim kısayolu değil; karar kalitesini yükselten bir katmandır.</h3>
-            <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
-              <p>OGEDAY için yapay zekâ, yazılım geliştirme sürecinin yerine geçen bir üretim kısayolu değil; doğru probleme bağlandığında veriyi, süreci ve karar mekanizmasını güçlendiren özel bir sistem katmanıdır.</p>
-              <p>Önceliğimiz, kendi iç bünyemizde kontrollü ve ölçülebilir bir AI çalışma düzeni oluşturmaktır. Bu düzen; dokümantasyon, bilgi tabanı, proje hafızası, test senaryoları, teklif hazırlığı, operasyon takibi ve karar destek gibi alanlarda şirketin üretim kalitesini artırır.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="mt-6 grid gap-6 lg:grid-cols-12">
-          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-7" style="transition-delay: 0.1s">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Hikayemiz</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Gerçek işletme sorunlarından doğan bir teknoloji çatısı.</h3>
-          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
-            <p>OGEDAY’in hikâyesi, yalnızca “bir yazılım şirketi kuralım” fikriyle başlamadı. Daha derinde, gerçek işletmelerin yaşadığı dağınıklığı ve karar zorluğunu teknolojiyle çözme ihtiyacı vardı.</p>
-            <p>Sahada gördüğümüz şey çok netti: Birçok işletme büyümek istiyor ama sistemleri büyümeye hazır değil. Excel dosyaları, kopuk programlar, manuel takipler, dağınık iletişim, geciken raporlar ve geç fark edilen finansal riskler işletmenin hızını düşürüyor.</p>
-            <p>Bu tablo bize şunu gösterdi: Türkiye’de sadece yazılım yapan değil; işletmeyi anlayan, süreci sadeleştiren, doğru kapsam çıkaran ve teknolojiyi ticari sonuca bağlayan yapılara ihtiyaç var.</p>
-            <p>OGEDAY bu anlayışla doğdu. Amacımız, işletmelerin ve girişimlerin dijitalleşme sürecinde yüzeysel çözümler üretmek değil; gerçekten çalışan, yönetilebilir ve büyümeyi taşıyabilecek sistemler kurmak.</p>
-            <p>Orbions, bu vizyonun ilk büyük karşılığıdır. Orbions ile işletmelerin satış, stok, cari, finans, depo, şube ve raporlama süreçlerini tek merkezde toplayan; veriyi yalnızca kaydeden değil, karar sürecine katkı sağlayan bir iş yönetim platformu geliştirmeyi hedefliyoruz.</p>
-          </div>
-        </article>
-
-          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-5" style="transition-delay: 0.2s">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Karakterimiz</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Sade, ölçülebilir ve uzun vadeli değer üretmeye odaklı.</h3>
-          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
-            <p>OGEDAY’in karakteri sade ama güçlü bir anlayışa dayanır: Problemi netleştir, sistemi doğru kur, işi ölçülebilir hale getir ve uzun vadeli değer üret.</p>
-            <p>Bizim için iyi teknoloji karmaşık görünmek zorunda değildir. İyi teknoloji; kullanıcının yükünü azaltmalı, kararını netleştirmeli ve işin günlük akışına doğal şekilde yerleşmelidir.</p>
-            <p>Bu yüzden hem kendi ürünlerimizde hem özel projelerde gösterişli ama zayıf çözümler yerine; sade, anlaşılır, güvenilir ve büyümeye hazır sistemler kurmayı önemsiyoruz.</p>
-          </div>
-          <div class="mt-6 rounded-xl border border-primary/10 bg-primary/10 p-4">
-            <h4 class="mb-3 font-headline-md text-[20px] font-bold text-on-background">OGEDAY’i Nasıl Konumlandırıyoruz?</h4>
-            <ul class="space-y-2 font-body-md text-body-md leading-7 text-on-surface-variant">
-              <li>• Sadece yazılım ajansı değildir; kendi SaaS ürünlerini geliştiren bir ürün şirketi refleksi taşır.</li>
-              <li>• Sadece Orbions’un arkasındaki teknik ekip değildir; Orbions ilk amiral üründür, OGEDAY daha geniş bir teknoloji çatısıdır.</li>
-              <li>• Sadece yapay zekâ şirketi değildir; yapay zekâyı kendi iç bilgi ve operasyon kabiliyetinden beslenen bir teknoloji katmanı olarak ele alır.</li>
-              <li>• Sadece fason proje alan bir ekip değildir; özel projeleri kontrollü, kapsamı net ve portal/süreç disipliniyle yönetmeyi hedefler.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-
-      <div class="mt-6 grid gap-6 lg:grid-cols-12">
-          <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-8" style="transition-delay: 0.3s">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Kısa Web Sitesi Versiyonu</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">OGEDAY, dijital operasyonları iş değeri üreten sistemlere dönüştürür.</h3>
-          <div class="space-y-4 font-body-md text-body-md leading-7 text-on-surface-variant">
-            <p>OGEDAY, SaaS ürünleri, ihtiyaca özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir.</p>
-            <p>Biz yalnızca kod yazan bir ekip değil; işletmelerin, kurumların ve girişimlerin gerçek ihtiyaçlarını anlayan, bu ihtiyaçları sade ve uygulanabilir sistemlere dönüştüren bir yapı olmayı hedefliyoruz. OGEDAY; ürün geliştirme, özel proje üretimi, entegrasyon, müşteri portalı, operasyon disiplini ve kendi iç AI kabiliyetini müşteriye özel çözümlere dönüştürme yaklaşımıyla çalışır.</p>
-            <p>Orbions, OGEDAY’in bu vizyonla geliştirdiği ana SaaS ürünlerinden biridir. Bunun yanında OGEDAY; müşterinin kendi verisine, iş akışına ve karar ihtiyaçlarına göre çalışan özel yazılım projeleri ve AI destekli dijital sistemler geliştiren uzun vadeli bir teknoloji şirketi olarak konumlanır.</p>
-          </div>
-        </article>
-
-        <article class="light-glass-card rounded-2xl p-lg reveal-up active lg:col-span-4" style="transition-delay: 0.35s">
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Çok Kısa Profil Açıklaması</span>
-            <h3 class="mb-4 font-headline-md text-headline-md font-bold text-on-background">Kısa, net ve profil alanlarına uygun.</h3>
-            <p class="font-body-md text-body-md leading-7 text-on-surface-variant">
-              OGEDAY; SaaS ürünleri, özel yazılım projeleri, müşteriye özel yapay zekâ sistemleri ve operasyonel dijital altyapılar geliştiren hibrit bir teknoloji şirketidir. Kendi iç AI kabiliyetini; kurumların, şirketlerin ve kişilerin verisini, sürecini ve karar ihtiyaçlarını anlayan özel dijital sistemlere dönüştürür.
-            </p>
-          </article>
-        </div>
-    </section>
-
-    <section id="solutions" class="relative bg-surface px-margin-mobile py-section-y md:px-margin-desktop">
-      <div class="mb-xl max-w-3xl reveal-up active">
-        <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Temel Yetenekler</span>
-        <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background md:font-display-lg md:text-display-lg">
-          Karmaşıklığa Meydan Okuyan, <br />
-          Sınırsız Ölçeklenebilen Çözümler.
-        </h2>
-      </div>
-
-      <div class="bento-grid">
-        <div class="light-glass-card relative col-span-12 overflow-hidden rounded-2xl p-xl reveal-up active lg:col-span-8">
-          <div class="absolute top-0 right-0 p-lg opacity-5 transition-opacity duration-500 group-hover:opacity-10">
-            <span class="material-symbols-outlined text-[160px] text-primary">architecture</span>
-          </div>
-          <div class="relative z-10 flex h-full flex-col justify-between">
-            <div>
-              <div class="mb-md flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
-                <span class="material-symbols-outlined text-[28px] text-primary">developer_board</span>
-              </div>
-              <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Özel yazılım mimarisi</h3>
-              <p class="max-w-md font-body-md text-body-md font-medium text-on-surface-variant">
-                İşletmenin ritmine uyumlu, yönetim panelleri, portallar, dashboardlar ve MVP'ler tasarlarız.
+              <p>
+                OGEDAY; SaaS urunleri, ozel yazilim projeleri ve AI sistemlerini tek bir premium teknoloji catisi altinda birlestirir.
+                Orbions ile satis, stok, finans ve operasyon akisini tek merkezde toplayan kontrollu bir isletim deneyimi kuruyoruz.
               </p>
+
+              <div class="hero-actions">
+                <a class="primary-button" href="#cta">
+                  Ucretsiz Deneyin
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+                <a class="secondary-button" href="#orbions">
+                  Demoyu Izle
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M8 6l6 4-6 4V6z" fill="currentColor" />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="trust-row" aria-label="Guven rozetleri">
+                <span>14 gun ucretsiz deneme</span>
+                <span>Kredi karti gerekmez</span>
+                <span>Kurumlara ozel kurulum</span>
+              </div>
             </div>
-            <div class="mt-lg">
-              <a class="font-label-sm text-label-sm flex items-center gap-xs font-bold uppercase tracking-wider text-primary transition-all hover:gap-sm hover:text-primary-container" href="#technology">
-                Geliştirmeyi Keşfedin
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+
+            <div id="hero-stage" class="hero-stage reveal is-visible delay-1" aria-hidden="true">
+              <div class="hero-glow"></div>
+
+              <div class="device-frame">
+                <div class="device-topbar">
+                  <div class="device-brand">
+                    <img src="/assets/ogeday-logo-cropped.png" alt="" />
+                    <span>Orbions</span>
+                  </div>
+                  <div class="device-pills">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="device-body">
+                  <div class="sidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="dashboard">
+                    <div class="dashboard-head">
+                      <div class="dashboard-headline">
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="status-group">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+
+                    <div class="metric-row">
+                      <div class="metric-card">
+                        <span>Toplam hacim</span>
+                        <strong>220M</strong>
+                      </div>
+                      <div class="metric-card">
+                        <span>Aktif operasyon</span>
+                        <strong>142</strong>
+                      </div>
+                      <div class="metric-card">
+                        <span>Anlik gosterge</span>
+                        <strong>93%</strong>
+                      </div>
+                    </div>
+
+                    <div class="chart-panel">
+                      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <defs>
+                          <linearGradient id="orbionsRed" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="rgba(214,60,52,0.0)" />
+                            <stop offset="50%" stop-color="rgba(214,60,52,0.34)" />
+                            <stop offset="100%" stop-color="rgba(214,60,52,0.0)" />
+                          </linearGradient>
+                        </defs>
+                        <path d="M0 78 H100" stroke="rgba(255,255,255,0.12)" stroke-width="0.5" />
+                        <path d="M0 54 H100" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" />
+                        <path d="M0 30 H100" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" />
+                        <path
+                          d="M2 70 C10 62, 17 66, 24 56 S39 40, 48 46 61 68, 70 55 82 30, 98 38"
+                          fill="none"
+                          stroke="rgba(214,60,52,0.92)"
+                          stroke-width="2.2"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M2 70 C10 62, 17 66, 24 56 S39 40, 48 46 61 68, 70 55 82 30, 98 38 L98 100 L2 100 Z"
+                          fill="url(#orbionsRed)"
+                        />
+                        <circle cx="48" cy="46" r="2.4" fill="#ffffff" />
+                        <circle cx="70" cy="55" r="2.4" fill="#ffffff" />
+                        <circle cx="98" cy="38" r="2.4" fill="#ffffff" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-cta">
+                <small>Karar paneli</small>
+                <strong>Veri, stok ve finans ayni akista toplanir.</strong>
+              </div>
+
+              <div class="floating-note">
+                <small>Amiral urun</small>
+                <strong>Orbions, saha karmasasini tek merkezden yonetilebilir hale getirir.</strong>
+              </div>
+
+              <div class="floating-chip">
+                <small>Canli ritim</small>
+                <strong>Anlik gosterge + surec takibi</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="utility-bar reveal is-visible delay-2">
+            <a class="secondary-button" href="#cta">WhatsApp'tan yazin</a>
+
+            <div class="social-list" aria-label="Sosyal baglantilar">
+              <a class="social-pill" href="#footer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.9 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6z" />
+                </svg>
+              </a>
+              <a class="social-pill" href="#footer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.46 2.48 2.48 0 0 0 4.98 3.5zM3 9.75h4v11.25H3V9.75zm7 0h3.84v1.54h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.94c0-1.18-.02-2.7-1.64-2.7-1.65 0-1.9 1.29-1.9 2.61V21h-4V9.75z" />
+                </svg>
+              </a>
+              <a class="social-pill" href="#footer" aria-label="X">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18.9 3H22l-6.8 7.78L23 21h-6.1l-4.78-6.24L6.67 21H3.55l7.28-8.32L1 3h6.26l4.32 5.72L18.9 3zm-1.07 16.18h1.71L6.33 4.73H4.5l13.33 14.45z" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="social-divider" aria-hidden="true"></div>
+
+            <a class="primary-button" href="#cta">Fiyat Teklifi Alin</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="shell">
+          <div class="section-head reveal">
+            <span class="section-label">Hakkimizda</span>
+            <h2>OGEDAY, sadece ekran tasarlayan degil; sistemi kurup olcen teknoloji ortagidir.</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="card col-6 reveal">
+              <div class="card-content">
+                <div>
+                  <h3>Hibrit teknoloji catisi</h3>
+                  <p>OGEDAY ayni anda urun gelistirir, ozel yazilim teslim eder ve AI katmanlarini is ihtiyacina baglar. Orbions bunun vitrindeki ilk buyuk karsiligidir.</p>
+                </div>
+                <a class="card-link" href="#orbions">
+                  Amiral urune git
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card col-3 reveal delay-1">
+              <div class="card-content">
+                <div>
+                  <h3>Net kapsam</h3>
+                  <p>Problemi sadeleştirir, kapsamı görünür hale getirir ve sürprizleri azaltır.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card col-3 reveal delay-2">
+              <div class="card-content">
+                <div>
+                  <h3>Olculebilir teslim</h3>
+                  <p>Tasarim, altyapi ve surec katmanlarini tek premium ritimde teslim eder.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section">
+        <div class="shell">
+          <div class="section-head reveal">
+            <span class="section-label">Temel Cozumler</span>
+            <h2>OGEDAY + Orbions ile kontrolu dagilmadan buyutun.</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="card col-6 reveal">
+              <div class="card-content">
+                <div>
+                  <h3>Butunlesik Satis Yonetimi</h3>
+                  <p>Satis kanallarini, teklif akisini ve fiyatlama disiplinini tek panelde birlestiren net bir operasyon zemini.</p>
+                </div>
+                <a class="card-link" href="#orbions">
+                  Surec optimizasyonu
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+              <div class="card-visual card-visual--monitor"></div>
+            </article>
+
+            <article class="card col-6 reveal delay-1">
+              <div class="card-content">
+                <div>
+                  <h3>Net Stok Gorunurlugu</h3>
+                  <p>Kritik stok seviyelerini, tedarik ritmini ve saha etkisini tek bakista goren daha kontrollu ekipler.</p>
+                </div>
+                <a class="card-link" href="#orbions">
+                  Surecleri incele
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+              <div class="card-visual card-visual--bars"></div>
+            </article>
+
+            <article class="card card--tint col-4 reveal delay-1">
+              <div class="card-content">
+                <div>
+                  <h3>Merkezi Finans Kontrolu</h3>
+                  <p>Daginik tablolar yerine gelir, gider ve nakit akisinda anlik karar kalitesi saglayan bir gorunum.</p>
+                </div>
+                <a class="card-link" href="#cta">
+                  Hatasiz raporlama
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card col-8 reveal delay-2">
+              <div class="card-content">
+                <div>
+                  <h3>Sube ve B2B Ag Koordinasyonu</h3>
+                  <p>Lokasyonlar arasi veri akislarini, ortak stok kullanimi ve roller bazli hareketleri tek ekranda netlestiren bir yapi.</p>
+                </div>
+                <a class="card-link" href="#projects">
+                  Merkezden yonetin
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+              <div class="card-visual card-visual--nodes"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="orbions" class="section">
+        <div class="shell">
+          <div class="operational-panel reveal">
+            <div class="operational-copy">
+              <span class="section-label">Orbions Amiral Urun</span>
+              <h2>Operasyonel darbo gazlari asan, karar kalitesini yukselten akilli isletim katmani.</h2>
+              <p>
+                Orbions; satis, stok, finans ve saha sureclerini ayni ritimde bulusturarak ekiplerin ayni veriye ayni anda bakmasini saglar.
+                OGEDAY'in farki, bunu sadece bir arayuz olarak degil; is akisina oturan, olculebilir ve buyumeye hazir bir sistem olarak kurmasidir.
+              </p>
+
+              <div class="bullet-list">
+                <div class="bullet-item">
+                  <span class="bullet-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
+                  </span>
+                  <div>
+                    <strong>Tek noktadan dogruluk</strong>
+                    <span>Tum departmanlar ayni canli veri zemininde calisir; gecikme ve yorum farki azalir.</span>
+                  </div>
+                </div>
+
+                <div class="bullet-item">
+                  <span class="bullet-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
+                  </span>
+                  <div>
+                    <strong>Standartlastirilmis is akislari</strong>
+                    <span>Kisilere bagimli daginik surecler yerine yonetilebilir ve tekrar edilebilir operasyon senaryolari.</span>
+                  </div>
+                </div>
+
+                <div class="bullet-item">
+                  <span class="bullet-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8" /></svg>
+                  </span>
+                  <div>
+                    <strong>AI destekli karar katmani</strong>
+                    <span>Veriyi sadece gostermez; hangi alanin risk, firsat veya aksiyon istedigini daha okunur hale getirir.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="workflow-stage">
+              <div class="workflow-frame">
+                <div class="workflow-topbar">
+                  <strong>Operasyon Haritasi</strong>
+                  <span>Canli akis ornegi</span>
+                </div>
+
+                <div class="workflow-canvas">
+                  <svg class="workflow-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M18 24 C28 16, 38 16, 50 20" stroke="rgba(255,255,255,0.18)" stroke-width="0.35" fill="none" />
+                    <path d="M50 20 C62 24, 72 24, 84 28" stroke="rgba(255,255,255,0.18)" stroke-width="0.35" fill="none" />
+                    <path d="M18 24 C26 38, 30 48, 36 66" stroke="rgba(255,255,255,0.16)" stroke-width="0.35" fill="none" />
+                    <path d="M50 20 C50 40, 52 54, 66 72" stroke="rgba(214,60,52,0.28)" stroke-width="0.45" fill="none" />
+                    <path d="M84 28 C76 44, 72 52, 66 72" stroke="rgba(255,255,255,0.16)" stroke-width="0.35" fill="none" />
+                  </svg>
+
+                  <div class="workflow-node is-primary">
+                    <strong>Satis Akisi</strong>
+                    <span>Teklif - siparis</span>
+                  </div>
+                  <div class="workflow-node">
+                    <strong>Stok Nodu</strong>
+                    <span>Rezerv - transfer</span>
+                  </div>
+                  <div class="workflow-node">
+                    <strong>Finans Gozu</strong>
+                    <span>Tahsilat - risk</span>
+                  </div>
+                  <div class="workflow-node">
+                    <strong>Sube Komutu</strong>
+                    <span>Yetki - kanal</span>
+                  </div>
+                  <div class="workflow-node is-primary">
+                    <strong>AI Yorum Katmani</strong>
+                    <span>Oncelik - aksiyon</span>
+                  </div>
+
+                  <div class="workflow-caption">
+                    <div>
+                      <strong>Gercek hayattaki daginik veri, ayni ekranda kontrol altina alinir.</strong>
+                      <span>Bu alan, sonra gercek Orbions ekran goruntuleriyle degistirilebilir premium placeholder sahnedir.</span>
+                    </div>
+                    <div class="workflow-badge">Placeholder sahne</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai-systems" class="section">
+        <div class="shell">
+          <div class="section-head reveal">
+            <span class="section-label">AI Sistemleri</span>
+            <h2>OGEDAY, yapay zekayi pariltidan cikarip is sonuclarina baglar.</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="card col-4 reveal">
+              <div class="card-content">
+                <div>
+                  <h3>Dokuman ve Bilgi Katmani</h3>
+                  <p>Sirket hafizasini, operasyon belgelerini ve karar bilgisini daha hizli erisilebilir hale getirir.</p>
+                </div>
+                <a class="card-link" href="#projects">
+                  Bilgi sistemleri
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card col-4 reveal delay-1">
+              <div class="card-content">
+                <div>
+                  <h3>Karar Destegi</h3>
+                  <p>Sadece veri gostermek yerine; risk, istisna ve oncelik alanlarini isaretleyen yorum katmanlari tasarlar.</p>
+                </div>
+                <a class="card-link" href="#cta">
+                  Ozel cozum al
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card col-4 reveal delay-2">
+              <div class="card-content">
+                <div>
+                  <h3>Sirket Icine Ozel Asistanlar</h3>
+                  <p>Markanin kendi veri yapisina, rol dagilimina ve is ritmine gore calisan kontrollu AI deneyimleri.</p>
+                </div>
+                <a class="card-link" href="#about">
+                  Yaklasimi gor
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="shell">
+          <div class="section-head reveal">
+            <span class="section-label">Projeler ve Altyapi</span>
+            <h2>Urun odagi kadar, ozel proje teslim ve operasyon disiplini de OGEDAY isidir.</h2>
+            <div class="section-accent"></div>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="card col-6 reveal">
+              <div class="card-content">
+                <div>
+                  <h3>Yonetim panelleri ve musterinin isine ozel arayuzler</h3>
+                  <p>Gosterisli ama zayif ekranlar yerine, ekiplerin gunluk ritmine oturan net ve olculebilir panel deneyimleri kuruyoruz.</p>
+                </div>
+                <a class="card-link" href="#cta">
+                  Projeyi konusalim
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="card col-6 reveal delay-1">
+              <div class="card-content">
+                <div>
+                  <h3>Entegrasyon, raporlama ve buyumeye hazir dijital omurga</h3>
+                  <p>Depo, CRM, muhasebe, satis ve raporlama katmanlarini ayni mimari ritimde bulusturan daha temiz bir altyapi.</p>
+                </div>
+                <a class="card-link" href="#cta">
+                  Altyapi planla
+                  <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M4 10h11M11 4l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta-wrap">
+        <div class="shell">
+          <div class="cta-panel reveal">
+            <h2>Islerinizi karmasadan kurtarin.</h2>
+            <p>
+              Orbions ile operasyonel kontrolu merkezi hale getirin; OGEDAY ile kurumunuza ozel yazilim, AI ve surec mimarisini tek ekipten alin.
+              Bu turda tum butonlar yer tutucu hedeflere baglidir; gercek urun akislari sonraki iterasyonda kolayca yerlestirilebilir.
+            </p>
+            <a class="secondary-button" href="#top">
+              Danismanlik Alin
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="shell">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-brand-top">
+              <img src="/assets/ogeday-logo-cropped.png" alt="OGEDAY logosu" loading="lazy" decoding="async" />
+              <div>
+                <div class="footer-brand-name">OGEDAY</div>
+                <span class="brand-subtitle">Yazilim ve Teknoloji Sistemleri</span>
+              </div>
+            </div>
+            <p>Karmasik surecleri, guvenli ve fonksiyonel teknoloji sistemleriyle duzenleyen premium bir teknoloji catisi.</p>
+
+            <div class="social-list" aria-label="Footer sosyal baglantilar">
+              <a class="social-pill" href="#footer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.9 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6z" />
+                </svg>
+              </a>
+              <a class="social-pill" href="#footer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.46 2.48 2.48 0 0 0 4.98 3.5zM3 9.75h4v11.25H3V9.75zm7 0h3.84v1.54h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.94c0-1.18-.02-2.7-1.64-2.7-1.65 0-1.9 1.29-1.9 2.61V21h-4V9.75z" />
+                </svg>
+              </a>
+              <a class="social-pill" href="#footer" aria-label="X">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18.9 3H22l-6.8 7.78L23 21h-6.1l-4.78-6.24L6.67 21H3.55l7.28-8.32L1 3h6.26l4.32 5.72L18.9 3zm-1.07 16.18h1.71L6.33 4.73H4.5l13.33 14.45z" />
+                </svg>
               </a>
             </div>
           </div>
-        </div>
 
-        <div class="light-glass-card group col-span-12 flex flex-col justify-between rounded-2xl p-lg reveal-up active md:col-span-6 lg:col-span-4" style="transition-delay: 0.1s">
-          <div>
-            <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
-              <span class="material-symbols-outlined text-[24px] text-primary">cloud</span>
-            </div>
-            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Ölçeklenebilir ürün altyapıları</h3>
-            <p class="font-body-md text-body-md font-medium text-on-surface-variant">
-              Abonelik, lisans ve kurulum modeliyle büyüyebilecek ürün tabanları kuruyoruz.
-            </p>
+          <div class="footer-column">
+            <strong>Cozumler</strong>
+            <a href="#orbions">Orbions Isletim Sistemi</a>
+            <a href="#solutions">Surec Analizi</a>
+            <a href="#projects">Kurumsal Entegrasyon</a>
           </div>
-          <div class="mt-md">
-            <a class="font-label-sm text-label-sm flex items-center gap-xs font-bold uppercase tracking-wider text-primary transition-all hover:gap-sm" href="#technology">
-              Bulut Çözümlerini İnceleyin
-              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
-          </div>
-        </div>
 
-        <div class="light-glass-card group col-span-12 flex flex-col justify-between rounded-2xl p-lg reveal-up active md:col-span-6 lg:col-span-4" style="transition-delay: 0.2s">
-          <div>
-            <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
-              <span class="material-symbols-outlined text-[24px] text-primary">analytics</span>
-            </div>
-            <h3 class="mb-sm font-headline-md text-headline-md font-bold text-on-background">Karar odaklı analitik</h3>
-            <p class="font-body-md text-body-md font-medium text-on-surface-variant">
-              Veri yığınlarını stratejik, okunabilir ve eyleme dönüştürülebilir içgörülere çeviriyoruz.
-            </p>
+          <div class="footer-column">
+            <strong>Kurumsal</strong>
+            <a href="#about">Hakkimizda</a>
+            <a href="#projects">Yaklasimimiz</a>
+            <a href="#cta">Iletisim</a>
           </div>
-          <div class="mt-md">
-            <a class="font-label-sm text-label-sm flex items-center gap-xs font-bold uppercase tracking-wider text-primary transition-all hover:gap-sm" href="#technology">
-              Analitiği Keşfedin
-              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
+
+          <div class="footer-column">
+            <strong>Bulten</strong>
+            <span>Gercek form yerine bu tur icin premium placeholder alan kullanildi.</span>
+            <label class="newsletter">
+              <input type="email" placeholder="E-posta adresi" aria-label="E-posta adresi" />
+              <button type="button" aria-label="Gonder">
+                <svg viewBox="0 0 20 20">
+                  <path d="M4 10h11M11 4l6 6-6 6" />
+                </svg>
+              </button>
+            </label>
           </div>
         </div>
 
-        <div class="light-glass-card col-span-12 flex items-center justify-between rounded-2xl p-lg reveal-up active lg:col-span-8" style="transition-delay: 0.3s">
-          <div>
-            <div class="mb-md flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 transition-colors group-hover:bg-primary/20">
-              <span class="material-symbols-outlined text-[24px] text-primary">security</span>
-            </div>
-            <h3 class="mb-xs font-headline-md text-headline-md font-bold text-on-background">Güvenlik ve kontrol katmanı</h3>
-            <p class="max-w-sm font-body-md text-body-md font-medium text-on-surface-variant">
-              Sıfır Güven yaklaşımıyla dijital varlıkları, rol yapısını ve erişim sınırlarını kontrollü tutuyoruz.
-            </p>
-          </div>
-          <div class="hidden transform opacity-10 transition-opacity duration-500 group-hover:opacity-100 sm:block group-hover:scale-110">
-            <span class="material-symbols-outlined text-[80px] text-on-background">lock</span>
+        <div class="footer-meta">
+          <span>&copy; 2026 OGEDAY. Tum haklari saklidir.</span>
+          <div class="footer-meta-links">
+            <a href="#footer">Gizlilik Politikasi</a>
+            <a href="#footer">Kullanim Sartlari</a>
+            <a href="#footer">KVKK</a>
+            <a href="#footer">Cerez Tercihleri</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="technology" class="relative overflow-hidden border-t border-b border-white/5 bg-dark-bg py-section-y text-white">
-      <div class="pointer-events-none absolute inset-0 opacity-10" style="background-image: radial-gradient(#a81f20 1px, transparent 1px); background-size: 32px 32px;"></div>
-      <div class="reveal-up active relative z-10 mb-xl px-margin-mobile text-center md:px-margin-desktop">
-        <h2 class="mb-sm font-headline-lg text-headline-lg font-extrabold text-white">İleri teknoloji ekosistemimiz</h2>
-        <p class="mx-auto max-w-2xl font-body-md text-body-md font-medium text-surface-variant opacity-90">
-          Güçlü araçları disiplinli teslim, gözlemlenebilir mimari ve sürdürülebilir üretim için bir araya getiriyoruz.
-        </p>
-      </div>
-
-      <div class="relative flex w-full flex-col overflow-hidden border-t border-white/10 bg-dark-surface/40 py-4 backdrop-blur-md">
-        <div class="flex whitespace-nowrap px-4 opacity-80 transition-opacity hover:opacity-100 animate-[marquee_25s_linear_infinite] space-x-12">
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Kubernetes</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">React</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Node.js</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">PostgreSQL</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">AWS</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Docker</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">GraphQL</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Python</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Terraform</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Kubernetes</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">React</span>
-          <span class="cursor-default rounded-full border border-white/20 px-6 py-3 font-label-sm text-label-sm text-white transition-colors hover:border-primary/50 hover:bg-primary/10">Node.js</span>
-        </div>
-      </div>
-
-      <div class="relative mt-[1px] flex w-full flex-col overflow-hidden border-b border-white/10 bg-dark-surface/40 py-4 backdrop-blur-md">
-        <div class="flex whitespace-nowrap px-4 opacity-80 transition-opacity hover:opacity-100 animate-[marquee-reverse_35s_linear_infinite] space-x-12">
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Microservices Architecture</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Distributed Systems</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Edge Computing</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">CI/CD Pipelines</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Zero-Trust Security</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Real-time Data Processing</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Microservices Architecture</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Distributed Systems</span>
-          <span class="cursor-default rounded-full border border-primary/30 px-6 py-3 font-label-sm text-label-sm font-bold text-primary-fixed-dim transition-colors hover:bg-primary/10">Edge Computing</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="bg-background px-margin-mobile py-section-y md:px-margin-desktop">
-      <div class="grid grid-cols-1 items-center gap-xl lg:grid-cols-2">
-        <div class="reveal-up active relative">
-          <div class="-inset-4 absolute z-0 rounded-2xl bg-gradient-to-tr from-primary/10 to-transparent blur-lg transform -rotate-2"></div>
-          <img
-            class="relative z-10 aspect-square w-full rounded-2xl border border-on-surface/10 object-cover grayscale contrast-105 transition-all duration-700 hover:grayscale-0"
-            data-alt="Uzaktaki mesafelere uzanan yüksek teknolojili sunucu rafları sıraları ile şık, modern bir sunucu odası içi."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5NmH6rPLLaDO0K4ETKIsv9mvKPone8kdprly24j3e1sO98lPde5F5SipaK8M1MIveqPEcCnITg4a3JxBVL_76y-mcU_WIbhrwXJctr6WDA6_vXaLmYr6nEx2CS2kRPWuKqJq3vohEgyMEYY7JU1hGhKt_zbeGsuFrJmEPq69tuGrfhXBYn9MIa7XpnLq6aS9X8DDFZvrOa1uFN79bwGYy0TYYXlCb610Bc9d3cGbUjlhpzmHzSZLBeWB7IX5cbCyQQW6FGdDO2FY"
-            alt="Modern sunucu odası"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-
-        <div class="space-y-lg reveal-up active" style="transition-delay: 0.2s">
-          <div>
-            <span class="font-label-sm text-label-sm mb-sm block font-bold uppercase tracking-widest text-primary">Ogeday avantajı</span>
-            <h2 class="font-headline-lg text-headline-lg font-extrabold leading-tight text-on-background">Kapsamı net, teslimi ölçülebilir bir çalışma modeli.</h2>
-          </div>
-
-          <div class="space-y-md">
-            <div class="group flex gap-md">
-              <div class="mt-1 rounded-lg bg-surface-container p-2 transition-colors group-hover:bg-primary/10">
-                <span class="material-symbols-outlined text-[28px] text-primary">verified</span>
-              </div>
-              <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Risk görünürlüğü</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Problemi, kapsamı ve teslim sınırını görünür hale getiririz.</p>
-              </div>
-            </div>
-
-            <div class="group flex gap-md">
-              <div class="mt-1 rounded-lg bg-surface-container p-2 transition-colors group-hover:bg-primary/10">
-                <span class="material-symbols-outlined text-[28px] text-primary">rocket_launch</span>
-              </div>
-              <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Ölçeklenebilir mimari</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Sistemleri büyümeye hazır ve uzun ömürlü olacak şekilde kurarız.</p>
-              </div>
-            </div>
-
-            <div class="group flex gap-md">
-              <div class="mt-1 rounded-lg bg-surface-container p-2 transition-colors group-hover:bg-primary/10">
-                <span class="material-symbols-outlined text-[28px] text-primary">support_agent</span>
-              </div>
-              <div>
-                <h4 class="mb-xs font-headline-md text-[22px] font-bold text-on-background">Uzun vadeli teknoloji ortaklığı</h4>
-                <p class="font-body-md text-body-md font-medium text-on-surface-variant">Teslimden sonra da sistemin çalışırlığını ve gelişimini birlikte yönetiriz.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer
-      id="company"
-      class="flex w-full flex-col items-center justify-between gap-md border-t border-on-surface/5 bg-surface-container-highest px-margin-mobile py-lg md:flex-row md:px-margin-desktop dark:bg-inverse-surface"
-    >
-      <div class="flex flex-col items-center gap-sm md:items-start">
-        <div class="flex items-center gap-3">
-          <img src="/assets/ogeday-logo-cropped.png" alt="Ogeday logosu" class="h-14 w-auto rounded-lg bg-white object-contain p-1 shadow-sm" loading="lazy" decoding="async" />
-          <div class="flex flex-col">
-            <span class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-background dark:text-inverse-on-surface">Ogeday</span>
-            <span class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-surface-variant">Yazılım ve Teknoloji Sistemleri</span>
-          </div>
-        </div>
-        <span class="font-body-md text-body-md font-medium text-on-surface-variant dark:text-on-surface-variant">© 2024 Ogeday Teknoloji. Tüm hakları saklıdır.</span>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-md">
-        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#about">Hakkımızda</a>
-        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#company">İletişim</a>
-        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#technology">Teknoloji</a>
-        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#solutions">Çözümler</a>
-        <a class="font-body-md text-body-md font-medium text-on-surface-variant transition-all hover:text-primary dark:text-on-surface-variant dark:hover:text-primary-fixed-dim" href="#">Gizlilik Politikası</a>
       </div>
     </footer>
 
     <script>
-      window.addEventListener("scroll", () => {
-        const nav = document.getElementById("main-nav");
-        if (window.scrollY > 20) {
-          nav.classList.add("shadow-md");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const siteHeader = document.getElementById("site-header");
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
+      const heroStage = document.getElementById("hero-stage");
+
+      function syncHeaderShadow() {
+        if (!siteHeader) return;
+        if (window.scrollY > 12) {
+          siteHeader.classList.add("scrolled");
         } else {
-          nav.classList.remove("shadow-md");
+          siteHeader.classList.remove("scrolled");
         }
-      });
+      }
 
-      const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.15,
-      };
+      syncHeaderShadow();
+      window.addEventListener("scroll", syncHeaderShadow, { passive: true });
 
-      const observer = new IntersectionObserver((entries, io) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-            io.unobserve(entry.target);
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = mobileMenu.classList.toggle("open");
+          menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      if (!prefersReducedMotion) {
+        const revealElements = document.querySelectorAll(".reveal");
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.16 }
+        );
+
+        revealElements.forEach((element) => {
+          if (!element.classList.contains("is-visible")) {
+            revealObserver.observe(element);
           }
         });
-      }, observerOptions);
 
-      document.querySelectorAll(".reveal-up").forEach((element) => {
-        observer.observe(element);
-      });
-
-      window.addEventListener("scroll", () => {
-        const parallaxImg = document.getElementById("hero-parallax");
-        if (parallaxImg && window.scrollY < window.innerHeight) {
-          const scrolled = window.scrollY;
-          parallaxImg.style.transform = `translateY(${scrolled * 0.15}px)`;
-        }
-      });
+        window.addEventListener(
+          "scroll",
+          () => {
+            if (!heroStage) return;
+            const offset = Math.min(window.scrollY * 0.08, 18);
+            heroStage.style.transform = "translateY(" + offset + "px)";
+          },
+          { passive: true }
+        );
+      } else {
+        document.querySelectorAll(".reveal").forEach((element) => {
+          element.classList.add("is-visible");
+        });
+      }
     </script>
   </body>
 </html>
