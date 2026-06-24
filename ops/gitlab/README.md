@@ -20,9 +20,10 @@ The scripts are intentionally safe by default:
 7. Create real GitLab groups and replace placeholder entries in `CODEOWNERS`.
 8. Use `api-bootstrap.md` to review and apply labels and `main` branch protection.
 9. Configure remaining project settings from `docs/gitlab/project-settings-checklist.md`.
-10. Create a runner in GitLab UI and install/register it on a separate runner machine.
-11. Run the first pipeline.
-12. Run a backup and restore test before GitLab becomes the only source of truth.
+10. Use `create-pilot-issues.sh` to review the first workflow rehearsal issues.
+11. Create a runner in GitLab UI and install/register it on a separate runner machine.
+12. Run the first pipeline.
+13. Run a backup and restore test before GitLab becomes the only source of truth.
 
 ## Files
 
@@ -46,6 +47,8 @@ The scripts are intentionally safe by default:
   - Dry-run first `main` branch protection helper.
 - `project-readiness-check.sh`
   - API readiness check for project, labels, and protected branch.
+- `create-pilot-issues.sh`
+  - Dry-run first pilot issue creation helper for Task, QA, Release, and Access rehearsals.
 - `import-ogeday-repo.md`
   - Project import and post-import checklist.
 - `bootstrap-groups.md`

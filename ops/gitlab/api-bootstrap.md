@@ -67,9 +67,30 @@ The readiness check confirms:
 - `main` is protected
 - Core operational labels exist
 
+## Create pilot issues
+
+Review first:
+
+```bash
+sh ops/gitlab/create-pilot-issues.sh
+```
+
+Apply after review:
+
+```bash
+DRY_RUN=0 sh ops/gitlab/create-pilot-issues.sh
+```
+
+This creates rehearsal issues for:
+
+- Task-driven MR workflow
+- QA Validation
+- Release Checklist dry-run
+- Access Request rehearsal without production access
+
 ## Official API references
 
 - Project Labels API: https://docs.gitlab.com/api/labels/
+- Issues API: https://docs.gitlab.com/api/issues/
 - Protected Branches API: https://docs.gitlab.com/api/protected_branches/
 - Projects API: https://docs.gitlab.com/api/projects/
-

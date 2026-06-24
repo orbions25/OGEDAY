@@ -39,6 +39,7 @@ Exit criteria:
 - Replace placeholder `CODEOWNERS` entries.
 - Review and run `ops/gitlab/apply-labels.sh`.
 - Review and run `ops/gitlab/protect-main.sh`.
+- Review `ops/gitlab/create-pilot-issues.sh` in dry-run mode.
 - Apply project settings checklist.
 
 Exit criteria:
@@ -48,6 +49,7 @@ Exit criteria:
 - Direct push to `main` is disabled.
 - CODEOWNERS uses real GitLab groups.
 - Core operational labels exist.
+- Pilot issue seed plan is reviewed.
 
 ## Day 3 - Runner and CI
 
@@ -66,6 +68,7 @@ Exit criteria:
 ## Day 4 - Process pilot
 
 - Create one Task issue for a small documentation change.
+- Optionally use `ops/gitlab/create-pilot-issues.sh` after review.
 - Open one Merge Request from that task.
 - Complete MR template fields.
 - Complete Supervisor review checklist.
@@ -81,6 +84,7 @@ Exit criteria:
 - Create a test Access Request issue without granting real production access.
 - Create a QA Validation issue for the website.
 - Create a Release Checklist issue for a dry-run release review.
+- Use `docs/gitlab/release-evidence-format.md` for evidence.
 
 Exit criteria:
 
@@ -105,6 +109,7 @@ Exit criteria:
 - Fill `docs/gitlab/monthly-governance-report-template.md` for the pilot week.
 - Review `docs/gitlab/cutover-checklist.md`.
 - Confirm `docs/gitlab/github-fallback-plan.md` is still valid.
+- Review `docs/gitlab/automation-readiness.md`.
 - Decide whether GitLab becomes primary or continues in parallel with GitHub.
 
 Exit criteria:

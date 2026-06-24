@@ -37,6 +37,8 @@ Use this template before deploying changes to `ogedays.com`.
 - [ ] `sitemap.xml` is reachable
 - [ ] Security headers are present
 
+Evidence format: `docs/gitlab/release-evidence-format.md`.
+
 ## Rollback
 
 - Rollback trigger:
@@ -51,4 +53,3 @@ Use this template before deploying changes to `ogedays.com`.
 - [ ] Cancelled
 
 Decision note:
-

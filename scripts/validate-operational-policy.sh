@@ -38,6 +38,8 @@ require_file docs/gitlab/backup-restore-checklist.md
 require_file docs/gitlab/monthly-governance-report-template.md
 require_file docs/gitlab/cutover-checklist.md
 require_file docs/gitlab/github-fallback-plan.md
+require_file docs/gitlab/release-evidence-format.md
+require_file docs/gitlab/automation-readiness.md
 require_file ops/gitlab/README.md
 require_file ops/gitlab/preflight-check.sh
 require_file ops/gitlab/install-single-node-ubuntu.sh
@@ -49,6 +51,7 @@ require_file ops/gitlab/api-bootstrap.md
 require_file ops/gitlab/apply-labels.sh
 require_file ops/gitlab/protect-main.sh
 require_file ops/gitlab/project-readiness-check.sh
+require_file ops/gitlab/create-pilot-issues.sh
 require_file ops/gitlab/import-ogeday-repo.md
 require_file ops/gitlab/bootstrap-groups.md
 require_file ops/gitlab/source-links.md
@@ -76,6 +79,8 @@ require_contains docs/gitlab/backup-restore-checklist.md "Restore test" "Backup 
 require_contains docs/gitlab/monthly-governance-report-template.md "Access summary" "Monthly governance access summary"
 require_contains docs/gitlab/cutover-checklist.md "Go / no-go" "Cutover decision section"
 require_contains docs/gitlab/github-fallback-plan.md "GitHub main -> GitLab pilot project" "GitHub fallback sync direction"
+require_contains docs/gitlab/release-evidence-format.md "Required evidence" "Release evidence required section"
+require_contains docs/gitlab/automation-readiness.md "Do not automate yet" "Automation readiness guard"
 require_contains ops/gitlab/README.md "DRY_RUN=0" "GitLab ops dry-run note"
 require_contains ops/gitlab/preflight-check.sh "GITLAB_EXTERNAL_URL" "GitLab preflight external URL guard"
 require_contains ops/gitlab/preflight-check.sh "40 GB" "GitLab preflight storage guidance"
@@ -87,6 +92,7 @@ require_contains ops/gitlab/api-bootstrap.md "Project Labels API" "GitLab API bo
 require_contains ops/gitlab/apply-labels.sh "type::access-request" "GitLab label bootstrap access label"
 require_contains ops/gitlab/protect-main.sh "push_access_level=0" "GitLab protected branch no-push policy"
 require_contains ops/gitlab/project-readiness-check.sh "Project readiness check passed" "GitLab readiness success message"
+require_contains ops/gitlab/create-pilot-issues.sh "Pilot Task: GitLab workflow rehearsal" "GitLab pilot task issue"
 require_contains ops/gitlab/import-ogeday-repo.md "https://github.com/orbions25/OGEDAY.git" "OGEDAY import source"
 require_contains ops/gitlab/bootstrap-groups.md "OGEDAY/software-admin" "Software Admin group guide"
 require_contains docs/gitlab/pilot-execution-plan.md "Day 3 - Runner and CI" "Pilot runner day"

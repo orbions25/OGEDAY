@@ -79,6 +79,8 @@ Add automation only after the manual process becomes stable:
 - Release note drafting
 - Audit report preparation
 
+Use `docs/gitlab/automation-readiness.md` before adding any automation that changes project settings, access, branches, or production state.
+
 ## Phase 4 - OGEDAYhub foundation
 
 After the process stabilizes, the same model can become the foundation for OGEDAYhub:

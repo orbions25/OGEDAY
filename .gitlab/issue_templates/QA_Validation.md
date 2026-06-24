@@ -25,6 +25,8 @@ Use this template for release checks, regression checks, and post-deploy validat
 Add command output, screenshot references, or manual notes here.
 ```
 
+Recommended evidence format: `docs/gitlab/release-evidence-format.md`.
+
 ## Defects found
 
 - Defect:
@@ -36,4 +38,3 @@ Add command output, screenshot references, or manual notes here.
 - [ ] Approved for deploy
 - [ ] Approved with notes
 - [ ] Blocked
-
