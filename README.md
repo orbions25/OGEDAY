@@ -13,6 +13,10 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 
 - `site/index.html`
   - Canli OGEDAY acilis sayfasi
+- `site/robots.txt`
+  - Arama motorlari icin indeksleme ve sitemap yonlendirmesi
+- `site/sitemap.xml`
+  - `https://ogedays.com/` icin tek sayfalik sitemap
 - `site/nginx.conf`
   - Konteyner ici nginx tanimi
 - `docker-compose.yml`
@@ -35,6 +39,20 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 ```bash
 docker compose up -d
 ```
+
+Lokal kontrol:
+
+```bash
+curl -I http://127.0.0.1:8095
+```
+
+## Gelistirme notlari
+
+- Ana gelistirme yuzeyi `site/index.html` dosyasidir.
+- Canli site `ogedays.com` uzerinde bu dosyadan servis edilir.
+- Iletisim akisi `iletisim@ogedays.com` mailto baglantilari uzerinden calisir.
+- SEO icin canonical, Open Graph, Twitter Card, Organization schema, `robots.txt` ve `sitemap.xml` birlikte tutulur.
+- Host nginx guvenlik basliklari `ops/nginx/ogedays.com.conf` icinde; konteyner ici basliklar `site/nginx.conf` icindedir.
 
 ## Not
 

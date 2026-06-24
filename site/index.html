@@ -9,6 +9,7 @@
       content="OGEDAY; SaaS ürünleri, özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir."
     />
     <meta name="theme-color" content="#0d1014" />
+    <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ogedays.com/" />
     <meta id="og-title" property="og:title" content="OGEDAY | Yazılım ve Teknoloji Sistemleri" />
@@ -30,6 +31,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ogeday-favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/ogeday-favicon-192.png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="canonical" href="https://ogedays.com/" />
     <title>OGEDAY | Yazılım ve Teknoloji Sistemleri</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +39,18 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OGEDAY",
+        "url": "https://ogedays.com/",
+        "logo": "https://ogedays.com/assets/ogeday-logo.png",
+        "email": "iletisim@ogedays.com",
+        "sameAs": ["https://orbions.com/"],
+        "description": "OGEDAY; SaaS ürünleri, özel yazılım çözümleri, müşteriye özel yapay zekâ sistemleri ve dijital operasyon altyapıları geliştiren hibrit bir teknoloji şirketidir."
+      }
+    </script>
     <style>
       :root {
         --bg: #0d1014;
@@ -1201,6 +1215,52 @@
         margin-top: 26px;
       }
 
+      .contact-methods {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 18px;
+      }
+
+      .contact-method {
+        display: grid;
+        gap: 8px;
+        padding: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.05);
+        transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease;
+      }
+
+      .contact-method:hover,
+      .contact-method:focus-visible {
+        transform: translateY(-3px);
+        border-color: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .contact-method span,
+      .footer-contact-label {
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.62);
+      }
+
+      .contact-method strong {
+        font-family: "Sora", sans-serif;
+        font-size: clamp(1.2rem, 2vw, 1.8rem);
+        letter-spacing: -0.04em;
+        color: #ffffff;
+        overflow-wrap: anywhere;
+      }
+
+      .contact-method small {
+        color: var(--text-soft);
+        line-height: 1.6;
+      }
+
       .contact-card {
         padding: 24px;
         border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1281,6 +1341,10 @@
       .footer-newsletter {
         display: grid;
         gap: 12px;
+      }
+
+      .footer-mail-link {
+        justify-self: start;
       }
 
       .footer-newsletter-field {
@@ -1436,6 +1500,7 @@
 
         .trust-row,
         .metrics-grid,
+        .contact-methods,
         .contact-grid,
         .value-grid,
         .ai-grid,
@@ -1486,7 +1551,8 @@
 
         .hero-actions a,
         .cta-actions a,
-        .mobile-actions a {
+        .mobile-actions a,
+        .footer-mail-link {
           width: 100%;
         }
       }
@@ -1540,7 +1606,13 @@
           >
             Orbions'u Görün
           </a>
-          <a class="primary-button" href="#contact" data-i18n="header.cta">İletişime Geçin</a>
+          <a
+            class="primary-button"
+            href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Proje%20Gorusmesi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+            data-i18n="header.cta"
+          >
+            İletişime Geçin
+          </a>
           <button
             class="lang-toggle"
             type="button"
@@ -1587,7 +1659,13 @@
             >
               Orbions'u Görün
             </a>
-            <a class="primary-button" href="#contact" data-i18n="header.cta">İletişime Geçin</a>
+            <a
+              class="primary-button"
+              href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Proje%20Gorusmesi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+              data-i18n="header.cta"
+            >
+              İletişime Geçin
+            </a>
             <button
               class="lang-toggle"
               type="button"
@@ -1619,7 +1697,13 @@
             </p>
 
             <div class="hero-actions">
-              <a class="primary-button" href="#contact" data-i18n="hero.primary">Görüşme Planlayın</a>
+              <a
+                class="primary-button"
+                href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Proje%20Gorusmesi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+                data-i18n="hero.primary"
+              >
+                Görüşme Planlayın
+              </a>
               <a
                 class="secondary-button"
                 href="https://orbions.com/"
@@ -2035,7 +2119,13 @@
               bir üretim modeli kurmayı hedefler. Uygun iş akışını birlikte netleştirelim.
             </p>
             <div class="cta-actions">
-              <a class="secondary-button" href="#top" data-i18n="cta.primary">İlk görüşmeyi planlayın</a>
+              <a
+                class="secondary-button"
+                href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Ilk%20Gorusme&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+                data-i18n="cta.primary"
+              >
+                İlk görüşmeyi planlayın
+              </a>
               <a
                 class="secondary-button"
                 href="https://orbions.com/"
@@ -2046,6 +2136,29 @@
                 Orbions'u görün
               </a>
             </div>
+          </div>
+
+          <div class="contact-methods reveal" aria-label="OGEDAY iletişim seçenekleri">
+            <a
+              class="contact-method"
+              href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Proje%20Gorusmesi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+            >
+              <span data-i18n="contact.directMailLabel">Doğrudan e-posta</span>
+              <strong data-i18n="contact.directMailTitle">iletisim@ogedays.com</strong>
+              <small data-i18n="contact.directMailHint">
+                Proje, iş birliği ve kurumsal yazılım ihtiyaçları için en net başlangıç kanalı.
+              </small>
+            </a>
+            <a
+              class="contact-method"
+              href="mailto:iletisim@ogedays.com?subject=Orbions%20ve%20OGEDAY%20Urun%20Gorusmesi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+            >
+              <span data-i18n="contact.projectMailLabel">Ürün ve kapsam</span>
+              <strong data-i18n="contact.projectMailTitle">Orbions ve özel proje görüşmesi</strong>
+              <small data-i18n="contact.projectMailHint">
+                Orbions, entegrasyon, AI katmanı veya özel proje kapsamını birlikte netleştirelim.
+              </small>
+            </a>
           </div>
 
           <div class="contact-grid">
@@ -2122,22 +2235,19 @@
             </div>
 
             <div class="footer-newsletter">
-              <label for="newsletterEmail" data-i18n="footer.newsTitle">Bilgi notu alanı</label>
+              <span class="footer-contact-label" data-i18n="footer.newsTitle">Doğrudan iletişim</span>
               <p data-i18n="footer.newsText">
-                Bu alan, ileride kurumsal güncellemeler veya lansman notları için gerçek iletişim akışına bağlanacaktır.
+                Kurumsal web, özel yazılım, entegrasyon ve AI destekli operasyon yapıları için bize e-posta ile ulaşın.
               </p>
-              <div class="footer-newsletter-field">
-                <input
-                  id="newsletterEmail"
-                  type="email"
-                  disabled
-                  data-i18n-placeholder="footer.newsPlaceholder"
-                  placeholder="E-posta alanı yakında aktif olacak"
-                />
-                <button type="button" disabled data-i18n="footer.newsButton">Yakında</button>
-              </div>
+              <a
+                class="secondary-button footer-mail-link"
+                href="mailto:iletisim@ogedays.com?subject=OGEDAY%20Bilgi%20Talebi&body=Merhaba%20OGEDAY%20ekibi%2C%0A%0A"
+                data-i18n="footer.newsButton"
+              >
+                iletisim@ogedays.com
+              </a>
               <span class="footer-note" data-i18n="footer.newsNote">
-                Kırık form üretmemek için bu alan bilinçli olarak placeholder bırakıldı.
+                Mesajınızda ihtiyacınızı, şirketinizi ve beklediğiniz kapsamı kısaca paylaşmanız yeterli.
               </span>
             </div>
           </div>
@@ -2335,10 +2445,16 @@
             title: "Gizlilik, kapsam ve teslim disiplini yüksek bir <span>teknoloji ortağı</span> arıyorsanız konuşalım.",
             text:
               "OGEDAY; kurumsal yazılım, SaaS ürünleri, AI sistemleri ve dijital operasyon omurgaları için daha güvenilir bir üretim modeli kurmayı hedefler. Uygun iş akışını birlikte netleştirelim.",
-            primary: "İlk görüşmeyi planlayın",
+            primary: "E-posta ile görüşme planlayın",
             secondary: "Orbions'u görün",
           },
           contact: {
+            directMailLabel: "Doğrudan e-posta",
+            directMailTitle: "iletisim@ogedays.com",
+            directMailHint: "Proje, iş birliği ve kurumsal yazılım ihtiyaçları için en net başlangıç kanalı.",
+            projectMailLabel: "Ürün ve kapsam",
+            projectMailTitle: "Orbions ve özel proje görüşmesi",
+            projectMailHint: "Orbions, entegrasyon, AI katmanı veya özel proje kapsamını birlikte netleştirelim.",
             cardOneTitle: "Kurumsal web ve ürün yüzeyi",
             cardOneText: "Şirket vitrini, ürün akışı ve yönetim ekranları arasında daha tutarlı bir deneyim kurgularız.",
             cardTwoTitle: "Özel proje ve entegrasyon",
@@ -2363,12 +2479,12 @@
             productOne: "Orbions",
             productTwo: "Kullanım yüzeyi",
             productThree: "Operasyon görünürlüğü",
-            newsTitle: "Bilgi notu alanı",
+            newsTitle: "Doğrudan iletişim",
             newsText:
-              "Bu alan, ileride kurumsal güncellemeler veya lansman notları için gerçek iletişim akışına bağlanacaktır.",
-            newsPlaceholder: "E-posta alanı yakında aktif olacak",
-            newsButton: "Yakında",
-            newsNote: "Kırık form üretmemek için bu alan bilinçli olarak placeholder bırakıldı.",
+              "Kurumsal web, özel yazılım, entegrasyon ve AI destekli operasyon yapıları için bize e-posta ile ulaşın.",
+            newsPlaceholder: "E-posta adresiniz",
+            newsButton: "iletisim@ogedays.com",
+            newsNote: "Mesajınızda ihtiyacınızı, şirketinizi ve beklediğiniz kapsamı kısaca paylaşmanız yeterli.",
             copy: "© 2026 OGEDAY. Tüm hakları saklıdır.",
             legalOne: "Gizlilik yaklaşımı",
             legalTwo: "Kullanım çerçevesi",
@@ -2554,10 +2670,16 @@
             title: "If you are looking for a <span>technology partner</span> with strong privacy, scope, and delivery discipline, let's talk.",
             text:
               "OGEDAY aims to build a more reliable production model for corporate software, SaaS products, AI systems, and digital operations backbones. Let us define the right workflow together.",
-            primary: "Plan the first conversation",
+            primary: "Plan by email",
             secondary: "View Orbions",
           },
           contact: {
+            directMailLabel: "Direct email",
+            directMailTitle: "iletisim@ogedays.com",
+            directMailHint: "The clearest starting point for project, partnership, and corporate software needs.",
+            projectMailLabel: "Product and scope",
+            projectMailTitle: "Orbions and custom project discussion",
+            projectMailHint: "Let us clarify Orbions, integrations, AI layers, or a custom project scope together.",
             cardOneTitle: "Corporate web and product surfaces",
             cardOneText:
               "We build a more consistent experience across the company showcase, product flow, and management interfaces.",
@@ -2583,12 +2705,12 @@
             productOne: "Orbions",
             productTwo: "Usage surface",
             productThree: "Operational visibility",
-            newsTitle: "Information area",
+            newsTitle: "Direct contact",
             newsText:
-              "This space will later connect to a real communication flow for corporate updates or launch notes.",
-            newsPlaceholder: "Email field will be enabled soon",
-            newsButton: "Soon",
-            newsNote: "This area is intentionally left as a placeholder to avoid a broken form.",
+              "Reach us by email for corporate web, custom software, integrations, and AI-supported operations work.",
+            newsPlaceholder: "Your email address",
+            newsButton: "iletisim@ogedays.com",
+            newsNote: "Briefly share your need, company, and expected scope so we can respond with the right context.",
             copy: "© 2026 OGEDAY. All rights reserved.",
             legalOne: "Privacy approach",
             legalTwo: "Usage framework",
@@ -2743,6 +2865,12 @@
       window.addEventListener("scroll", () => {
         updateHeaderState();
         updateActiveNav();
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setMenuState(false);
+        }
       });
 
       langToggles.forEach((toggle) => {
