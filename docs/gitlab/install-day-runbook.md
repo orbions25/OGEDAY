@@ -29,6 +29,12 @@ Use this runbook on the first real installation day.
 
 ## Commands
 
+Print the current command pack:
+
+```bash
+sh ops/gitlab/print-phase-0-commands.sh
+```
+
 ```bash
 GITLAB_EXTERNAL_URL="https://gitlab.ogedays.com" sh ops/gitlab/preflight-check.sh
 GITLAB_EXTERNAL_URL="https://gitlab.ogedays.com" sh ops/gitlab/install-single-node-ubuntu.sh
@@ -57,4 +63,3 @@ Stop the install if:
 - [ ] Register runner.
 - [ ] Run first pipeline.
 - [ ] Schedule restore test.
-

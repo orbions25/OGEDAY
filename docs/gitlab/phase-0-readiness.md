@@ -18,6 +18,8 @@ Record each decision in `docs/gitlab/infrastructure-decision-record.md` before i
 - Emergency contact
 - GitHub fallback owner
 
+Use `docs/gitlab/phase-0-handoff.md` to assign these decisions to the DNS owner, infrastructure owner, and Software Admin.
+
 ## Current default assumption
 
 The repository assumes the first pilot FQDN will be:
@@ -48,6 +50,7 @@ From Windows:
 ```powershell
 powershell -ExecutionPolicy Bypass -File ops/gitlab/dns-readiness.ps1
 powershell -ExecutionPolicy Bypass -File ops/gitlab/phase-0-go-no-go.ps1
+powershell -ExecutionPolicy Bypass -File ops/gitlab/print-phase-0-commands.ps1
 ```
 
 From Linux:
@@ -55,6 +58,7 @@ From Linux:
 ```bash
 sh ops/gitlab/dns-readiness.sh
 sh ops/gitlab/phase-0-go-no-go.sh
+sh ops/gitlab/print-phase-0-commands.sh
 ```
 
 On the target GitLab server:

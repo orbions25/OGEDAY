@@ -71,6 +71,7 @@ curl -I http://127.0.0.1:8095
 - Incident, emergency access, runner-secret ve backup/restore konulari `docs/gitlab/` altindaki runbooklarla izlenmelidir.
 - Phase 0 icin GitLab FQDN, DNS/TLS plani ve altyapi karar kaydi netlestirilmelidir.
 - DNS degisiklik talebi, sunucu provisioning checklist ve Phase 0 go/no-go kontrolu tamamlanmadan kuruluma gecilmemelidir.
+- Phase 0 handoff ve komut paketi DNS owner, infrastructure owner ve Software Admin arasinda paylasilmalidir.
 - Self-hosted GitLab kurulumu icin `ops/gitlab/` altindaki scriptler once dry-run olarak incelenmelidir.
 - GitLab primary olmadan once cutover checklist tamamlanmali ve GitHub fallback plani korunmalidir.
 - Ilk pilot issue'lari, release evidence formati ve automation readiness kurallari GitLab'a gecmeden once hazir tutulmalidir.
