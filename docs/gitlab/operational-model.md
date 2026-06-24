@@ -40,6 +40,7 @@ This layer defines how the team actually works:
 - Task-driven development
 - QA validation before deploy
 - Release checklist before production change
+- Incident handling and emergency access review
 
 ## Roles
 
@@ -126,6 +127,8 @@ Track these categories through issues, merge requests, pipeline logs, and admin 
 - Deployment actions
 - System and runner changes
 - Access request lifecycle
+- Incident reports
+- Backup and restore tests
 
 During the pilot, important events can also be summarized in `docs/gitlab/audit-register.md` so the team can review patterns before building automation.
 

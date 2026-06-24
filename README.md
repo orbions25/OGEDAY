@@ -14,7 +14,7 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 - `.gitlab-ci.yml`
   - GitLab uzerinde statik site ve operasyon politikasi dogrulama hatti
 - `.gitlab/`
-  - Merge request, task, QA ve access request sablonlari
+  - Merge request, task, QA, release, incident ve access request sablonlari
 - `CODEOWNERS`
   - Hassas dosyalar icin review sahipligi iskeleti
 - `docs/gitlab/`
@@ -66,6 +66,7 @@ curl -I http://127.0.0.1:8095
 - GitLab gecisinde her degisiklik task veya access request ile baslamali, MR sablonu eksiksiz doldurulmalidir.
 - Production, nginx, TLS, runner, CI secret veya deploy alanlari icin sureli access request akisi kullanilmalidir.
 - Canli yayina cikmadan once QA Validation ve Release Checklist issue'lari tamamlanmalidir.
+- Incident, emergency access, runner-secret ve backup/restore konulari `docs/gitlab/` altindaki runbooklarla izlenmelidir.
 
 ## Not
 

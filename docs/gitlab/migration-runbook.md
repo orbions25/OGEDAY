@@ -9,6 +9,7 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Decide real GitLab groups for Software Admin, Supervisor, Developer, QA, and Read-only visibility.
 - Decide backup storage location and retention policy.
 - Decide who can approve production access.
+- Decide the first restore-test date before GitLab becomes the only source of truth.
 
 ## Phase 1A - GitLab Core
 
@@ -21,6 +22,8 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Disable direct push to `main`.
 - Enable merge request pipeline requirements.
 - Configure runner capacity for static validation jobs.
+- Apply runner and secret rules from `docs/gitlab/runner-secrets-policy.md`.
+- Prepare backup and restore checks from `docs/gitlab/backup-restore-checklist.md`.
 
 ## Phase 1B - Operational Discipline
 
@@ -30,6 +33,7 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Use Access Request issues for restricted resources.
 - Use QA Validation issues for release checks.
 - Use Release Checklist issues before production deploys.
+- Use Incident Report issues for emergency fixes and production failures.
 - Add CODEOWNERS approval for `ops/`, `.gitlab/`, `scripts/`, and deploy files.
 - Create labels from `docs/gitlab/labels.md`.
 - Apply project settings from `docs/gitlab/project-settings-checklist.md`.
@@ -53,6 +57,7 @@ Pilot checks:
 - Review audit history weekly.
 - Keep `docs/gitlab/audit-register.md` as the first lightweight human-readable register.
 - Build a short monthly governance report from issues, MRs, and pipeline data.
+- Use `docs/gitlab/monthly-governance-report-template.md` for the first 6-7 months.
 
 ## Phase 3 - AI and automation
 
