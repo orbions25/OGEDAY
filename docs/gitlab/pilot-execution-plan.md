@@ -37,6 +37,8 @@ Exit criteria:
 - Import `https://github.com/orbions25/OGEDAY.git`.
 - Create groups from `ops/gitlab/bootstrap-groups.md`.
 - Replace placeholder `CODEOWNERS` entries.
+- Review and run `ops/gitlab/apply-labels.sh`.
+- Review and run `ops/gitlab/protect-main.sh`.
 - Apply project settings checklist.
 
 Exit criteria:
@@ -45,12 +47,14 @@ Exit criteria:
 - `main` is protected.
 - Direct push to `main` is disabled.
 - CODEOWNERS uses real GitLab groups.
+- Core operational labels exist.
 
 ## Day 3 - Runner and CI
 
 - Create runner in GitLab UI and copy the `glrt-` runner authentication token.
 - Install runner on a separate machine using `ops/gitlab/install-runner-ubuntu.sh`.
 - Run the first pipeline.
+- Run `ops/gitlab/project-readiness-check.sh`.
 - Fix only pipeline issues, not production deploy automation.
 
 Exit criteria:
@@ -99,6 +103,8 @@ Exit criteria:
 
 - Review labels, boards, templates, and approval bottlenecks.
 - Fill `docs/gitlab/monthly-governance-report-template.md` for the pilot week.
+- Review `docs/gitlab/cutover-checklist.md`.
+- Confirm `docs/gitlab/github-fallback-plan.md` is still valid.
 - Decide whether GitLab becomes primary or continues in parallel with GitHub.
 
 Exit criteria:
@@ -106,4 +112,3 @@ Exit criteria:
 - Go/no-go decision is recorded.
 - GitHub fallback decision is explicit.
 - Next automation candidates are listed.
-

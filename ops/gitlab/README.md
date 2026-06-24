@@ -18,10 +18,11 @@ The scripts are intentionally safe by default:
 5. Run the same install script with `DRY_RUN=0` only on the target GitLab server.
 6. Create the OGEDAY group and import this repository.
 7. Create real GitLab groups and replace placeholder entries in `CODEOWNERS`.
-8. Configure project settings from `docs/gitlab/project-settings-checklist.md`.
-9. Create a runner in GitLab UI and install/register it on a separate runner machine.
-10. Run the first pipeline.
-11. Run a backup and restore test before GitLab becomes the only source of truth.
+8. Use `api-bootstrap.md` to review and apply labels and `main` branch protection.
+9. Configure remaining project settings from `docs/gitlab/project-settings-checklist.md`.
+10. Create a runner in GitLab UI and install/register it on a separate runner machine.
+11. Run the first pipeline.
+12. Run a backup and restore test before GitLab becomes the only source of truth.
 
 ## Files
 
@@ -37,6 +38,14 @@ The scripts are intentionally safe by default:
   - Backup helper for application and `/etc/gitlab` configuration backups.
 - `restore-test-checklist.sh`
   - Restore-test command guide for a clean test instance.
+- `api-bootstrap.md`
+  - API-based label and protected branch bootstrap instructions.
+- `apply-labels.sh`
+  - Dry-run first project label creation helper.
+- `protect-main.sh`
+  - Dry-run first `main` branch protection helper.
+- `project-readiness-check.sh`
+  - API readiness check for project, labels, and protected branch.
 - `import-ogeday-repo.md`
   - Project import and post-import checklist.
 - `bootstrap-groups.md`

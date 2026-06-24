@@ -25,6 +25,7 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Create real GitLab groups that replace the placeholder `CODEOWNERS` entries.
 - Use `ops/gitlab/bootstrap-groups.md` for the first group layout.
 - Protect `main`.
+- Use `ops/gitlab/api-bootstrap.md` for label creation and `main` branch protection helpers.
 - Disable direct push to `main`.
 - Enable merge request pipeline requirements.
 - Configure runner capacity for static validation jobs.
@@ -93,6 +94,8 @@ After the process stabilizes, the same model can become the foundation for OGEDA
 If GitLab migration blocks production work:
 
 - Keep GitHub repository as the fallback source of truth until cutover is complete.
+- Use `docs/gitlab/github-fallback-plan.md` during the pilot.
+- Use `docs/gitlab/cutover-checklist.md` before declaring GitLab primary.
 - Keep production deploy manual until runner and secret handling are verified.
 - Do not remove existing live server access before GitLab access recovery is tested.
 - Export GitLab project data after the first pilot week.

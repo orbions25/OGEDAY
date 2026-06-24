@@ -34,7 +34,7 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 - `ops/nginx/`
   - Host nginx icin referans konfigurasyonlar
 - `ops/gitlab/`
-  - Self-hosted GitLab kurulumu, runner, backup, restore ve import icin dry-run operasyon yardimcilari
+  - Self-hosted GitLab kurulumu, runner, backup, restore, import ve API bootstrap icin dry-run operasyon yardimcilari
 
 ## Canli sunucu notlari
 
@@ -70,6 +70,7 @@ curl -I http://127.0.0.1:8095
 - Canli yayina cikmadan once QA Validation ve Release Checklist issue'lari tamamlanmalidir.
 - Incident, emergency access, runner-secret ve backup/restore konulari `docs/gitlab/` altindaki runbooklarla izlenmelidir.
 - Self-hosted GitLab kurulumu icin `ops/gitlab/` altindaki scriptler once dry-run olarak incelenmelidir.
+- GitLab primary olmadan once cutover checklist tamamlanmali ve GitHub fallback plani korunmalidir.
 
 ## Not
 
