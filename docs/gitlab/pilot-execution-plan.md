@@ -6,7 +6,10 @@ This plan turns the self-hosted GitLab model into the first week of practical wo
 
 - Confirm GitLab FQDN and DNS owner.
 - Record Phase 0 decisions in `docs/gitlab/infrastructure-decision-record.md`.
+- Prepare `docs/gitlab/dns-change-request.md`.
+- Complete `docs/gitlab/server-provisioning-checklist.md`.
 - Run `ops/gitlab/dns-readiness.ps1` or `ops/gitlab/dns-readiness.sh`.
+- Run `ops/gitlab/phase-0-go-no-go.ps1` or `ops/gitlab/phase-0-go-no-go.sh`.
 - Confirm target server size and storage.
 - Run `ops/gitlab/preflight-check.sh` on the target server.
 - Confirm backup storage location.

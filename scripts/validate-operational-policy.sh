@@ -43,9 +43,15 @@ require_file docs/gitlab/automation-readiness.md
 require_file docs/gitlab/phase-0-readiness.md
 require_file docs/gitlab/dns-and-tls-plan.md
 require_file docs/gitlab/infrastructure-decision-record.md
+require_file docs/gitlab/dns-change-request.md
+require_file docs/gitlab/server-provisioning-checklist.md
+require_file docs/gitlab/install-day-runbook.md
+require_file docs/gitlab/phase-0-go-no-go.md
 require_file ops/gitlab/README.md
 require_file ops/gitlab/dns-readiness.sh
 require_file ops/gitlab/dns-readiness.ps1
+require_file ops/gitlab/phase-0-go-no-go.sh
+require_file ops/gitlab/phase-0-go-no-go.ps1
 require_file ops/gitlab/preflight-check.sh
 require_file ops/gitlab/install-single-node-ubuntu.sh
 require_file ops/gitlab/gitlab.rb.example
@@ -89,9 +95,15 @@ require_contains docs/gitlab/automation-readiness.md "Do not automate yet" "Auto
 require_contains docs/gitlab/phase-0-readiness.md "gitlab.ogedays.com" "Phase 0 GitLab FQDN"
 require_contains docs/gitlab/dns-and-tls-plan.md "gitlab.ogedays.com  A" "DNS A record plan"
 require_contains docs/gitlab/infrastructure-decision-record.md "Backup storage" "Infrastructure backup decision"
+require_contains docs/gitlab/dns-change-request.md "gitlab.ogedays.com" "DNS change request FQDN"
+require_contains docs/gitlab/server-provisioning-checklist.md "Server identity" "Server provisioning identity section"
+require_contains docs/gitlab/install-day-runbook.md "Stop conditions" "Install day stop conditions"
+require_contains docs/gitlab/phase-0-go-no-go.md "Go to install" "Phase 0 go/no-go decision"
 require_contains ops/gitlab/README.md "DRY_RUN=0" "GitLab ops dry-run note"
 require_contains ops/gitlab/dns-readiness.sh "GITLAB_HOST" "Linux DNS readiness host variable"
 require_contains ops/gitlab/dns-readiness.ps1 "Resolve-DnsName" "Windows DNS readiness resolver"
+require_contains ops/gitlab/phase-0-go-no-go.sh "Go to install" "Linux Phase 0 go/no-go output"
+require_contains ops/gitlab/phase-0-go-no-go.ps1 "Go to install" "Windows Phase 0 go/no-go output"
 require_contains ops/gitlab/preflight-check.sh "GITLAB_EXTERNAL_URL" "GitLab preflight external URL guard"
 require_contains ops/gitlab/preflight-check.sh "40 GB" "GitLab preflight storage guidance"
 require_contains ops/gitlab/install-single-node-ubuntu.sh "GITLAB_EXTERNAL_URL" "GitLab install external URL guard"

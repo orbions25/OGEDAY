@@ -31,6 +31,8 @@ This must resolve to the selected GitLab server before HTTPS installation is tre
 ## Minimum readiness gates
 
 - [ ] DNS record exists for GitLab FQDN.
+- [ ] DNS change request is complete.
+- [ ] Server provisioning checklist is complete.
 - [ ] HTTPS plan is selected.
 - [ ] SSH, HTTP, and HTTPS firewall rules are known.
 - [ ] Target server has enough CPU, memory, and disk.
@@ -45,12 +47,14 @@ From Windows:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File ops/gitlab/dns-readiness.ps1
+powershell -ExecutionPolicy Bypass -File ops/gitlab/phase-0-go-no-go.ps1
 ```
 
 From Linux:
 
 ```bash
 sh ops/gitlab/dns-readiness.sh
+sh ops/gitlab/phase-0-go-no-go.sh
 ```
 
 On the target GitLab server:
@@ -58,4 +62,3 @@ On the target GitLab server:
 ```bash
 GITLAB_EXTERNAL_URL="https://gitlab.ogedays.com" sh ops/gitlab/preflight-check.sh
 ```
-

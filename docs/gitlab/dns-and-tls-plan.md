@@ -18,6 +18,7 @@ gitlab.ogedays.com  AAAA  <gitlab-server-public-ipv6>
 
 ## DNS checklist
 
+- [ ] DNS change request is prepared from `docs/gitlab/dns-change-request.md`.
 - [ ] Confirm DNS provider account owner.
 - [ ] Confirm target GitLab server public IP.
 - [ ] Add `A` record for `gitlab.ogedays.com`.
@@ -53,4 +54,3 @@ SSH should be limited or rate-limited where possible.
 - [ ] `https://gitlab.ogedays.com` loads after install.
 - [ ] Git clone URLs show the GitLab FQDN.
 - [ ] No production secrets are stored in DNS notes or repository files.
-
