@@ -1,0 +1,13 @@
+# Replace these placeholder groups with real GitLab users or groups after migration.
+# The intent is to protect operationally sensitive areas with Supervisor and
+# Software Admin review instead of relying on informal chat approval.
+
+* @software-admin
+
+site/ @software-admin @supervisor
+ops/ @software-admin
+scripts/ @software-admin
+.gitlab/ @software-admin @supervisor
+docs/gitlab/ @software-admin @supervisor
+docker-compose.yml @software-admin
+

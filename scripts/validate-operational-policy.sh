@@ -1,0 +1,44 @@
+#!/bin/sh
+set -eu
+
+fail() {
+  printf 'ERROR: %s\n' "$1" >&2
+  exit 1
+}
+
+require_file() {
+  [ -f "$1" ] || fail "Missing required file: $1"
+}
+
+require_contains() {
+  file="$1"
+  text="$2"
+  label="$3"
+  grep -Fq "$text" "$file" || fail "$label not found in $file"
+}
+
+mr_template=".gitlab/merge_request_templates/Default.md"
+access_template=".gitlab/issue_templates/Access_Request.md"
+
+require_file "$mr_template"
+require_file "$access_template"
+require_file .gitlab/issue_templates/Task.md
+require_file .gitlab/issue_templates/QA_Validation.md
+require_file CODEOWNERS
+require_file docs/gitlab/operational-model.md
+require_file docs/gitlab/migration-runbook.md
+require_file docs/gitlab/role-matrix.md
+
+require_contains "$mr_template" "Linked issue" "MR linked issue field"
+require_contains "$mr_template" "Scope" "MR scope field"
+require_contains "$mr_template" "Test result" "MR test result field"
+require_contains "$mr_template" "Rollback" "MR rollback field"
+
+require_contains "$access_template" "Requested resource" "Access request resource field"
+require_contains "$access_template" "Business reason" "Access request business reason field"
+require_contains "$access_template" "Access duration" "Access request duration field"
+require_contains "$access_template" "Supervisor note" "Access request supervisor note field"
+require_contains "$access_template" "Approval history" "Access request approval history field"
+
+printf 'Operational policy validation passed.\n'
+

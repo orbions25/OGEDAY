@@ -11,6 +11,16 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 
 ## Repo yapisi
 
+- `.gitlab-ci.yml`
+  - GitLab uzerinde statik site ve operasyon politikasi dogrulama hatti
+- `.gitlab/`
+  - Merge request, task, QA ve access request sablonlari
+- `CODEOWNERS`
+  - Hassas dosyalar icin review sahipligi iskeleti
+- `docs/gitlab/`
+  - Self-hosted GitLab gecis modeli, rol matrisi ve runbook
+- `scripts/`
+  - CI tarafinda calisan dogrulama scriptleri
 - `site/index.html`
   - Canli OGEDAY acilis sayfasi
 - `site/robots.txt`
@@ -53,6 +63,8 @@ curl -I http://127.0.0.1:8095
 - Iletisim akisi `iletisim@ogedays.com` mailto baglantilari uzerinden calisir.
 - SEO icin canonical, Open Graph, Twitter Card, Organization schema, `robots.txt` ve `sitemap.xml` birlikte tutulur.
 - Host nginx guvenlik basliklari `ops/nginx/ogedays.com.conf` icinde; konteyner ici basliklar `site/nginx.conf` icindedir.
+- GitLab gecisinde her degisiklik task veya access request ile baslamali, MR sablonu eksiksiz doldurulmalidir.
+- Production, nginx, TLS, runner, CI secret veya deploy alanlari icin sureli access request akisi kullanilmalidir.
 
 ## Not
 

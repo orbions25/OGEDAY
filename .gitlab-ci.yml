@@ -1,0 +1,23 @@
+stages:
+  - validate
+  - policy
+
+default:
+  image: alpine:3.20
+
+validate_static_site:
+  stage: validate
+  script:
+    - sh scripts/validate-site.sh
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH'
+
+validate_operational_policy:
+  stage: policy
+  script:
+    - sh scripts/validate-operational-policy.sh
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH'
+
