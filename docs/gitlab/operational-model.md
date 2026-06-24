@@ -12,6 +12,7 @@ The first implementation for this repo is intentionally small:
 - Every merge request explains purpose, scope, risk, test result, and rollback.
 - Sensitive files require explicit owner review.
 - Temporary access is requested through an issue template and removed after expiry.
+- Production deploys use a release checklist before action is taken.
 - CI checks the public site contract and the presence of governance files.
 
 ## Layers
@@ -38,6 +39,7 @@ This layer defines how the team actually works:
 - Software Admin approval
 - Task-driven development
 - QA validation before deploy
+- Release checklist before production change
 
 ## Roles
 
@@ -125,9 +127,10 @@ Track these categories through issues, merge requests, pipeline logs, and admin 
 - System and runner changes
 - Access request lifecycle
 
+During the pilot, important events can also be summarized in `docs/gitlab/audit-register.md` so the team can review patterns before building automation.
+
 ## First 6-7 months
 
 The first months should be treated as an operational data collection period. The goal is to observe how work actually moves, where access requests repeat, where approvals slow down, and which validations catch real problems.
 
 Do not over-automate too early. Start with simple templates and CI checks, then convert repeated manual decisions into automation.
-

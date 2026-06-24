@@ -18,7 +18,7 @@ Bu repo, `ogedays.com` alani icin ayrilmis bagimsiz yayin hattini ve kurumsal we
 - `CODEOWNERS`
   - Hassas dosyalar icin review sahipligi iskeleti
 - `docs/gitlab/`
-  - Self-hosted GitLab gecis modeli, rol matrisi ve runbook
+  - Self-hosted GitLab gecis modeli, rol matrisi, label sistemi, audit register ve runbook
 - `scripts/`
   - CI tarafinda calisan dogrulama scriptleri
 - `site/index.html`
@@ -65,6 +65,7 @@ curl -I http://127.0.0.1:8095
 - Host nginx guvenlik basliklari `ops/nginx/ogedays.com.conf` icinde; konteyner ici basliklar `site/nginx.conf` icindedir.
 - GitLab gecisinde her degisiklik task veya access request ile baslamali, MR sablonu eksiksiz doldurulmalidir.
 - Production, nginx, TLS, runner, CI secret veya deploy alanlari icin sureli access request akisi kullanilmalidir.
+- Canli yayina cikmadan once QA Validation ve Release Checklist issue'lari tamamlanmalidir.
 
 ## Not
 

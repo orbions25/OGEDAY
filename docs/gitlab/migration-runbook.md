@@ -29,7 +29,10 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Require a linked issue for every merge request.
 - Use Access Request issues for restricted resources.
 - Use QA Validation issues for release checks.
+- Use Release Checklist issues before production deploys.
 - Add CODEOWNERS approval for `ops/`, `.gitlab/`, `scripts/`, and deploy files.
+- Create labels from `docs/gitlab/labels.md`.
+- Apply project settings from `docs/gitlab/project-settings-checklist.md`.
 
 ## Phase 1C - Website pilot
 
@@ -48,6 +51,7 @@ Pilot checks:
 - Add issue boards for Task, Access Request, QA Validation, and Release.
 - Add labels for risk, area, access, release, and blocked state.
 - Review audit history weekly.
+- Keep `docs/gitlab/audit-register.md` as the first lightweight human-readable register.
 - Build a short monthly governance report from issues, MRs, and pipeline data.
 
 ## Phase 3 - AI and automation
@@ -79,4 +83,3 @@ If GitLab migration blocks production work:
 - Keep production deploy manual until runner and secret handling are verified.
 - Do not remove existing live server access before GitLab access recovery is tested.
 - Export GitLab project data after the first pilot week.
-

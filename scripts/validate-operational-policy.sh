@@ -24,10 +24,14 @@ require_file "$mr_template"
 require_file "$access_template"
 require_file .gitlab/issue_templates/Task.md
 require_file .gitlab/issue_templates/QA_Validation.md
+require_file .gitlab/issue_templates/Release_Checklist.md
 require_file CODEOWNERS
 require_file docs/gitlab/operational-model.md
 require_file docs/gitlab/migration-runbook.md
 require_file docs/gitlab/role-matrix.md
+require_file docs/gitlab/labels.md
+require_file docs/gitlab/project-settings-checklist.md
+require_file docs/gitlab/audit-register.md
 
 require_contains "$mr_template" "Linked issue" "MR linked issue field"
 require_contains "$mr_template" "Scope" "MR scope field"
@@ -40,5 +44,10 @@ require_contains "$access_template" "Access duration" "Access request duration f
 require_contains "$access_template" "Supervisor note" "Access request supervisor note field"
 require_contains "$access_template" "Approval history" "Access request approval history field"
 
-printf 'Operational policy validation passed.\n'
+require_contains .gitlab/issue_templates/Release_Checklist.md "Pre-deploy checks" "Release pre-deploy checks"
+require_contains .gitlab/issue_templates/Release_Checklist.md "Post-deploy smoke test" "Release post-deploy smoke test"
+require_contains docs/gitlab/labels.md "type::access-request" "Access request label"
+require_contains docs/gitlab/project-settings-checklist.md 'Direct push to `main` is disabled' "Protected branch checklist"
+require_contains docs/gitlab/audit-register.md "Permission grants" "Audit register permission category"
 
+printf 'Operational policy validation passed.\n'
