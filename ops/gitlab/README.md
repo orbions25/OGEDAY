@@ -13,22 +13,28 @@ The scripts are intentionally safe by default:
 
 1. Prepare DNS for the GitLab FQDN, for example `gitlab.ogedays.com`.
 2. Provision a Debian/Ubuntu server that satisfies GitLab single-node requirements.
-3. Run `preflight-check.sh` on the target server.
-4. Run `install-single-node-ubuntu.sh` in dry-run mode and review the output.
-5. Run the same install script with `DRY_RUN=0` only on the target GitLab server.
-6. Create the OGEDAY group and import this repository.
-7. Create real GitLab groups and replace placeholder entries in `CODEOWNERS`.
-8. Use `api-bootstrap.md` to review and apply labels and `main` branch protection.
-9. Configure remaining project settings from `docs/gitlab/project-settings-checklist.md`.
-10. Use `create-pilot-issues.sh` to review the first workflow rehearsal issues.
-11. Create a runner in GitLab UI and install/register it on a separate runner machine.
-12. Run the first pipeline.
-13. Run a backup and restore test before GitLab becomes the only source of truth.
+3. Record Phase 0 decisions in `docs/gitlab/infrastructure-decision-record.md`.
+4. Run `dns-readiness.ps1` from Windows or `dns-readiness.sh` from Linux.
+5. Run `preflight-check.sh` on the target server.
+6. Run `install-single-node-ubuntu.sh` in dry-run mode and review the output.
+7. Run the same install script with `DRY_RUN=0` only on the target GitLab server.
+8. Create the OGEDAY group and import this repository.
+9. Create real GitLab groups and replace placeholder entries in `CODEOWNERS`.
+10. Use `api-bootstrap.md` to review and apply labels and `main` branch protection.
+11. Configure remaining project settings from `docs/gitlab/project-settings-checklist.md`.
+12. Use `create-pilot-issues.sh` to review the first workflow rehearsal issues.
+13. Create a runner in GitLab UI and install/register it on a separate runner machine.
+14. Run the first pipeline.
+15. Run a backup and restore test before GitLab becomes the only source of truth.
 
 ## Files
 
 - `install-single-node-ubuntu.sh`
   - Dry-run first install helper for GitLab Linux package deployments.
+- `dns-readiness.ps1`
+  - Windows DNS readiness check for the root domain and GitLab FQDN.
+- `dns-readiness.sh`
+  - Linux DNS readiness check for the root domain and GitLab FQDN.
 - `preflight-check.sh`
   - Read-only target-server readiness check for CPU, memory, disk, and DNS.
 - `gitlab.rb.example`

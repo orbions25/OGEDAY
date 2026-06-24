@@ -5,6 +5,9 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 ## Phase 0 - Decisions before migration
 
 - Decide the GitLab domain and hosting target.
+- Use `docs/gitlab/phase-0-readiness.md` as the readiness gate.
+- Record decisions in `docs/gitlab/infrastructure-decision-record.md`.
+- Use `docs/gitlab/dns-and-tls-plan.md` for DNS and HTTPS preparation.
 - Decide whether the initial GitLab server is single-node or prepared for later scaling.
 - Decide real GitLab groups for Software Admin, Supervisor, Developer, QA, and Read-only visibility.
 - Decide backup storage location and retention policy.
