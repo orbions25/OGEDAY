@@ -36,6 +36,17 @@ require_file docs/gitlab/audit-register.md
 require_file docs/gitlab/runner-secrets-policy.md
 require_file docs/gitlab/backup-restore-checklist.md
 require_file docs/gitlab/monthly-governance-report-template.md
+require_file ops/gitlab/README.md
+require_file ops/gitlab/preflight-check.sh
+require_file ops/gitlab/install-single-node-ubuntu.sh
+require_file ops/gitlab/gitlab.rb.example
+require_file ops/gitlab/install-runner-ubuntu.sh
+require_file ops/gitlab/backup-gitlab.sh
+require_file ops/gitlab/restore-test-checklist.sh
+require_file ops/gitlab/import-ogeday-repo.md
+require_file ops/gitlab/bootstrap-groups.md
+require_file ops/gitlab/source-links.md
+require_file docs/gitlab/pilot-execution-plan.md
 
 require_contains "$mr_template" "Linked issue" "MR linked issue field"
 require_contains "$mr_template" "Scope" "MR scope field"
@@ -57,5 +68,15 @@ require_contains docs/gitlab/audit-register.md "Permission grants" "Audit regist
 require_contains docs/gitlab/runner-secrets-policy.md "protected branches" "Runner protected branch policy"
 require_contains docs/gitlab/backup-restore-checklist.md "Restore test" "Backup restore test section"
 require_contains docs/gitlab/monthly-governance-report-template.md "Access summary" "Monthly governance access summary"
+require_contains ops/gitlab/README.md "DRY_RUN=0" "GitLab ops dry-run note"
+require_contains ops/gitlab/preflight-check.sh "GITLAB_EXTERNAL_URL" "GitLab preflight external URL guard"
+require_contains ops/gitlab/preflight-check.sh "40 GB" "GitLab preflight storage guidance"
+require_contains ops/gitlab/install-single-node-ubuntu.sh "GITLAB_EXTERNAL_URL" "GitLab install external URL guard"
+require_contains ops/gitlab/install-runner-ubuntu.sh "RUNNER_AUTH_TOKEN" "Runner authentication token guard"
+require_contains ops/gitlab/backup-gitlab.sh "gitlab-backup create" "GitLab backup command"
+require_contains ops/gitlab/restore-test-checklist.sh "same GitLab version and type" "Restore version guard"
+require_contains ops/gitlab/import-ogeday-repo.md "https://github.com/orbions25/OGEDAY.git" "OGEDAY import source"
+require_contains ops/gitlab/bootstrap-groups.md "OGEDAY/software-admin" "Software Admin group guide"
+require_contains docs/gitlab/pilot-execution-plan.md "Day 3 - Runner and CI" "Pilot runner day"
 
 printf 'Operational policy validation passed.\n'

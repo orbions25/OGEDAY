@@ -25,7 +25,9 @@ Backups are not complete until restore has been tested. Use this checklist befor
 ## Restore test
 
 - [ ] Restore target prepared
+- [ ] Restore target is the same GitLab version and type as the backup source
 - [ ] Latest backup restored
+- [ ] `/etc/gitlab/gitlab-secrets.json` restored securely outside the repository
 - [ ] Repository history verified
 - [ ] Issues and merge requests verified
 - [ ] CI variables verified or re-entered securely
@@ -44,4 +46,3 @@ Backups are not complete until restore has been tested. Use this checklist befor
 ## Notes
 
 Record every restore test result here or link the related issue.
-

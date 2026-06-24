@@ -10,20 +10,28 @@ This runbook describes how to apply the self-hosted GitLab model to the current 
 - Decide backup storage location and retention policy.
 - Decide who can approve production access.
 - Decide the first restore-test date before GitLab becomes the only source of truth.
+- Review `ops/gitlab/source-links.md` for the official GitLab docs used by this repo.
+- Use `docs/gitlab/pilot-execution-plan.md` as the first-week execution tracker.
 
 ## Phase 1A - GitLab Core
 
 - Install GitLab.
+- Run `ops/gitlab/preflight-check.sh` before installation.
+- Use `ops/gitlab/install-single-node-ubuntu.sh` as the reviewed command guide.
 - Enable HTTPS.
 - Create the OGEDAY group.
 - Import or mirror this repository.
+- Use `ops/gitlab/import-ogeday-repo.md` for the import checklist.
 - Create real GitLab groups that replace the placeholder `CODEOWNERS` entries.
+- Use `ops/gitlab/bootstrap-groups.md` for the first group layout.
 - Protect `main`.
 - Disable direct push to `main`.
 - Enable merge request pipeline requirements.
 - Configure runner capacity for static validation jobs.
+- Use `ops/gitlab/install-runner-ubuntu.sh` on a separate runner machine after a runner authentication token is created in GitLab.
 - Apply runner and secret rules from `docs/gitlab/runner-secrets-policy.md`.
 - Prepare backup and restore checks from `docs/gitlab/backup-restore-checklist.md`.
+- Use `ops/gitlab/backup-gitlab.sh` and `ops/gitlab/restore-test-checklist.sh` as reviewed command guides.
 
 ## Phase 1B - Operational Discipline
 

@@ -1,0 +1,23 @@
+# Example only. Copy relevant lines into /etc/gitlab/gitlab.rb manually.
+# Do not store secrets in this repository.
+
+external_url "https://gitlab.ogedays.com"
+
+gitlab_rails['time_zone'] = 'Europe/Istanbul'
+
+# Keep application and configuration backups long enough for the pilot period.
+# Adjust after the first restore test and storage sizing review.
+gitlab_rails['backup_keep_time'] = 1209600
+
+# Disable open public signup for the internal OGEDAY instance.
+gitlab_rails['gitlab_signup_enabled'] = false
+
+# Keep Git HTTP brute-force protection enabled and bounded.
+gitlab_rails['rack_attack_git_basic_auth'] = {
+  'enabled' => true,
+  'ip_whitelist' => ['127.0.0.1'],
+  'maxretry' => 10,
+  'findtime' => 60,
+  'bantime' => 3600
+}
+

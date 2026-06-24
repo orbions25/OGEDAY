@@ -7,7 +7,8 @@ This policy defines how GitLab runners, CI variables, deploy keys, and productio
 - Use dedicated runners for OGEDAY projects.
 - Do not share production deploy runners with untrusted or experimental projects.
 - Restrict deploy-capable runners to protected branches.
-- Keep runner registration tokens under Software Admin control.
+- Keep runner authentication tokens under Software Admin control.
+- Prefer the current `glrt-` runner authentication token workflow instead of deprecated registration tokens.
 - Review runner logs after pipeline failures that touch deploy or secret paths.
 
 ## CI variables
@@ -42,4 +43,3 @@ Rotate or revoke credentials when:
 - Emergency access was used.
 - A deploy key was copied outside the approved environment.
 - A runner was reconfigured unexpectedly.
-
